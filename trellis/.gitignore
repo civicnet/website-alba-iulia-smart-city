@@ -3,3 +3,5 @@
 vendor/roles
 *.py[co]
 *.retry
+
+vault.yml
