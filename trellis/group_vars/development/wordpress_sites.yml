@@ -5,7 +5,9 @@
 wordpress_sites:
   albaiuliasmartcity.ro:
     site_hosts:
-      - canonical: albaiuliasmartcity.ro
+      - canonical: albaiuliasmartcity.dev
+        redirects:
+          - www.albaiuliasmartcity.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: claudiu.ceia@civictech.ro
     multisite:
