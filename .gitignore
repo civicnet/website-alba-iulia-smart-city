@@ -1,0 +1,12 @@
+/trellis/group_vars/*/vault.yml
+
+# vim coders unite
+.swp
+
+# operating system files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
