@@ -8,9 +8,9 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/smart-city",
-  "devUrl": "http://albaiuliasmartcity.test",
-  "proxyUrl": "http://localhost:3000",
+  "publicPath": "app/themes/smart-city",
+  "devUrl": "dev.albaiuliasmartcity.ro",
+  "proxyUrl": "https://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
