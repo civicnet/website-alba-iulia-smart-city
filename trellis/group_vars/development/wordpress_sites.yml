@@ -6,6 +6,8 @@ wordpress_sites:
   dev.albaiuliasmartcity.ro:
     site_hosts:
       - canonical: dev.albaiuliasmartcity.ro
+        redirects:
+          - www.dev.albaiuliasmartcity.ro
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: admin@albaiuliasmartcity.test
     multisite:

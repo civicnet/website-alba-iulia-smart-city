@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "327dfc5c0193e2ce0d98bd111f24fab8",
+    "content-hash": "23a345c93af9b30a66a96b5dfa2313ce",
     "packages": [
         {
             "name": "composer/installers",
@@ -402,6 +402,46 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "5.6.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "tags/5.6.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.6.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/cmb2",
+            "version": "2.3.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cmb2/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1513780345",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cmb2/"
         }
     ],
     "packages-dev": [
