@@ -68,3 +68,19 @@ add_filter('comments_template', function ($comments_template) {
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 });
+
+add_filter('nav_menu_css_class', function ($classes, $item, $args) {
+  if($args->theme_location === 'primary_navigation') {
+    $classes[] = 'nav-item';
+  }
+
+  return $classes;
+}, 1, 3);
+
+add_filter('nav_menu_link_attributes', function ($atts, $item, $args) {
+  if($args->theme_location === 'primary_navigation') {
+    $atts['class'] = 'nav-link';
+  }
+
+  return $atts;
+}, 10, 3);
