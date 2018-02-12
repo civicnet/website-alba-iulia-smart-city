@@ -5,3 +5,15 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.banner .navbar {
+  height: 115px;
+}
+
+.banner .navbar-brand img {
+  height: 75px;
+}
+
+.banner {
+  position: relative;
+}
