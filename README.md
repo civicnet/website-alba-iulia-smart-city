@@ -53,3 +53,4 @@ To build the assets for development and run browsersync so you have live reload 
 $> yarn start run
 ```
 
+**Made with :heart: & :coffee: by [CivicTech România](https://civictech.ro/)**
