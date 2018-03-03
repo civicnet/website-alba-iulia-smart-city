@@ -47,7 +47,8 @@
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/advanced-custom-fields": "5.6.7",
-    "wpackagist-plugin/cmb2": "2.3.0"
+    "wpackagist-plugin/cmb2": "2.3.0",
+    "wpackagist-plugin/advanced-custom-fields-font-awesome": "3.0.0-beta1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
@@ -57,7 +58,8 @@
       "web/app/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
         "wpackagist-plugin/advanced-custom-fields",
-        "wpackagist-plugin/cmb2"
+        "wpackagist-plugin/cmb2",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
