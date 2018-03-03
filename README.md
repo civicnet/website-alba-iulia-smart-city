@@ -1,3 +1,8 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/61f3f8272ea22b993a52/maintainability)](https://codeclimate.com/github/civictechro/website-alba-iulia-smart-city/maintainability)
+
+[![GitHub license](https://img.shields.io/github/license/civictechro/website-alba-iulia-smart-city.svg)](https://github.com/civictechro/website-alba-iulia-smart-city/blob/master/LICENSE) [![GitHub issues by-label](https://img.shields.io/github/issues-raw/civictechro/website-alba-iulia-smart-city/help%20wanted.svg)](https://github.com/civictechro/website-alba-iulia-smart-city/issues) 
+
+
 # Alba Iulia, Smart City
 Website de prezentare soluții Smart City, Alba Iulia
 
@@ -48,3 +53,4 @@ To build the assets for development and run browsersync so you have live reload 
 $> yarn start run
 ```
 
+**Made with :heart: & :coffee: by [CivicTech România](https://civictech.ro/)**
