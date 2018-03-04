@@ -1,5 +1,12 @@
 @import "common/variables";
 
+// Import npm dependencies
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+// Import Slick
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
 /** Import everything from autoload */
 @import "./autoload/**/*";
 
@@ -17,9 +24,11 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/mdl-stepper";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/proiect";

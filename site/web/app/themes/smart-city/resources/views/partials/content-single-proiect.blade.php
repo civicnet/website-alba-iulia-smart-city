@@ -1,76 +1,103 @@
 <article @php(post_class())>
   <header>
-    <div class="container-fluid  intro" style="background-image: url({{ Proiect::featuredImage() }})">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <div class="verticala">
-              {{ Proiect::verticala() }}
+    <div class="container-fluid  intro">
+      <div class="row header-image" style="background-image: url({{ Proiect::featuredImage() }})">
+        <div class="container">
+          <div class="row align-items-center metadata">
+            <div class="col">
+              <div class="verticala">
+                {{ Proiect::verticala() }}
+              </div>
+              <h1 class="entry-title">{{ Proiect::nume() }}</h1>
+              <div class="extras">
+                  {{ Proiect::extras() }}
+              </div>
             </div>
-            <h1 class="entry-title">{{ Proiect::nume() }}</h1>
-            <div class="extras">
-                {{ Proiect::extras() }}
+            <div class="col">
+              <div class="circle align-middle">
+                <div class="pictograma">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <div class="label">
+                  {{ Proiect::etapa() }}
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col">
-              {{ Proiect::etapa() }}
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col intro-footer align-self-end justify-content-center">
-          <div class="container align-middle">
-            @foreach (Proiect::etichete() as $eticheta)
-              <span class="eticheta">
-                <i class="{{ $eticheta->pictograma }}"></i>
-                {{ $eticheta->post_title }}
-              </span>
-            @endforeach
+      <div class="taxonomy intro-footer row">
+        <div class="container">
+          <div class="row">
+            <div class="col-7 align-self-end justify-content-center">
+              <div class="container align-middle">
+                @foreach (Proiect::etichete() as $eticheta)
+                  <span class="eticheta">
+                    <span class="pictograma align-middle">
+                      <i class="{{ $eticheta->pictograma }}"></i>
+                    </span>
+                    {{ $eticheta->post_title }}
+                  </span>
+                @endforeach
+              </div>
+            </div>
+            <div class="col-5">
+              Distribuie Proiectul
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
   <div class="entry-content">
-    <div class="container">
+    <div class="container etape-proiect">
       <h2>Etape proiect</h2>
 
-      <div class="mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__supporting-text">
-          <div class="mdl-stepper-horizontal-alternative">
-            <div class="mdl-stepper-step active-step step-done">
-              <div class="mdl-stepper-circle"><span>1</span></div>
-              <div class="mdl-stepper-title">Analiză</div>
-              <div class="mdl-stepper-bar-left"></div>
-              <div class="mdl-stepper-bar-right"></div>
+      <div class="etape-desktop">
+        @include('partials/components/mdl-stepper')
+      </div> <!-- ETAPE PROIECT END -->
+    </div>
+
+    <div class="row companii">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 first">
+            <h3>Furnizori</h3>
+            @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
+          </div>
+          <div class="col-6">
+            <h3>Parteneri</h3>
+            @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container proiect-content">
+      @include('partials/components/taburi-proiect')
+    </div>
+
+    <div class="row statistici">
+      <div class="container">
+        <div class="row">
+          <div class="col-6  align-self-center">
+            <div class="statistici-box">
+              <div class="counter">
+                486
+              </div>
+              <div class="label">
+                Linii de cod scrise
+              </div>
             </div>
-            <div class="mdl-stepper-step active-step step-done">
-              <div class="mdl-stepper-circle"><span>2</span></div>
-              <div class="mdl-stepper-title">Implementare</div>
-              <div class="mdl-stepper-optional"></div>
-              <div class="mdl-stepper-bar-left"></div>
-              <div class="mdl-stepper-bar-right"></div>
-            </div>
-            <div class="mdl-stepper-step active-step step-done">
-              <div class="mdl-stepper-circle"><span>3</span></div>
-              <div class="mdl-stepper-title">Testare</div>
-              <div class="mdl-stepper-optional"></div>
-              <div class="mdl-stepper-bar-left"></div>
-              <div class="mdl-stepper-bar-right"></div>
-            </div>
-            <div class="mdl-stepper-step active-step progress-step">
-              <div class="mdl-stepper-circle"><span>4</span></div>
-              <div class="mdl-stepper-title">Funcțional</div>
-              <div class="mdl-stepper-optional"></div>
-              <div class="mdl-stepper-bar-left"></div>
-              <div class="mdl-stepper-bar-right"></div>
-            </div>
-            <div class="mdl-stepper-step">
-              <div class="mdl-stepper-circle"><span>5</span></div>
-              <div class="mdl-stepper-title">Evaluare</div>
-              <div class="mdl-stepper-optional"></div>
-              <div class="mdl-stepper-bar-left"></div>
-              <div class="mdl-stepper-bar-right"></div>
+          </div>
+          <div class="col-6  align-self-center">
+            <div class="statistici-box">
+              <div class="counter">
+                312
+              </div>
+              <div class="label">
+                Linii de cod sterse
+              </div>
             </div>
           </div>
         </div>
