@@ -1,0 +1,31 @@
+footer.content-info {
+  height: 100%;
+  background: #333;
+  border-top: 2px solid #fff;
+  color: #999;
+}
+
+footer.content-info a {
+  color: unset;
+}
+
+footer.content-info a:hover,
+footer.content-info a:focus,
+footer.content-info .current_page_item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ccc;
+}
+
+footer.content-info ul.menu {
+  list-style-type: none;
+}
+
+footer.content-info .links {
+  border-bottom: 1px solid #494949;
+  padding: 60px 0;
+}
+
+footer.content-info .logos {
+  padding: 15px 0;
+}
