@@ -2,8 +2,8 @@
 
 @section('content')
   @include(
-    'partials.page-header',
+    'partials.solutii-page-header',
     ['title' => 'Soluții Smart City']
   )
-  @include('partials.content-page')
+  @include('partials.solutii-content-page')
 @endsection
