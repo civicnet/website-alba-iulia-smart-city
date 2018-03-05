@@ -1,7 +1,7 @@
 
 /* Simple setup for this demo */
 .mdl-card {
-  width: 550px;
+  width: 100%;
   min-height: 0;
   margin: 10px auto;
 }
@@ -28,10 +28,13 @@
 }
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-icon {
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   font-size: 30px;
   position: absolute;
-  top: -25px;
-  left: 38px;
   color: #699;
 }
 
@@ -45,6 +48,7 @@
   font-size: 12px;
   color: white;
   border: 1px solid #0cc;
+  background: #fff;
 }
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-circle::before {
@@ -54,7 +58,8 @@
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-bar-right {
   right: 0;
   left: 50%;
-  margin-left: 20px;
+  margin-left: 0;
+  z-index: -1;
 }
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-bar-left,
@@ -62,13 +67,20 @@
   position: absolute;
   top: 36px;
   height: 1px;
-  border-top: 1px solid #0cc;
+  border-top: 2px solid #ccc;
 }
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-bar-left {
   left: 0;
   right: 50%;
-  margin-right: 20px;
+  margin-right: 0;
+  z-index: -1;
+}
+
+.mdl-stepper-horizontal-alternative .mdl-stepper-step.step-done .mdl-stepper-bar-right,
+.mdl-stepper-horizontal-alternative .mdl-stepper-step.step-done .mdl-stepper-bar-left,
+.mdl-stepper-horizontal-alternative .mdl-stepper-step.progress-step .mdl-stepper-bar-left {
+  border-color: #0cc;
 }
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step:first-child .mdl-stepper-bar-left,
@@ -108,6 +120,11 @@
     to {-webkit-transform: rotate(360deg);}
 }
 
+.mdl-stepper-horizontal-alternative .mdl-stepper-step.progress-step .mdl-stepper-circle {
+  background: #f93;
+  border-color: #f93;
+}
+
 .mdl-stepper-horizontal-alternative .mdl-stepper-step.progress-step .mdl-stepper-circle::before {
   content: "\f110";
   font-family: FontAwesome;
@@ -118,24 +135,10 @@
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-title {
   margin-top: 16px;
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-title,
-.mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-optional {
+  font-size: 16px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.26);
-}
-
-.mdl-stepper-horizontal-alternative .mdl-stepper-step.active-step .mdl-stepper-title {
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.mdl-stepper-horizontal-alternative .mdl-stepper-step.active-step.step-done .mdl-stepper-title,
-.mdl-stepper-horizontal-alternative .mdl-stepper-step.active-step.progress-step .mdl-stepper-title {
-  font-weight: 300;
+  color: #333;
+  font-weight: bold;
 }
 
 .mdl-stepper-horizontal-alternative .mdl-stepper-step .mdl-stepper-optional {

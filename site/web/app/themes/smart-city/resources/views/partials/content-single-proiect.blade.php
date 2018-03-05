@@ -55,16 +55,16 @@
               <div class="cta align-middle">
                 {{ pll__('Distribuie proiectul') }}
               </div>
-              <a href="#">
+              <a href="#" class="align-middle">
                 <i class="fab fa-facebook-square"></i>
               </a>
-              <a href="#">
+              <a href="#" class="align-middle">
                 <i class="fab fa-twitter-square"></i>
               </a>
-              <a href="#">
+              <a href="#" class="align-middle">
                 <i class="fab fa-whatsapp-square"></i>
               </a>
-              <a href="#">
+              <a href="#" class="align-middle">
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
@@ -99,30 +99,24 @@
       @include('partials/components/taburi-proiect')
     </div>
 
-    <div class="container-fluid">
-      <div class="row statistici">
-        <div class="col-6  align-self-center">
-          <div class="statistici-box">
-            <div class="counter">
-              486
+    @if (Proiect::hasTwoStats() || Proiect::hasOneStat())
+      <div class="container-fluid">
+        <div class="row statistici">
+          @if (Proiect::hasTwoStats())
+            <div class="col-6  align-self-center">
+              @include('partials/components/stats-box', ['stat' => Proiect::stat1()])
             </div>
-            <div class="label">
-              Linii de cod scrise
+            <div class="col-6  align-self-center">
+              @include('partials/components/stats-box', ['stat' => Proiect::stat2()])
             </div>
-          </div>
-        </div>
-        <div class="col-6  align-self-center">
-          <div class="statistici-box">
-            <div class="counter">
-              312
+          @elseif (Proiect::hasOneStat())
+            <div class="col-12  text-center align-self-center">
+              @include('partials/components/stats-box', ['stat' => Proiect::activeStat()])
             </div>
-            <div class="label">
-              Linii de cod sterse
-            </div>
-          </div>
+          @endif
         </div>
       </div>
-    </div>
+    @endif
   </div>
   <footer>
     {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}

@@ -105,7 +105,12 @@ article.type-proiect .intro .intro-footer .cta {
 article.type-proiect .intro .intro-footer a {
   color: unset;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 22px;
+}
+
+article.type-proiect .intro .intro-footer a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 article.type-proiect .etape-proiect h2 {
@@ -184,6 +189,7 @@ article.type-proiect .companii .companie .location {
 article.type-proiect .proiect-content {
   margin-top: 100px;
   color: #333;
+  margin-bottom: 140px;
 }
 
 article.type-proiect .proiect-content h3 {
@@ -222,7 +228,6 @@ article.type-proiect .proiect-content .nav-link:focus {
 article.type-proiect .statistici {
   min-height: 300px;
   background: #8ebcbc;
-  margin-top: 140px;
 }
 
 article.type-proiect .statistici .row {
@@ -241,7 +246,7 @@ article.type-proiect .statistici .counter {
 
 /* stylelint-disable */
 article.type-proiect .statistici .label {
-  color: #006;
+  color: #066;
   font-size: 17px;
   text-transform: capitalize;
 }
