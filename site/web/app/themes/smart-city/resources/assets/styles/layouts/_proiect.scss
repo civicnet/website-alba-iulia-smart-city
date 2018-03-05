@@ -1,3 +1,5 @@
+@import "../components/circle";
+
 article.type-proiect .intro {
   color: #fff;
 }
@@ -17,8 +19,8 @@ article.type-proiect .header-image::before {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(106deg, #017a75, #6cc);
-  opacity: 0.9;
+  background-color: #099;
+  opacity: 0.8;
 }
 
 article.type-proiect .intro .metadata {
@@ -41,17 +43,6 @@ article.type-proiect .intro .verticala {
 article.type-proiect .intro .extras {
   color: #cff;
   font-size: 16px;
-}
-
-article.type-proiect .intro .circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin: 0 auto;
-  background: #099;
-  border-top-color: #6cc;
-  border-left-color: #6cc;
 }
 
 article.type-proiect .intro .circle .label {

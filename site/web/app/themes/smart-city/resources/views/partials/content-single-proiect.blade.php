@@ -14,12 +14,20 @@
               </div>
             </div>
             <div class="col">
-              <div class="circle align-middle">
-                <div class="pictograma">
-                  {!! Proiect::etapa()['icon'] !!}
-                </div>
-                <div class="label">
-                  {{ Proiect::etapa()['nume'] }}
+              <div class="progress circle align-middle" data-percentage="{{ Proiect::percentage() }}">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">
+                  <div class="pictograma">
+                    {!! Proiect::etapa()['icon'] !!}
+                  </div>
+                  <div class="label">
+                    {{ Proiect::etapa()['nume'] }}
+                  </div>
                 </div>
               </div>
             </div>
