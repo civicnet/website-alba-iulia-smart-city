@@ -39,7 +39,7 @@
       <div class="taxonomy intro-footer row">
         <div class="container">
           <div class="row">
-            <div class="col-7 align-self-end justify-content-center">
+            <div class="col-6 align-self-end justify-content-center">
               <div class="container align-middle">
                 @foreach (Proiect::etichete() as $eticheta)
                   <span class="eticheta">
@@ -51,7 +51,7 @@
                 @endforeach
               </div>
             </div>
-            <div class="col-5 social">
+            <div class="col-6 social">
               <div class="cta align-middle">
                 {{ pll__('Distribuie proiectul') }}
               </div>
