@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="circle align-middle"> 
+              <div class="circle align-middle">
                 <div class="pictograma">
                   {!! Proiect::etapa()['icon'] !!}
                 </div>
@@ -58,17 +58,15 @@
       </div> <!-- ETAPE PROIECT END -->
     </div>
 
-    <div class="row companii">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 first">
-            <h3>{{ pll__('Furnizori') }}</h3>
-            @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
-          </div>
-          <div class="col-6">
-            <h3>{{ pll__('Parteneri') }}</h3>
-            @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
-          </div>
+    <div class="container-fluid">
+      <div class="row companii">
+        <div class="col-6 first">
+          <h3>{{ pll__('Furnizori') }}</h3>
+          @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
+        </div>
+        <div class="col-6">
+          <h3>{{ pll__('Parteneri') }}</h3>
+          @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
         </div>
       </div>
     </div>
@@ -77,27 +75,25 @@
       @include('partials/components/taburi-proiect')
     </div>
 
-    <div class="row statistici">
-      <div class="container">
-        <div class="row">
-          <div class="col-6  align-self-center">
-            <div class="statistici-box">
-              <div class="counter">
-                486
-              </div>
-              <div class="label">
-                Linii de cod scrise
-              </div>
+    <div class="container-fluid">
+      <div class="row statistici">
+        <div class="col-6  align-self-center">
+          <div class="statistici-box">
+            <div class="counter">
+              486
+            </div>
+            <div class="label">
+              Linii de cod scrise
             </div>
           </div>
-          <div class="col-6  align-self-center">
-            <div class="statistici-box">
-              <div class="counter">
-                312
-              </div>
-              <div class="label">
-                Linii de cod sterse
-              </div>
+        </div>
+        <div class="col-6  align-self-center">
+          <div class="statistici-box">
+            <div class="counter">
+              312
+            </div>
+            <div class="label">
+              Linii de cod sterse
             </div>
           </div>
         </div>
