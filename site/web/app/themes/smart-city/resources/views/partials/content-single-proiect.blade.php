@@ -14,12 +14,12 @@
               </div>
             </div>
             <div class="col">
-              <div class="circle align-middle">
+              <div class="circle align-middle"> 
                 <div class="pictograma">
-                  <i class="fas fa-rocket"></i>
+                  {!! Proiect::etapa()['icon'] !!}
                 </div>
                 <div class="label">
-                  {{ Proiect::etapa() }}
+                  {{ Proiect::etapa()['nume'] }}
                 </div>
               </div>
             </div>

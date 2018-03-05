@@ -104,24 +104,45 @@ final class SmartCityThemeSetup {
     );
 
     register_post_type(
-      AppConstants::POST_TYPE_STATS,
+      AppConstants::POST_TYPE_VERTICAL,
       array(
         'labels' => array(
-          'name' => __('Statistici'),
-          'singular_name' => __('Statistică'),
+          'name' => __('Verticale'),
+          'singular_name' => __('Verticală'),
           'add_new' => __('Adaugă'),
-          'add_new_item' => __('Adaugă statistici'),
-          'edit_item' => __('Editează statistici'),
-          'view_item' => __('Vezi statistică'),
-          'new_item' => __('Statistici noi'),
-          'view_items' => __('Vezi statistici'),
+          'add_new_item' => __('Adaugă verticală'),
+          'edit_item' => __('Editează verticală'),
+          'new_item' => __('Verticală nouă'),
+          'view_item' => __('Vezi verticală'),
+          'view_items' => __('Vezi verticale'),
         ),
         'supports' => array('title', 'editor', 'thumbnail'),
         'public' => true,
         'has_archive' => false,
-        'menu_icon' => 'dashicons-chart-area'
+        'menu_icon' => 'dashicons-networking'
       )
     );
+
+    register_post_type(
+      AppConstants::POST_TYPE_PROJECT_STATUS,
+      array(
+        'labels' => array(
+          'name' => __('Etape proiect'),
+          'singular_name' => __('Etapă proiect'),
+          'add_new' => __('Adaugă'),
+          'add_new_item' => __('Adaugă etapă'),
+          'edit_item' => __('Editează etapă'),
+          'new_item' => __('Etapă nouă'),
+          'view_item' => __('Vezi etapă'),
+          'view_items' => __('Vezi etape'),
+        ),
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'public' => true,
+        'has_archive' => false,
+        'menu_icon' => 'dashicons-editor-ol'
+      )
+    );
+
   }
 
   private function registerCustomFieldGroups(): void {
@@ -272,39 +293,37 @@ final class SmartCityThemeSetup {
     	'title' => 'Proiect',
     	'fields' => array(
         array(
-    			'key' => 'field_5a9a1073b82c4',
-    			'label' => 'Verticala',
-    			'name' => 'verticala',
-    			'type' => 'select',
-    			'instructions' => 'Ce verticala',
-    			'required' => 1,
-    			'conditional_logic' => 0,
-    			'wrapper' => array(
-    				'width' => '',
-    				'class' => '',
-    				'id' => '',
-    			),
-    			'choices' => array(
-    				'mobilitate_urbana' => 'Mobilitate Urbană',
-    				'sanatate' => 'Sănătate',
-    				'turism' => 'Turism',
-    				'utilitati' => 'Utilități',
-    			),
-    			'default_value' => array(
-    			),
-    			'allow_null' => 0,
-    			'multiple' => 0,
-    			'ui' => 0,
-    			'ajax' => 0,
-    			'return_format' => 'array',
-    			'placeholder' => '',
-    		),
+          'key' => 'field_5a9a5ec18d131',
+          'label' => 'Etapă implementare',
+          'name' => 'etapa_implementare',
+          'type' => 'relationship',
+          'instructions' => '',
+          'required' => 1,
+          'conditional_logic' => 0,
+          'wrapper' => array(
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+          'post_type' => array(
+            0 => AppConstants::POST_TYPE_PROJECT_STATUS,
+          ),
+          'taxonomy' => array(
+          ),
+          'filters' => array(
+            0 => 'search',
+          ),
+          'elements' => '',
+          'min' => '1',
+          'max' => '1',
+          'return_format' => 'object',
+        ),
         array(
-    			'key' => 'field_5a9a1073b82c5',
-    			'label' => 'Etapă implementare',
-    			'name' => 'etapa',
-    			'type' => 'select',
-    			'instructions' => 'Etapa de impl.',
+    			'key' => 'field_5a9a5ec18d132',
+    			'label' => 'Verticală',
+    			'name' => 'verticala',
+    			'type' => 'relationship',
+    			'instructions' => '',
     			'required' => 1,
     			'conditional_logic' => 0,
     			'wrapper' => array(
@@ -312,21 +331,18 @@ final class SmartCityThemeSetup {
     				'class' => '',
     				'id' => '',
     			),
-    			'choices' => array(
-    				'analiza' => 'Analiză',
-            'implementare' => 'Implementare',
-            'testare' => 'Testare',
-            'functional' =>'Funcțional',
-            'evaluare' => 'Evaluare',
+    			'post_type' => array(
+    				0 => AppConstants::POST_TYPE_VERTICAL,
     			),
-    			'default_value' => array(
+    			'taxonomy' => array(
     			),
-    			'allow_null' => 0,
-    			'multiple' => 0,
-    			'ui' => 0,
-    			'ajax' => 0,
-    			'return_format' => 'array',
-    			'placeholder' => '',
+    			'filters' => array(
+    				0 => 'search',
+    			),
+    			'elements' => '',
+    			'min' => '1',
+    			'max' => '1',
+    			'return_format' => 'object',
     		),
     		array(
     			'key' => 'field_5a80ac3b50c29',
@@ -523,113 +539,6 @@ final class SmartCityThemeSetup {
     	'description' => '',
     ));
 
-    // AppConstants::POST_TYPE_STATS
-    acf_add_local_field_group(array(
-    	'key' => 'group_5a80b0088503b',
-    	'title' => 'Statistică',
-    	'fields' => array(
-    		array(
-    			'key' => 'field_5a80b01a873bc',
-    			'label' => 'Nume indicator (1)',
-    			'name' => 'nume_indicator_1',
-    			'type' => 'text',
-    			'instructions' => 'Numele primului indicator (ex: Număr useri, Vizitatori unici, etc.)',
-    			'required' => 1,
-    			'conditional_logic' => 0,
-    			'wrapper' => array(
-    				'width' => '',
-    				'class' => '',
-    				'id' => '',
-    			),
-    			'default_value' => '',
-    			'placeholder' => '',
-    			'prepend' => '',
-    			'append' => '',
-    			'maxlength' => '',
-    		),
-    		array(
-    			'key' => 'field_5a80b089873bd',
-    			'label' => 'Valoare indicator (1)',
-    			'name' => 'valoare_indicator_1',
-    			'type' => 'number',
-    			'instructions' => 'Valoarea primului indicator',
-    			'required' => 1,
-    			'conditional_logic' => 0,
-    			'wrapper' => array(
-    				'width' => '',
-    				'class' => '',
-    				'id' => '',
-    			),
-    			'default_value' => '',
-    			'placeholder' => '',
-    			'prepend' => '',
-    			'append' => '',
-    			'min' => '',
-    			'max' => '',
-    			'step' => 1,
-    		),
-    		array(
-    			'key' => 'field_5a80b0d8873be',
-    			'label' => 'Nume indicator (2)',
-    			'name' => 'nume_indicator_2',
-    			'type' => 'text',
-    			'instructions' => '',
-    			'required' => 0,
-    			'conditional_logic' => 0,
-    			'wrapper' => array(
-    				'width' => '',
-    				'class' => '',
-    				'id' => '',
-    			),
-    			'default_value' => '',
-    			'placeholder' => '',
-    			'prepend' => '',
-    			'append' => '',
-    			'maxlength' => '',
-    		),
-    		array(
-    			'key' => 'field_5a80b0e3873bf',
-    			'label' => 'Valoare indicator (2)',
-    			'name' => 'valoare_indicator_2',
-    			'type' => 'number',
-    			'instructions' => '',
-    			'required' => 0,
-    			'conditional_logic' => 0,
-    			'wrapper' => array(
-    				'width' => '',
-    				'class' => '',
-    				'id' => '',
-    			),
-    			'default_value' => '',
-    			'placeholder' => '',
-    			'prepend' => '',
-    			'append' => '',
-    			'min' => '',
-    			'max' => '',
-    			'step' => 1,
-    		),
-    	),
-    	'location' => array(
-    		array(
-    			array(
-    				'param' => 'post_type',
-    				'operator' => '==',
-    				'value' => AppConstants::POST_TYPE_STATS,
-    			),
-    		),
-    	),
-    	'menu_order' => 0,
-    	'position' => 'normal',
-    	'style' => 'default',
-    	'label_placement' => 'top',
-    	'instruction_placement' => 'label',
-    	'hide_on_screen' => array(
-    		0 => 'the_content',
-    	),
-    	'active' => 1,
-    	'description' => '',
-    ));
-
     // AppConstants::POST_TYPE_PROJECT_LABEL
     acf_add_local_field_group(array(
       'key' => 'group_5a80af3fad6b7',
@@ -664,6 +573,104 @@ final class SmartCityThemeSetup {
             'param' => 'post_type',
             'operator' => '==',
             'value' => AppConstants::POST_TYPE_PROJECT_LABEL,
+          ),
+        ),
+      ),
+      'menu_order' => 0,
+      'position' => 'normal',
+      'style' => 'default',
+      'label_placement' => 'top',
+      'instruction_placement' => 'label',
+      'hide_on_screen' => array(
+        0 => 'the_content',
+      ),
+      'active' => 1,
+      'description' => '',
+    ));
+
+    // AppConstants::POST_TYPE_VERTICAL
+    acf_add_local_field_group(array(
+      'key' => 'group_5a80af3fad688',
+      'title' => 'Verticală',
+      'fields' => array(
+        array(
+    			'key' => 'field_5a9a5375e56e5',
+    			'label' => 'Pictograma',
+    			'name' => 'pictograma',
+    			'type' => 'font-awesome',
+    			'instructions' => '',
+    			'required' => 1,
+    			'conditional_logic' => 0,
+    			'wrapper' => array(
+    				'width' => '',
+    				'class' => '',
+    				'id' => '',
+    			),
+    			'default_value' => 'fa-car',
+    			'save_format' => 'object',
+    			'allow_null' => 0,
+    			'show_preview' => 1,
+    			'enqueue_fa' => 0,
+    			'fa_live_preview' => '',
+    			'choices' => array(
+    			),
+    		),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => AppConstants::POST_TYPE_VERTICAL,
+          ),
+        ),
+      ),
+      'menu_order' => 0,
+      'position' => 'normal',
+      'style' => 'default',
+      'label_placement' => 'top',
+      'instruction_placement' => 'label',
+      'hide_on_screen' => array(
+        0 => 'the_content',
+      ),
+      'active' => 1,
+      'description' => '',
+    ));
+
+    // AppConstants::POST_TYPE_PROJECT_STATUS
+    acf_add_local_field_group(array(
+      'key' => 'group_5a80af3fad689',
+      'title' => 'Etapă proiect',
+      'fields' => array(
+        array(
+          'key' => 'field_5a9a5375e56e5',
+          'label' => 'Pictograma',
+          'name' => 'pictograma',
+          'type' => 'font-awesome',
+          'instructions' => '',
+          'required' => 1,
+          'conditional_logic' => 0,
+          'wrapper' => array(
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+          'default_value' => 'fa-car',
+          'save_format' => 'object',
+          'allow_null' => 0,
+          'show_preview' => 1,
+          'enqueue_fa' => 0,
+          'fa_live_preview' => '',
+          'choices' => array(
+          ),
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => AppConstants::POST_TYPE_PROJECT_STATUS,
           ),
         ),
       ),
