@@ -89,6 +89,21 @@ article.type-proiect .intro .intro-footer .eticheta .pictograma {
   line-height: 35px;
 }
 
+article.type-proiect .intro .intro-footer .cta {
+  display: inline-block;
+  font-size: 12px;
+  width: 50px;
+  line-height: 12px;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+
+article.type-proiect .intro .intro-footer a {
+  color: unset;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
 article.type-proiect .etape-proiect h2 {
   margin-bottom: 140px;
 }

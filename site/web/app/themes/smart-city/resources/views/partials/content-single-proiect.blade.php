@@ -14,7 +14,9 @@
               </div>
             </div>
             <div class="col">
-              <div class="progress circle align-middle" data-percentage="{{ Proiect::percentage() }}">
+              <div
+                class="progress circle align-middle"
+                data-percentage="{{ Proiect::percentage() }}">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
                 </span>
@@ -49,8 +51,22 @@
                 @endforeach
               </div>
             </div>
-            <div class="col-5">
-              {{ pll__('Distribuie proiectul') }}
+            <div class="col-5 social">
+              <div class="cta align-middle">
+                {{ pll__('Distribuie proiectul') }}
+              </div>
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-whatsapp-square"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
