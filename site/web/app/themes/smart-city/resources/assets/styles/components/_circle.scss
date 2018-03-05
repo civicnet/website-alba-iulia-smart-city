@@ -9,11 +9,11 @@ $howManySteps: 20; //this needs to be even.
   width: $size;
   height: $size;
   line-height: $size;
-  background: none;
   box-shadow: none;
   position: relative;
-  //background: #099;
   margin: 0 auto;
+  border-radius: 50%;
+  background: #099;
 
   &::after {
     content: "";
