@@ -1,3 +1,7 @@
+.banner #navbarSupportedContent {
+  margin-top: 60px;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
@@ -16,4 +20,12 @@
 
 .banner {
   position: relative;
+}
+
+.banner .navbar-nav .menu-item a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #369;
+  text-transform: uppercase;
+  margin-left: 15px;
 }
