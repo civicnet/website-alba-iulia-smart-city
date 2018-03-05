@@ -120,7 +120,7 @@
       id="media"
       role="tabpanel"
       aria-labelledby="media-tab">
-      <h3>{{ Proiect::nume() }} în media</h3>
+      <h3>{{ Proiect::nume() }} {{ pll__('în media') }}</h3>
       {!! Proiect::media() !!}
     </div>
   @endif
