@@ -29,3 +29,21 @@ footer.content-info .links {
 footer.content-info .logos {
   padding: 15px 0;
 }
+
+footer.content-info .logos .alba-logo img {
+  height: 45px;
+}
+
+footer.content-info .logos .headline {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer.content-info .logos .author,
+footer.content-info .logos .copyright {
+  font-size: 13px;
+}
+
+footer.content-info .logos .author a {
+  font-weight: bold;
+}
