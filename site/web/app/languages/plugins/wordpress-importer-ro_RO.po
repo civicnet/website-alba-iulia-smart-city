@@ -1,0 +1,210 @@
+# Translation of Plugins - WordPress Importer - Stable (latest release) in Romanian
+# This file is distributed under the same license as the Plugins - WordPress Importer - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-03-02 16:44:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ro\n"
+"Project-Id-Version: Plugins - WordPress Importer - Stable (latest release)\n"
+
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+#: wordpress-importer.php:264
+msgid "Assign Authors"
+msgstr "Atribuie autori"
+
+#: wordpress-importer.php:284
+msgid "Submit"
+msgstr "Trimite"
+
+#: wordpress-importer.php:372
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr "Am eșuat în crearea unui nou utilizator pentru %s. Articolele sale vor fi atribuite utilizatorului curent."
+
+#: wordpress-importer.php:321
+msgid "or assign posts to an existing user:"
+msgstr "sau atribuie articolele unui utilizator existent:"
+
+#: wordpress-importer.php:1023
+msgid "Zero size file downloaded"
+msgstr "Fișier descărcat de mărime zero"
+
+#: wordpress-importer.php:1011
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Serverul de la distanță a răspuns cu eroare %1$d %2$s"
+
+#: wordpress-importer.php:238
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr "Am eșuat în importul autorului %s. Articolele sale vor fi atribuite utilizatorului curent."
+
+#: wordpress-importer.php:516 wordpress-importer.php:738
+msgid "Failed to import %s %s"
+msgstr "Am eșuat în importul %s %s"
+
+#: wordpress-importer.php:424
+msgid "Failed to import category %s"
+msgstr "Am eșuat în importul categoriei %s"
+
+#: wordpress-importer.php:467
+msgid "Failed to import post tag %s"
+msgstr "Am eșuat în importul etichetei de articol %s"
+
+#: wordpress-importer.php:642
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr "%s &#8222;%s&#8221; există deja."
+
+#: wordpress-importer.php:704
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr "Am eșuat în importul %s &#8222;%s&#8221;"
+
+#: wordpress-importer.php:319
+msgid "assign posts to an existing user:"
+msgstr "atribuie articolele unui utilizator existent:"
+
+#: wordpress-importer.php:311
+msgid "as a new user:"
+msgstr "ca utilizator nou:"
+
+#: wordpress-importer.php:877
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Element de meniu peste care am sărit deoarece descriptorul său e invalid: %s"
+
+#: wordpress-importer.php:177
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Nu uita să actualizezi parolele și rolurile utilizatorilor importați."
+
+#: parsers.php:84 parsers.php:89 parsers.php:306 parsers.php:502
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "Acesta nu pare a fi un fișier WXR, numărul versiunii WXR lipsește/e invalid"
+
+#. Description of the plugin/theme
+msgid "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
+msgstr "Importul articolelor, paginilor, comentariilor, cîmpurilor particularizate, etichetelor și multor altora dintr-un fișier de export WordPress."
+
+#: parsers.php:42 parsers.php:72 parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr "A fost o eroare în citirea acestui fișier WXR"
+
+#: wordpress-importer.php:605
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Am eșuat în importul &#8222;%s&#8221;: Tip de articol %s invalid"
+
+#: wordpress-importer.php:213
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "Acest fișier WXR (versiunea %s) ar putea să nu fie recunoscut de această versiune de importer. Te rog să ai în vedere o actualizare."
+
+#: wordpress-importer.php:133
+msgid "The file does not exist, please try again."
+msgstr "Fișierul nu există, te rog încearcă din nou."
+
+#: wordpress-importer.php:1136
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "Este disponibilă o nouă versiune a acestui importer. Te rog actualizează la versiunea %s pentru a fi asigurată compatibilitatea cu cele mai noi fișiere exportate."
+
+#: wordpress-importer.php:1226
+msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
+msgstr "Import <strong>articole, pagini, comentarii, câmpuri personalizate, categorii și etichete</strong> dintr-un fișier de export WordPress."
+
+#: wordpress-importer.php:280
+msgid "Download and import file attachments"
+msgstr "Descarc și import fișiere atașament"
+
+#: wordpress-importer.php:1129
+msgid "Import WordPress"
+msgstr "Importă WordPress"
+
+#: wordpress-importer.php:277
+msgid "Import Attachments"
+msgstr "Import atașamente"
+
+#: wordpress-importer.php:297
+msgid "Import author:"
+msgstr "Import autorul:"
+
+#: wordpress-importer.php:953
+msgid "Invalid file type"
+msgstr "Tip de fișier invalid"
+
+#: wordpress-importer.php:322
+msgid "- Select -"
+msgstr "- Selectează -"
+
+#: wordpress-importer.php:1151
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr "Salut! Încarcă fișierul WordPress eXtended RSS (WXR) și vom importa articole, pagini, comentarii, câmpuri personalizate, categorii și etichete în acest sit."
+
+#: wordpress-importer.php:1029
+msgid "Remote file is too large, limit is %s"
+msgstr "Fișierul de la distanță e prea mare, limita este %s"
+
+#: wordpress-importer.php:1018
+msgid "Remote file is incorrect size"
+msgstr "Fișierul de la distanță nu are mărimea corectă"
+
+#. Plugin Name of the plugin/theme
+msgid "WordPress Importer"
+msgstr "Importer WordPress"
+
+#: wordpress-importer.php:176
+msgid "Have fun!"
+msgstr "Distracție faină!"
+
+#: wordpress-importer.php:176
+msgid "All done."
+msgstr "Am terminat totul."
+
+#: wordpress-importer.php:1003
+msgid "Remote server did not respond"
+msgstr "Serverul de la distanță nu a răspuns"
+
+#: wordpress-importer.php:132 wordpress-importer.php:141
+#: wordpress-importer.php:192 wordpress-importer.php:196
+#: wordpress-importer.php:205
+msgid "Sorry, there has been an error."
+msgstr "Regret, a apărut o eroare."
+
+#: wordpress-importer.php:197
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "Fișierul de export nu a fost găsit la <code>%s</code>. Este posibil ca acest lucru să fi fost cauzat de o problemă cu permisiile."
+
+#: wordpress-importer.php:870
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Element de meniu sărit din cauza lipsei descriptorului meniu"
+
+#: wordpress-importer.php:265
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr "Pentru a-ți fi mai ușor să editezi și să salvezi conținutului importat, poate vrei să reatribui autorul elementului importat unui autor existent pe acest sit. De exemplu, poate vrei să imporți toate intrările ca intrări ale <code>administratorului</code>."
+
+#: wordpress-importer.php:308
+msgid "or create new user with login name:"
+msgstr "sau creează un utilizator nou cu numele de autentificare:"
+
+#: wordpress-importer.php:940
+msgid "Fetching attachments is not enabled"
+msgstr "Aducerea atașamentelor nu este activată"
+
+#: parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "Detaliile sunt arătate mai sus. Acum importatorul va încerca din nou cu un alt interpretor..."
+
+#: wordpress-importer.php:267
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr "Dacă este creat un utilizator nou de WordPress, o nouă parolă va fi generată aleatoriu și rolul noului utilizator va fi setat ca %s. Va fi necesară modificarea manuală a detaliilor noului utilizator."
+
+#: wordpress-importer.php:1152
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Alege un fișier WXR (.xml) pentru a-l încărca, apoi dă clic pe încarcă fișier și importă."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wordpress-importer/"
+msgstr "https://wordpress.org/plugins/wordpress-importer/"
+
+#. Author URI of the plugin/theme
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"

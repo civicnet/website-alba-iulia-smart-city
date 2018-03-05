@@ -1,9 +1,9 @@
-.page.solutii .page-header {
+.page-header {
   position: relative;
   min-height: 300px;
 }
 
-.page.solutii .page-header::before {
+.page-header::before {
   background: url(../images/projects_full_header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,21 +16,21 @@
   z-index: -1;
 }
 
-.page.solutii .page-header h1 {
+.page-header h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 48px;
-  color: #336699;
+  color: #369;
   padding-top: 110px;
 }
 
-.page.solutii .page-header .stats {
+.page-header .stats {
   text-align: center;
   padding: 20px 0;
 }
 
-.page.solutii .page-header .circle {
+.page-header .circle {
   color: #fff;
   background: #999;
   width: 100px;
@@ -44,17 +44,17 @@
   margin: 0 20px;
 }
 
-.page.solutii .page-header .circle .count {
+.page-header .circle .count {
   margin-top: 10px;
   font-size: 32px;
 }
 
-.page.solutii .page-header .circle .label {
+.page-header .circle .label {
   margin-top: -5px;
   text-transform: uppercase;
 }
 
-.page.solutii .solutii-listing {
+.solutii-listing {
   min-height: 100px;
   background: #e2e2e2;
 }
