@@ -136,6 +136,37 @@ class Proiect extends Controller {
     return $ret;
   }
 
+  public static function stat1(): array {
+      $val = array(
+        'value' => get_field('valoare_statistica_1'),
+        'label' => get_field('indice_statistica_1'),
+      );
+
+      return $val['label'] && $val['value'] ? $val : array();
+  }
+
+  public static function stat2(): array {
+      $val = array(
+        'value' => get_field('valoare_statistica_2'),
+        'label' => get_field('indice_statistica_2'),
+      );
+
+      return $val['label'] && $val['value'] ? $val : array();
+  }
+
+  public static function hasTwoStats(): bool {
+      return self::stat1() && self::stat2();
+  }
+
+  public static function hasOneStat(): bool {
+      return self::stat1() xor self::stat2();
+  }
+
+  // Naive: Both could be set, returns 1st in that case
+  public static function activeStat(): array {
+      return self::stat1() ?: self::stat2();
+  }
+
   protected static function parseCompanies(array $companies): array {
       $ret = array();
       foreach ($companies as $company) {
