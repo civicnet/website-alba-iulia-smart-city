@@ -11,7 +11,7 @@
       role="tab"
       aria-controls="descriere"
       aria-selected="true">
-      Descriere
+      {{ pll__('Descriere') }}
     </a>
   </li>
   @if (Proiect::specificatii())
@@ -24,7 +24,7 @@
         role="tab"
         aria-controls="specificatii"
         aria-selected="false">
-        Specificații
+        {{ pll__('Specificații') }}
       </a>
     </li>
   @endif
@@ -38,7 +38,7 @@
         role="tab"
         aria-controls="protocol"
         aria-selected="false">
-        Protocol
+        {{ pll__('Protocol') }}
       </a>
     </li>
   @endif
@@ -52,7 +52,7 @@
         role="tab"
         aria-controls="media"
         aria-selected="false">
-        Media
+        {{ pll__('Media') }}
       </a>
     </li>
   @endif
@@ -66,7 +66,7 @@
         role="tab"
         aria-controls="noutati"
         aria-selected="false">
-        Noutăți
+        {{ pll__('Noutăți') }}
       </a>
     </li>
   @endif
@@ -80,7 +80,7 @@
         role="tab"
         aria-controls="altceva"
         aria-selected="false">
-        Altceva
+        {{ pll__('Altceva') }}
       </a>
     </li>
   @endif
@@ -91,7 +91,7 @@
     id="descriere"
     role="tabpanel"
     aria-labelledby="descriere-tab">
-    <h3>Detaliu Soluție/Proiect</h3>
+    <h3>{{ pll__('Detaliu Soluție/Proiect') }}</h3>
     {!! Proiect::descriere() !!}
   </div>
   @if (Proiect::specificatii())
@@ -100,7 +100,7 @@
       id="specificatii"
       role="tabpanel"
       aria-labelledby="specificatii-tab">
-      <h3>Specificații tehnice</h3>
+      <h3>{{ pll__('Specificații tehnice') }}</h3>
       {!! Proiect::specificatii() !!}
     </div>
   @endif
@@ -110,7 +110,7 @@
       id="protocol"
       role="tabpanel"
       aria-labelledby="protocol-tab">
-      <h3>Protocol de colaborare</h3>
+      <h3>{{ pll__('Protocol de colaborare') }}</h3>
       {!! Proiect::protocol() !!}
     </div>
   @endif

@@ -5,13 +5,13 @@
         @php(dynamic_sidebar('sidebar-footer'))
       </div>
       <div class="col-3">
-        Legaturi utile
+        {{ pll__('Legături utile') }}
       </div>
       <div class="col-3">
-        Adresa
+        {{ pll__('Adresă') }}
       </div>
       <div class="col-3">
-        Social
+        {{ pll__('Social Media') }}
       </div>
     </div>
     <div class="row logos">

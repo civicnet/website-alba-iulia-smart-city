@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "29262b9e33f9e76f691b65300af82b33",
+    "content-hash": "578a34d89c66ed53a1ebca83ca3f4e22",
     "packages": [
         {
             "name": "composer/installers",
@@ -462,6 +462,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cmb2/"
+        },
+        {
+            "name": "wpackagist-plugin/polylang",
+            "version": "2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
         }
     ],
     "packages-dev": [

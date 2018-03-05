@@ -48,7 +48,8 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/advanced-custom-fields": "5.6.7",
     "wpackagist-plugin/cmb2": "2.3.0",
-    "wpackagist-plugin/advanced-custom-fields-font-awesome": "3.0.0-beta1"
+    "wpackagist-plugin/advanced-custom-fields-font-awesome": "3.0.0-beta1",
+    "wpackagist-plugin/polylang": "2.3.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
@@ -59,7 +60,8 @@
         "type:wordpress-muplugin",
         "wpackagist-plugin/advanced-custom-fields",
         "wpackagist-plugin/cmb2",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome"
+        "wpackagist-plugin/advanced-custom-fields-font-awesome",
+        "wpackagist-plugin/polylang"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]

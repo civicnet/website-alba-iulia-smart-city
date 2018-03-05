@@ -7,7 +7,7 @@
           61
         </div>
         <div class="label">
-          solutii
+          {{ pll__('soluții') }}
         </div>
       </div>
       <div class="circle">
@@ -15,7 +15,7 @@
           62
         </div>
         <div class="label">
-          solutii
+          {{ pll__('soluții') }}
         </div>
       </div>
       <div class="circle">
@@ -23,7 +23,7 @@
           63
         </div>
         <div class="label">
-          solutii
+          {{ pll__('soluții') }}
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@
               </div>
             </div>
             <div class="col-5">
-              Distribuie Proiectul
+              {{ pll__('Distribuie proiectul') }}
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
   </header>
   <div class="entry-content">
     <div class="container etape-proiect">
-      <h2>Etape proiect</h2>
+      <h2>{{ pll__('Etape proiect') }}</h2>
 
       <div class="etape-desktop">
         @include('partials/components/mdl-stepper')
@@ -62,11 +62,11 @@
       <div class="container">
         <div class="row">
           <div class="col-6 first">
-            <h3>Furnizori</h3>
+            <h3>{{ pll__('Furnizori') }}</h3>
             @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
           </div>
           <div class="col-6">
-            <h3>Parteneri</h3>
+            <h3>{{ pll__('Parteneri') }}</h3>
             @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
           </div>
         </div>
