@@ -22,6 +22,34 @@ class Proiect extends Controller {
     );
   }
 
+  public static function percentage(): int {
+    $statuses = get_posts(array(
+      'post_type' => \AppConstants::POST_TYPE_PROJECT_STATUS,
+      'posts_per_page' => 10,
+    ));
+    $current_status = get_field('etapa_implementare')[0];
+
+    $count = 1;
+    foreach ($statuses as $status) {
+      if ($status->ID === $current_status->ID) {
+        break;
+      }
+
+      $count++;
+    }
+
+    $raw_percentage = (100 * $count) / count($statuses);
+    return self::roundPercentage($raw_percentage);
+  }
+
+  protected static function roundPercentage(float $n): int {
+    $n = round($n);
+    if (($n % 5) === 0) {
+      return $n;
+    }
+    return round(($n + 5 / 2) / 5) * 5;
+  }
+
   public static function extras(): string {
     return get_field('scurta_descriere');
   }
