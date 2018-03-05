@@ -1,0 +1,44 @@
+.home .page-header {
+  position: relative;
+  min-height: 450px;
+  background: url(../images/header_home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.home .page-header .motto {
+  bottom: 120px;
+  margin-left: 80px;
+  position: absolute;
+}
+
+.home .page-header .title,
+.home .page-header .title::after {
+  background-color: #fff;
+}
+
+.home .page-header .title {
+  position: relative;
+  line-height: 1;
+  color: #cc3234;
+  display: inline;
+  white-space: pre-wrap;
+  border: 0 solid #fff;
+}
+
+.home .page-header .title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 10px;
+}
+
+.home .page-header .title > span {
+  position: relative;
+  z-index: 1;
+  padding-right: 10px;
+}
