@@ -28,8 +28,14 @@ if (function_exists('pll_register_string')) {
 
   $keyword = 'continut_footer';
   pll_register_string($keyword, 'Legături utile', $group);
-  pll_register_string($keyword, 'Adresă', $group);
+  pll_register_string($keyword, 'Contact', $group);
   pll_register_string($keyword, 'Social Media', $group);
+  pll_register_string($keyword, 'Adresă', $group);
+  pll_register_string($keyword, 'Telefon', $group);
+  pll_register_string($keyword, 'Centrala', $group);
+  pll_register_string($keyword, 'Fax', $group);
+  pll_register_string($keyword, 'E-mail', $group);
+  pll_register_string($keyword, 'salut@albaiuliasmartcity.ro', $group);
 
   $keyword = 'continut_solutii';
   pll_register_string($keyword, 'soluții', $group);
