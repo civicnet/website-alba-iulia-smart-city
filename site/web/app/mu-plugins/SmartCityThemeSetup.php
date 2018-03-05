@@ -143,6 +143,25 @@ final class SmartCityThemeSetup {
       )
     );
 
+    register_post_type(
+      AppConstants::POST_TYPE_LINKS,
+      array(
+        'labels' => array(
+          'name' => __('Link-uri utile'),
+          'singular_name' => __('Link util'),
+          'add_new' => __('Adaugă'),
+          'add_new_item' => __('Adaugă link'),
+          'edit_item' => __('Editează link'),
+          'new_item' => __('Link nou'),
+          'view_item' => __('Vezi link'),
+          'view_items' => __('Vezi link-uri'),
+        ),
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'public' => true,
+        'has_archive' => false,
+        'menu_icon' => 'dashicons-admin-links'
+      )
+    );
   }
 
   private function registerCustomFieldGroups(): void {
@@ -653,6 +672,47 @@ final class SmartCityThemeSetup {
             'param' => 'post_type',
             'operator' => '==',
             'value' => AppConstants::POST_TYPE_PROJECT_LABEL,
+          ),
+        ),
+      ),
+      'menu_order' => 0,
+      'position' => 'normal',
+      'style' => 'default',
+      'label_placement' => 'top',
+      'instruction_placement' => 'label',
+      'hide_on_screen' => array(
+        0 => 'the_content',
+      ),
+      'active' => 1,
+      'description' => '',
+    ));
+
+    // AppConstants::POST_TYPE_LINKS
+    acf_add_local_field_group(array(
+      'key' => 'group_5a80af3fad611',
+      'title' => 'Link util',
+      'fields' => array(
+        array(
+          'key' => 'field_5a80aeb86df11',
+          'label' => 'Adresă www',
+          'name' => 'adresa_www',
+          'type' => 'url',
+          'instructions' => '',
+          'required' => 1,
+          'conditional_logic' => 0,
+          'wrapper' => array(
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => AppConstants::POST_TYPE_LINKS,
           ),
         ),
       ),
