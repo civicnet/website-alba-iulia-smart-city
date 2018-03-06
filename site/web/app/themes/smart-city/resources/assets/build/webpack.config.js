@@ -112,6 +112,10 @@ let webpackConfig = {
           name: `${config.cacheBusting}.[ext]`,
         },
       },
+      {
+        test: require.resolve('snapsvg/dist/snap.svg.js'),
+        use: 'imports-loader?this=>window,fix=>module.exports=0',
+      },
     ],
   },
   resolve: {
@@ -120,6 +124,9 @@ let webpackConfig = {
       'node_modules',
     ],
     enforceExtension: false,
+    alias: {
+       snapsvg: 'snapsvg/dist/snap.svg.js',
+     },
   },
   resolveLoader: {
     moduleExtensions: ['-loader'],
