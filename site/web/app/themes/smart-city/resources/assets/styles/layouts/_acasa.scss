@@ -42,3 +42,88 @@
   z-index: 1;
   padding-right: 10px;
 }
+
+.holder {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+.holder svg {
+  width: 100%;
+  height: auto;
+}
+
+.holder svg path {
+  fill-opacity: 0;
+  stroke-width: 0.1;
+  stroke: #ccc;
+  //filter: url(#filter);
+}
+
+.holder svg line {
+  stroke: #555;
+  stroke-width: 1;
+}
+
+.home .filterwrapper {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.home .star h2 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.top-r,
+.bot-r,
+.top-g,
+.bot-g {
+  stroke: #fff;
+}
+
+.top-r {
+  stroke-width: 100px;
+  animation: topani 3.5s linear infinite;
+}
+
+.bot-r {
+  stroke-width: 100px;
+  animation: botani 4s linear infinite;
+}
+
+.top-g {
+  stroke-width: 50px;
+  animation: topani 4s linear reverse infinite;
+}
+
+.bot-g {
+  stroke-width: 50%;
+  animation: botani 3.5s linear reverse infinite;
+}
+
+@mixin createRandomKeyframes( $numberOfKeys ) {
+  $delta: round(100/$numberOfKeys);
+
+  @for $i from 1 through $numberOfKeys {
+    $time: ($i*$delta - random($delta)) +'%';
+
+    #{$time} {
+      stroke-width: random(200) + px;
+    }
+  }
+}
+
+@keyframes topani {
+  @include createRandomKeyframes( 10 + random(10) );
+}
+
+@keyframes botani {
+  @include createRandomKeyframes( 10 + random(10) );
+}
