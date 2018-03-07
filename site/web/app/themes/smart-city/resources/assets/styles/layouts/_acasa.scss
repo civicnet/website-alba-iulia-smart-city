@@ -1,3 +1,11 @@
+@import "../components/_project-box.scss";
+
+$albaRed: #cc3234;
+
+.home {
+  background: #eee;
+}
+
 .home .page-header {
   position: relative;
   min-height: 450px;
@@ -22,7 +30,7 @@
 .home .page-header .title {
   position: relative;
   line-height: 1;
-  color: #cc3234;
+  color: $albaRed;
   display: inline;
   white-space: pre-wrap;
   border: 0 solid #fff;
@@ -43,8 +51,8 @@
   padding-right: 10px;
 }
 
-.holder {
-  width: 60%;
+.home .holder {
+  width: 40%;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -52,19 +60,18 @@
   margin-bottom: 120px;
 }
 
-.holder svg {
+.home .holder svg {
   width: 100%;
   height: auto;
 }
 
-.holder svg path {
+.home .holder svg path {
   fill-opacity: 0;
   stroke-width: 0.1;
   stroke: #ccc;
-  //filter: url(#filter);
 }
 
-.holder svg line {
+.home .holder svg line {
   stroke: #555;
   stroke-width: 1;
 }
@@ -81,29 +88,29 @@
   font-weight: 300;
 }
 
-.top-r,
-.bot-r,
-.top-g,
-.bot-g {
+.home .top-r,
+.home .bot-r,
+.home .top-g,
+.home .bot-g {
   stroke: #fff;
 }
 
-.top-r {
+.home .top-r {
   stroke-width: 100px;
   animation: topani 3.5s linear infinite;
 }
 
-.bot-r {
+.home .bot-r {
   stroke-width: 100px;
   animation: botani 4s linear infinite;
 }
 
-.top-g {
+.home .top-g {
   stroke-width: 50px;
   animation: topani 4s linear reverse infinite;
 }
 
-.bot-g {
+.home .bot-g {
   stroke-width: 50%;
   animation: botani 3.5s linear reverse infinite;
 }
@@ -127,3 +134,80 @@
 @keyframes botani {
   @include createRandomKeyframes( 10 + random(10) );
 }
+
+.home .about-section {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.home .about-section .icon {
+  color: $albaRed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid $albaRed;
+  position: relative;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.home .about-section .cta {
+  font-family: 'Roboto Slab', serif;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 25px !important;
+  line-height: 32px;
+}
+
+.home .about-section .cta.oras-inteligent {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.home .about-section .cta.alba-iulia {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.home .about-section .button {
+  color: $albaRed;
+  text-transform: uppercase;
+}
+
+.home .about-section .button:hover {
+  text-decoration: none;
+}
+
+/* stylelint-disable */
+.home .project-section .button {
+  color: $albaRed;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid $albaRed;
+}
+
+.home .project-section .button:hover {
+  background: $albaRed;
+  color: #fff;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: transparent;
+    color: $albaRed;
+  }
+  100% {
+    background-color: $albaRed;
+    color: #fff;
+  }
+}
+/* stylelint-enable */
