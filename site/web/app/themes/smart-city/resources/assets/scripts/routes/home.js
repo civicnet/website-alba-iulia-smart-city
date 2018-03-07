@@ -67,5 +67,15 @@ export default {
         </style>
       `);
     });
+
+    $('.partners-carousel').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
   },
 };
