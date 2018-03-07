@@ -55,5 +55,95 @@
       </div>
     </div>
   </div>
+
+  <div class="row trivia-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-center">
+          <div class="icon child">
+            <i class="fas fa-child"></i>
+          </div>
+          <div class="cta">
+            {{ pll__('Dacă ești') }}
+            <b>{{ pll__('Cetățean') }}</b>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <div class="icon">
+            <i class="far fa-handshake"></i>
+          </div>
+          <div class="cta">
+            {{ pll__('Dacă ești') }}
+            <b>{{ pll__('Partener') }}</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container blog-section">
+    <h2>{{ pll__('Noutăți') }}</h2>
+
+    <div class="row">
+      @foreach (FrontPage::articole() as $articol)
+        @include('partials/components/article-box', [ 'articol' => $articol ])
+      @endforeach
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a class="button" href="#">
+          {{ pll__('Toate articolele') }} >
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row counter-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4">
+          <div class="count">
+            67
+          </div>
+          <div class="label">
+            {{ pll__('Proiecte') }}
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="count">
+            12
+          </div>
+          <div class="label">
+            {{ pll__('Verticale') }}
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="count">
+            34
+          </div>
+          <div class="label">
+            {{ pll__('Parteneri') }}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container partners-section">
+    <h2>{{ pll__('Parteneri') }}</h2>
+
+    <div class="partners-carousel">
+      @foreach (FrontPage::parteneri() as $partener)
+        <div class="partner">
+          <img data-lazy="{{ $partener['logo']['url'] }}" />
+        </div>
+      @endforeach
+    </div>
+  </div>
+
   {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
 </div>
