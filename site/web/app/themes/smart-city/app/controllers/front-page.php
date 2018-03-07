@@ -32,6 +32,7 @@ class FrontPage extends Controller {
         'parteneri' => \Proiect::parseCompanies(
           get_field('parteneri', $project->ID)
         ),
+        'permalink' => get_permalink($project->ID),
         'furnizori' => \Proiect::parseCompanies(
           get_field('furnizori', $project->ID)
         ),
