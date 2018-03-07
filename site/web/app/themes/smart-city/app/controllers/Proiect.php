@@ -174,7 +174,7 @@ class Proiect extends Controller {
       return self::stat1() ?: self::stat2();
   }
 
-  public static function parseCompanies(array $companies): array {
+  public static function parseCompanies($companies): array {
       $ret = array();
       foreach ($companies as $company) {
         $ret[] = array(

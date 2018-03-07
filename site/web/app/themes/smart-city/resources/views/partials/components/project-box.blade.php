@@ -1,14 +1,16 @@
 <div class="col-3">
   <a href="#" class="project-box">
     <div class="body" data-tint="{{ $proiect['verticala']['color'] }}" style="background-image: url({{ $proiect['image'] }})">
-      <div class="label">
-        <div class="icon">
-          {!! $proiect['verticala']['icon'] !!}
+      <div class="body-overlay">
+        <div class="label">
+          <div class="icon">
+            {!! $proiect['verticala']['icon'] !!}
+          </div>
+            {{ $proiect['verticala']['label'] }}
         </div>
-          {{ $proiect['verticala']['label'] }}
-      </div>
 
-      <h3>{{ $proiect['name'] }}</h3>
+        <h3>{{ $proiect['name'] }}</h3>
+      </div>
     </div>
     <div
       class="footer"
