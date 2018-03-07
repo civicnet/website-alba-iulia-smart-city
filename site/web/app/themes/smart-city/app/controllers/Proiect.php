@@ -76,12 +76,36 @@ class Proiect extends Controller {
 
   public static function furnizori(): array {
     $furnizori = get_field('furnizori');
-    return self::parseCompanies($furnizori);
+    if ($furnizori) {
+      return self::parseCompanies($furnizori);
+    }
+
+    return array();
   }
 
   public static function parteneri(): array {
     $parteneri = get_field('parteneri');
-    return self::parseCompanies($parteneri);
+    if ($parteneri) {
+      return self::parseCompanies($parteneri);
+    }
+
+    return array();
+  }
+
+  public static function hasSupplierAndPartner(): bool {
+    return self::furnizori() && self::parteneri();
+  }
+
+  public static function hasSupplierOrPartner(): bool {
+    return self::furnizori() || self::parteneri();
+  }
+
+  public static function hasSupplierOnly(): bool {
+    return self::furnizori() && !self::parteneri();
+  }
+
+  public static function hasPartnerOnly(): bool {
+    return !self::furnizori() && self::parteneri();
   }
 
   public static function descriere(): string {

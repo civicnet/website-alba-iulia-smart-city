@@ -82,18 +82,34 @@
       </div> <!-- ETAPE PROIECT END -->
     </div>
 
-    <div class="container-fluid">
-      <div class="row companii">
-        <div class="col-6 first">
-          <h3>{{ pll__('Furnizori') }}</h3>
-          @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
-        </div>
-        <div class="col-6">
-          <h3>{{ pll__('Parteneri') }}</h3>
-          @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
-        </div>
+    @if (Proiect::hasSupplierOrPartner())
+      <div class="container-fluid">
+        @if (Proiect::hasSupplierAndPartner())
+          <div class="row companii">
+            <div class="col-6 first">
+              <h3>{{ pll__('Furnizori') }}</h3>
+              @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
+            </div>
+            <div class="col-6">
+              <h3>{{ pll__('Parteneri') }}</h3>
+              @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
+            </div>
+          </div>
+        @else
+          <div class="row companii">
+            <div class="col-12">
+              @if (Proiect::hasSupplierOnly())
+                <h3>{{ pll__('Furnizor') }}</h3>
+                @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
+              @elseif (Proiect::hasPartnerOnly())
+                <h3>{{ pll__('Partener') }}</h3>
+                @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::parteneri()])
+              @endif
+            </div>
+          </div>
+        @endif
       </div>
-    </div>
+    @endif
 
     <div class="container proiect-content">
       @include('partials/components/taburi-proiect')
