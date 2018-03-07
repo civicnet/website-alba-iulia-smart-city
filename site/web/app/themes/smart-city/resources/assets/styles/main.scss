@@ -20,11 +20,11 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/hover";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
-@import "components/mdl-stepper";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

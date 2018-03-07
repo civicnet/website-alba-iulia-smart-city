@@ -55,8 +55,15 @@ class Proiect extends Controller {
   }
 
   public static function featuredImage(): ?string {
-    if (has_post_thumbnail()) {
-      $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+    return self::featuredImageForID(get_post()->ID);
+  }
+
+  public static function featuredImageForID(int $id): ?string {
+    if (has_post_thumbnail($id)) {
+      $image = wp_get_attachment_image_src(
+        get_post_thumbnail_id($id),
+        'full'
+      );
       return $image[0];
     }
 
@@ -167,7 +174,7 @@ class Proiect extends Controller {
       return self::stat1() ?: self::stat2();
   }
 
-  protected static function parseCompanies(array $companies): array {
+  public static function parseCompanies(array $companies): array {
       $ret = array();
       foreach ($companies as $company) {
         $ret[] = array(
