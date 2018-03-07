@@ -5,7 +5,7 @@
     <div class="excerpt">
       {{ $articol['excerpt'] }}
     </div>
-    <a href="#">
+    <a href="{{ $articol['permalink'] }}">
       {{ pll__('Citește') }} >
     </a>
   </div>

@@ -64,6 +64,7 @@ class FrontPage extends Controller {
         'content' => $article['post_content'],
         'excerpt' => $article['post_excerpt'],
         'image' => $image,
+        'permalink' => get_permalink($article['ID']),
       );
     }
 

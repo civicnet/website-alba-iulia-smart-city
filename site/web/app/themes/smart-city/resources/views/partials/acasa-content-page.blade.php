@@ -91,7 +91,7 @@
     </div>
     <div class="row">
       <div class="col text-center">
-        <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('blog')->ID)) }}">
+        <a class="button" href="{{ get_permalink(get_option('page_for_posts')) }}">
           {{ pll__('Toate articolele') }} >
         </a>
       </div>
