@@ -85,4 +85,22 @@ class FrontPage extends Controller {
 
     return $ret;
   }
+
+  public static function countPosts(): int {
+    return (new \WP_Query(array(
+      'post_type' => \AppConstants::POST_TYPE_PROJECT
+    )))->found_posts;
+  }
+
+  public static function countVerticals(): int {
+    return (new \WP_Query(array(
+      'post_type' => \AppConstants::POST_TYPE_VERTICAL
+    )))->found_posts;
+  }
+
+  public static function countPartners(): int {
+    return (new \WP_Query(array(
+      'post_type' => \AppConstants::POST_TYPE_COMPANY
+    )))->found_posts;
+  }
 }

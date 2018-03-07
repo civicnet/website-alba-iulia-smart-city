@@ -21,7 +21,7 @@
           <div class="cta oras-inteligent">
             {{ pll__('Ce este un oraș inteligent?') }}
           </div>
-          <a class="button" href="#">
+          <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('despre')->ID)) }}#oras_inteligent">
             {{ pll__('Vezi detalii') }} >
           </a>
         </div>
@@ -32,7 +32,7 @@
           <div class="cta alba-iulia">
             {{ pll__('De ce Alba Iulia?') }}
           </div>
-          <a class="button" href="#">
+          <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('despre')->ID)) }}#alba_iulia">
             {{ pll__('Vezi detalii') }} >
           </a>
         </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="row">
       <div class="col text-center">
-        <a class="button" href="#">
+        <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('solutii')->ID)) }}">
           {{ pll__('Toate proiectele') }} >
         </a>
       </div>
@@ -91,7 +91,7 @@
     </div>
     <div class="row">
       <div class="col text-center">
-        <a class="button" href="#">
+        <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('blog')->ID)) }}">
           {{ pll__('Toate articolele') }} >
         </a>
       </div>
@@ -104,7 +104,7 @@
 
         <div class="col-4">
           <div class="count">
-            67
+            {{ FrontPage::countPosts() }}
           </div>
           <div class="label">
             {{ pll__('Proiecte') }}
@@ -113,7 +113,7 @@
 
         <div class="col-4">
           <div class="count">
-            12
+            {{ FrontPage::countVerticals() }}
           </div>
           <div class="label">
             {{ pll__('Verticale') }}
@@ -122,7 +122,7 @@
 
         <div class="col-4">
           <div class="count">
-            34
+            {{ FrontPage::countPartners() }}
           </div>
           <div class="label">
             {{ pll__('Parteneri') }}
