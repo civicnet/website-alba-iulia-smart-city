@@ -1,10 +1,10 @@
 <footer class="content-info">
   <div class="container">
     <div class="row links">
-      <div class="col-3">
+      <div class="col-md-3 col-sm-12">
         @php(dynamic_sidebar('sidebar-footer'))
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-sm-12">
         <h4>{{ pll__('Legături utile') }}</h4>
         <ul class="link-menu">
           @foreach (App::links() as $link)
@@ -16,7 +16,7 @@
           @endforeach
         </ul>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-sm-12">
         <h4>{{ pll__('Contact') }}</h4>
         <div class="address">
           {{ pll__('Adresă') }}: Calea Moților, nr.1 A, Alba Iulia <br/>
@@ -27,8 +27,8 @@
           {{ pll__('E-mail') }}: {{ pll__('salut@albaiuliasmartcity.ro') }}<br/>
         </div>
       </div>
-      <div class="col-3">
-        <h4>{{ pll__('Social Media') }}</h4> 
+      <div class="col-md-3 col-sm-12">
+        <h4>{{ pll__('Social Media') }}</h4>
         <ul class="social">
           <li>
             <a href="#">
@@ -56,12 +56,12 @@
       </div>
     </div>
     <div class="row logos">
-      <div class="alba-logo col-6">
+      <div class="alba-logo col-md-6 col-sm-12">
         <a href="#" class="float-right">
           <img src="@asset('images/stema_heraldica.png')" />
         </a>
       </div>
-      <div class="civic-tech-logo col-6">
+      <div class="civic-tech-logo col-md-6 col-sm-12">
         <div class="headline">
           {{ pll__('Departamentul SmartCity Alba Iulia') }}
         </div>

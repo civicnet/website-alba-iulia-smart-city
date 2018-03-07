@@ -12,13 +12,14 @@ $albaRed: #cc3234;
   background: url(../images/header_home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .home .page-header .motto {
   bottom: 120px;
-  margin-left: 80px;
+  margin-left: 4em;
   position: absolute;
 }
 
@@ -68,7 +69,7 @@ $albaRed: #cc3234;
 .home .holder svg path {
   fill-opacity: 0;
   stroke-width: 0.1;
-  stroke: #ccc;
+  stroke: #666;
 }
 
 .home .holder svg line {
@@ -142,12 +143,12 @@ $albaRed: #cc3234;
 
 .home .about-section .icon {
   color: $albaRed;
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   border: 3px solid $albaRed;
   position: relative;
-  font-size: 40px;
+  font-size: 2.369em;
   line-height: 100px;
   text-align: center;
   margin: 0 auto;
@@ -156,19 +157,19 @@ $albaRed: #cc3234;
 
 .home .about-section .cta {
   font-family: 'Roboto Slab', serif;
-  font-size: 32px;
+  font-size: 1.777em;
   color: #333;
   margin-bottom: 25px !important;
   line-height: 32px;
 }
 
 .home .about-section .cta.oras-inteligent {
-  width: 240px;
+  max-width: 240px;
   margin: 0 auto;
 }
 
 .home .about-section .cta.alba-iulia {
-  width: 240px;
+  max-width: 240px;
   margin: 0 auto;
 }
 
@@ -197,6 +198,10 @@ $albaRed: #cc3234;
   border: 2px solid $albaRed;
 }
 
+.home .blog-section .button {
+  margin-bottom: 0;
+}
+
 .home .project-section .button:hover,
 .home .blog-section .button:hover {
   background: $albaRed;
@@ -214,11 +219,39 @@ $albaRed: #cc3234;
     color: #fff;
   }
 }
+
+.home .blog-section .article-box a {
+  border: 1px solid #666;
+  color: $albaRed;
+  margin-top: 30px;
+  padding: 8px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.home .blog-section .article-box a:hover {
+  background: $albaRed;
+  border-color: $albaRed;
+  color: #fff;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: transparent;
+    color: $albaRed;
+  }
+  100% {
+    background-color: $albaRed;
+    border-color: $albaRed;
+    color: #fff;
+  }
+}
 /* stylelint-enable */
 
 .home .trivia-section {
   background: #fc6;
-  padding: 80px 0;
+  padding: 4em 0;
   border-top: 1px solid #fff;
 }
 
@@ -243,16 +276,15 @@ $albaRed: #cc3234;
 
 .home .trivia-section .cta {
   margin-top: 25px;
-  font-size: 16px;
+  font-size: 1em;
   color: #666;
-  margin-bottom: 25px !important;
   font-family: 'Roboto', sans-serif;
 }
 
 .home .trivia-section .cta b {
   text-transform: uppercase;
   display: block;
-  font-size: 36px;
+  font-size: 2.369em;
   line-height: 36px;
   font-weight: 700;
 }
@@ -262,13 +294,8 @@ $albaRed: #cc3234;
   margin: 20px 0;
 }
 
-.home .blog-section .article-box a {
-  border: 1px solid #666;
-  color: $albaRed;
-  margin-top: 30px;
-  padding: 8px 20px;
-  display: inline-block;
-  text-decoration: none;
+.home .blog-section .article-box h3 {
+  font-family: 'Roboto', sans-serif;
 }
 
 .home .counter-section {
@@ -280,6 +307,7 @@ $albaRed: #cc3234;
   background-image: url(../images/projects_full_header.jpg);
   position: relative;
   text-align: center;
+  margin-top: 80px;
 }
 
 .home .counter-section::before {
@@ -333,4 +361,40 @@ $albaRed: #cc3234;
 
 .home .partners-section .partners-carousel .slick-next::before {
   content: '\f054';
+}
+
+@include media-breakpoint-down(md) {
+  .home .holder {
+    //
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  a.button {
+    width: 100%;
+  }
+
+  .home .blog-section .article-box a {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 2px;
+  }
+
+  .home .trivia-section .cta b {
+    font-size: 1.333em;
+  }
+
+  .home .page-header .motto {
+    margin-left: 0;
+    bottom: 4em;
+  }
+
+  .home .holder {
+    width: 90%;
+  }
+
+  .home .about-section .cta {
+    font-size: 1.333em;
+  }
 }

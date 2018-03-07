@@ -19,8 +19,9 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
-@import "common/global";
 @import "common/hover";
+@import "common/responsive-text";
+@import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";

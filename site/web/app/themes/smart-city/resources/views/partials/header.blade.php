@@ -13,7 +13,7 @@
         @if (has_nav_menu('primary_navigation'))
           {!! wp_nav_menu([
               'theme_location' => 'primary_navigation',
-              'menu_class' => 'navbar-nav mr-auto',
+              'menu_class' => 'navbar-nav ml-auto w-100 justify-content-end',
             ]) !!}
         @endif
       </div>

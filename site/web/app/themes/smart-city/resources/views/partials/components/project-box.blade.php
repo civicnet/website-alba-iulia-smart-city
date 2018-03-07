@@ -1,4 +1,4 @@
-<div class="col-3">
+<div class="col-lg-3 col-md-6 col-sm-12">
   <a href="{{ $proiect['permalink'] }}" class="project-box">
     <div class="body" data-tint="{{ $proiect['verticala']['color'] }}" style="background-image: url({{ $proiect['image'] }})">
       <div class="body-overlay">
