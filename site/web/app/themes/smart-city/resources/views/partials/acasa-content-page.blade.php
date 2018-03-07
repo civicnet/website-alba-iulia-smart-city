@@ -104,7 +104,7 @@
 
         <div class="col-4">
           <div class="count">
-            {{ FrontPage::countPosts() }}
+            {{ FrontPage::countProjects() }}
           </div>
           <div class="label">
             {{ pll__('Proiecte') }}
