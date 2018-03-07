@@ -41,33 +41,7 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
-    $('.project-box .body').each((idx, elem) => {
-      let parent = $(elem).parent();
-      let color = $(elem).attr('data-tint');
-      let className = 'dynamic-tint-' + color.slice(1);
-
-      parent.addClass(className);
-      parent.append(`
-        <style>
-          .${className} .body::before {
-            background-color: ${color};
-          }
-
-          .${className} .footer .label {
-            color: ${color};
-          }
-
-          .${className} .footer .label .icon {
-            color: ${color};
-          }
-
-          .${className} .body .label .icon {
-            color: ${color};
-          }
-        </style>
-      `);
-    });
-
+    
     $('.partners-carousel').slick({
       infinite: true,
       speed: 300,
