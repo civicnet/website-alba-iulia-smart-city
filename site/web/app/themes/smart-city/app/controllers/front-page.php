@@ -16,6 +16,15 @@ class FrontPage extends Controller {
       $verticala = get_field('verticala', $project->ID)[0];
       $etapa = get_field('etapa_implementare', $project->ID)[0];
 
+      $partners = get_field('parteneri', $project->ID);
+      if ($partners) {
+        $partners = \Proiect::parseCompanies($partners);
+      }
+
+      $suppliers = get_field('furnizori', $project->ID);
+      if ($suppliers) {
+        $suppliers = \Proiect::parseCompanies($suppliers);
+      }
       $ret[] = array(
         'name' => $project->post_title,
         'verticala' => array(
@@ -29,13 +38,9 @@ class FrontPage extends Controller {
         ),
         'image' => \Proiect::featuredImageForID($project->ID),
         'status' => get_field('etapa_implementare', $project->ID),
-        'parteneri' => \Proiect::parseCompanies(
-          get_field('parteneri', $project->ID)
-        ),
+        'parteneri' => $partners,
         'permalink' => get_permalink($project->ID),
-        'furnizori' => \Proiect::parseCompanies(
-          get_field('furnizori', $project->ID)
-        ),
+        'furnizori' => $suppliers,
       );
     }
 

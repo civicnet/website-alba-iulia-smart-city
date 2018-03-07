@@ -202,7 +202,7 @@ class Proiect extends Controller {
       $ret = array();
       foreach ($companies as $company) {
         $ret[] = array(
-          'name' => get_field('nume', $company->ID),
+          'name' => $company->post_title,
           'logo' => get_field('logo', $company->ID),
           'locatie' => get_field('locatie_companie', $company->ID),
           'email' => get_field('adresa_email', $company->ID),

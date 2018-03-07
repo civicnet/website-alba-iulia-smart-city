@@ -1,7 +1,7 @@
 <footer class="content-info">
   <div class="container">
     <div class="row links">
-      <div class="col-md-3 col-sm-12">
+      <div class="col-md-2 col-sm-12">
         @php(dynamic_sidebar('sidebar-footer'))
       </div>
       <div class="col-md-3 col-sm-12">
@@ -16,7 +16,7 @@
           @endforeach
         </ul>
       </div>
-      <div class="col-md-3 col-sm-12">
+      <div class="col-md-5 col-sm-12">
         <h4>{{ pll__('Contact') }}</h4>
         <div class="address">
           {{ pll__('Adresă') }}: Calea Moților, nr.1 A, Alba Iulia <br/>
@@ -27,7 +27,7 @@
           {{ pll__('E-mail') }}: {{ pll__('salut@albaiuliasmartcity.ro') }}<br/>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12">
+      <div class="col-md-2 col-sm-12">
         <h4>{{ pll__('Social Media') }}</h4>
         <ul class="social">
           <li>

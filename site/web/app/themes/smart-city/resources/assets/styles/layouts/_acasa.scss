@@ -289,6 +289,10 @@ $albaRed: #cc3234;
   font-weight: 700;
 }
 
+.home .blog-section h2 {
+  margin-bottom: 2em;
+}
+
 .home .blog-section .article-box img {
   width: 100%;
   margin: 20px 0;
@@ -296,6 +300,8 @@ $albaRed: #cc3234;
 
 .home .blog-section .article-box h3 {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.333em;
+  line-height: 1em;
 }
 
 .home .counter-section {

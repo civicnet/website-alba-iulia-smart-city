@@ -4,7 +4,7 @@
     <div class="stats">
       <div class="circle">
         <div class="count">
-          61
+          {{ FrontPage::countProjects() }}
         </div>
         <div class="label">
           {{ pll__('soluții') }}
@@ -12,18 +12,18 @@
       </div>
       <div class="circle">
         <div class="count">
-          62
+          {{ FrontPage::countVerticals() }}
         </div>
         <div class="label">
-          {{ pll__('soluții') }}
+          {{ pll__('verticale') }}
         </div>
       </div>
       <div class="circle">
         <div class="count">
-          63
+          {{ FrontPage::countPartners() }}
         </div>
         <div class="label">
-          {{ pll__('soluții') }}
+          {{ pll__('parteneri') }}
         </div>
       </div>
     </div>

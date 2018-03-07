@@ -173,25 +173,6 @@ final class SmartCityThemeSetup {
     	'title' => 'Companie',
     	'fields' => array(
     		array(
-    			'key' => 'field_5a80adc86dfae',
-    			'label' => 'Nume',
-    			'name' => 'nume',
-    			'type' => 'text',
-    			'instructions' => '',
-    			'required' => 1,
-    			'conditional_logic' => 0,
-    			'wrapper' => array(
-    				'width' => '',
-    				'class' => '',
-    				'id' => '',
-    			),
-    			'default_value' => '',
-    			'placeholder' => '',
-    			'prepend' => '',
-    			'append' => '',
-    			'maxlength' => '',
-    		),
-    		array(
     			'key' => 'field_5a80ade76dfaf',
     			'label' => 'Logo companie',
     			'name' => 'logo',
