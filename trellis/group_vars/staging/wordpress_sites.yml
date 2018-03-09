@@ -3,13 +3,13 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  albasmart.claudiuceia.ro:
+  albasmart.civictech.ro:
     site_hosts:
-      - canonical: albasmart.claudiuceia.ro
+      - canonical: albasmart.civictech.ro
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:example/example.com.git # replace with your Git repo URL
+    repo: git@github.com:civictechro/website-alba-iulia-smart-city.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
