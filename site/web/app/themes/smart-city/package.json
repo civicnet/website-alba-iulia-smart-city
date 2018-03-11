@@ -110,6 +110,7 @@
     "jquery": "^3.3.1",
     "popper.js": "~1.11",
     "slick-carousel": "^1.8.1",
+    "slick-lightbox": "^0.2.10",
     "snapsvg": "^0.5.1"
   }
 }

@@ -251,8 +251,58 @@ article.type-proiect .statistici .label {
   font-size: 17px;
   text-transform: capitalize;
 }
-/* stylelint-enable */
 
 article.type-proiect .project-reviews {
   // ...
 }
+
+
+article.type-proiect .slick-gallery {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+article.type-proiect .slick-gallery img {
+  height: 480px;
+  width: 100%;
+  object-fit: contain;
+}
+
+article.type-proiect .slick-gallery:hover {
+  filter: grayscale(100%);
+}
+
+article.type-proiect .slick-gallery::after {
+  content: attr(data-caption);
+  position: absolute;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  top: calc(50% - 24px);
+  left: calc(50% - 100px);
+  height: 48px;
+  line-height: 48px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  pointer-events:none;
+}
+
+article.type-proiect .slick-gallery:hover::after {
+  content: "\f00e";
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 48px;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  z-index: 10;
+  pointer-events:none;
+  padding: 0;
+  background: none;
+}
+/* stylelint-enable */
