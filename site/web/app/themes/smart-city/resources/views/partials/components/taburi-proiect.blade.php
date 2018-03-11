@@ -93,6 +93,9 @@
     aria-labelledby="descriere-tab">
     <h3>{{ pll__('Detaliu Soluție/Proiect') }}</h3>
     {!! Proiect::descriere() !!}
+    <div class="project-reviews">
+      @php(comments_template('/partials/comments.blade.php'))
+    </div>
   </div>
   @if (Proiect::specificatii())
     <div

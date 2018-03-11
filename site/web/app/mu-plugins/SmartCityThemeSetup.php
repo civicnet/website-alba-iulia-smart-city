@@ -56,7 +56,7 @@ final class SmartCityThemeSetup {
           'view_item' => __('Vezi proiect'),
           'view_items' => __('Vezi proiecte'),
         ),
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail', 'comments'),
         'public' => true,
         'has_archive' => false,
         'menu_icon' => 'dashicons-lightbulb'
