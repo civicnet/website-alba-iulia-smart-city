@@ -84,3 +84,8 @@ add_filter('nav_menu_link_attributes', function ($atts, $item, $args) {
 
   return $atts;
 }, 10, 3);
+
+add_filter('upload_mimes', function ($mime_types = array()) {
+  $mime_types['svg']  = 'image/svg+xml';
+  return $mime_types;
+});
