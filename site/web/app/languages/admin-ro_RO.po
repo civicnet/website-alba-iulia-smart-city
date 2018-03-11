@@ -542,7 +542,7 @@ msgstr "https://wordpress.org/news/"
 msgid "Your Recent Drafts"
 msgstr "Ciornele tale recente"
 
-#: wp-admin/includes/class-wp-users-list-table.php:492
+#: wp-admin/includes/class-wp-users-list-table.php:496
 msgctxt "name"
 msgid "Unknown"
 msgstr "Necunoscut"
@@ -2077,7 +2077,7 @@ msgstr[0] "%s coloană"
 msgstr[1] "%s coloane"
 msgstr[2] "%s de coloane"
 
-#: wp-admin/includes/class-wp-users-list-table.php:566
+#: wp-admin/includes/class-wp-users-list-table.php:570
 msgctxt "no user roles"
 msgid "None"
 msgstr "Nimic"
@@ -2411,7 +2411,7 @@ msgstr[0] "Tema ta are suport pentru %s meniu. Selectează ce meniu apare în fi
 msgstr[1] "Tema ta are suport pentru %s meniuri. Selectează ce meniu apare în fiecare locație."
 msgstr[2] "Tema ta are suport pentru %s de meniuri. Selectează ce meniu apare în fiecare locație."
 
-#: wp-admin/includes/class-wp-users-list-table.php:505
+#: wp-admin/includes/class-wp-users-list-table.php:509
 msgid "%s post by this author"
 msgid_plural "%s posts by this author"
 msgstr[0] "%s articol de acest autor"
