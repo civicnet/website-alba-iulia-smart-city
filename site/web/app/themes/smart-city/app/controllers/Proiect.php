@@ -213,4 +213,20 @@ class Proiect extends Controller {
 
       return $ret;
   }
+
+  public static function galerieFoto(): array {
+    return (array) get_post_meta(
+      get_post()->ID,
+      \AppConstants::PROJECT_GALLERY_METABOX_LIST,
+      1
+    );
+  }
+
+  public static function galerieFotoFeatured(): string {
+    return get_post_meta(
+      get_post()->ID,
+      \AppConstants::PROJECT_GALLERY_METABOX_FEATURED,
+      1
+    );
+  }
 }

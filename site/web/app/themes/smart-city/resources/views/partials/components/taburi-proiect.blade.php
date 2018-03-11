@@ -91,10 +91,24 @@
     id="descriere"
     role="tabpanel"
     aria-labelledby="descriere-tab">
-    <h3>{{ pll__('Detaliu Soluție/Proiect') }}</h3>
-    {!! Proiect::descriere() !!}
-    <div class="project-reviews">
-      @php(comments_template('/partials/comments.blade.php'))
+    <div class="row">
+      <div class="col-4">
+        <div class="slick-gallery" data-caption="{{ pll__('Vezi galerie') }} >">
+          <div>
+            <img src="{{ Proiect::galerieFotoFeatured() }}" />
+          </div>
+          @foreach (Proiect::galerieFoto() as $photo)
+            <div><img src="{{ $photo }}" data-cta="" /></div>
+          @endforeach
+        </div>
+      </div>
+      <div class="col-8">
+        <h3>{{ pll__('Detaliu Soluție/Proiect') }}</h3>
+        {!! Proiect::descriere() !!}
+        <div class="project-reviews">
+          @php(comments_template('/partials/comments.blade.php'))
+        </div>
+      </div>
     </div>
   </div>
   @if (Proiect::specificatii())

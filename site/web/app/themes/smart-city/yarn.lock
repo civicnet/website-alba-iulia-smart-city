@@ -6333,6 +6333,10 @@ slick-carousel@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
 
+slick-lightbox@^0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/slick-lightbox/-/slick-lightbox-0.2.10.tgz#80f617783f420cb96d961aea24099ff8e6153390"
+
 snapsvg@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/snapsvg/-/snapsvg-0.5.1.tgz#0caf52c79189a290746fc446cc5e863f6bdddfe3"

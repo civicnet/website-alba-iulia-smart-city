@@ -15,18 +15,13 @@ export default {
     $('ul.slick-gallery li a').each((idx, elem) => {
       gallery_photos.push($(elem).attr('href'));
     });
-
     console.log(gallery_photos);
-    $('.slick-gallery').slick({
-      slidesToShow: 1,
-      adaptiveHeight: true,
-
-    });
-
-    $('.slick-gallery').slickLightbox({
-      src: 'src',
-      itemSelector: 'div img',
-      background: 'rgba(0, 0, 0, .95)',
+    $('#open-gallery-button').slickLightbox({
+      //images: gallery_photos,
+      //selector: 'ul.slick-gallery li a',
+      src: 'href',
+      selector: '',
+      itemSelector: 'ul.slick-gallery li a',
     });
   },
 };

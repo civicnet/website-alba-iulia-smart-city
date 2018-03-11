@@ -5,6 +5,9 @@ import 'bootstrap/dist/js/bootstrap';
 // Import Slick
 import 'slick-carousel/slick/slick.min';
 
+// Import Slick lightbox
+import 'slick-lightbox/dist/slick-lightbox.js';
+
 // Import everything from autoload
 import "./autoload/**/*"
 
