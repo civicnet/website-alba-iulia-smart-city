@@ -91,8 +91,8 @@
               @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
             </div>
             <div class="col-6">
-              <h3>{{ pll__('Parteneri') }}</h3>
-              @include('partials/components/carousel-companie', ['className' => "parteneri-carousel", 'companii' => Proiect::parteneri()])
+              <h3>{{ pll__('Partener') }}</h3>
+              @include('partials/components/companie', ['companie' => Proiect::partener()])
             </div>
           </div>
         @else
@@ -103,7 +103,7 @@
                 @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
               @elseif (Proiect::hasPartnerOnly())
                 <h3>{{ pll__('Partener') }}</h3>
-                @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::parteneri()])
+                @include('partials/components/companie', ['companie' => Proiect::partener()])
               @endif
             </div>
           </div>

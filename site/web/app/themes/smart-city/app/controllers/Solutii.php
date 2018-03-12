@@ -16,15 +16,8 @@ class Solutii extends Controller {
       $verticala = get_field('verticala', $project->ID)[0];
       $etapa = get_field('etapa_implementare', $project->ID)[0];
 
-      $partners = get_field('parteneri', $project->ID);
-      if ($partners) {
-        $partners = \Proiect::parseCompanies($partners);
-      }
+      $partner = \Proiect::parseCompanies(get_field('partener', $project->ID))[0];
 
-      $suppliers = get_field('furnizori', $project->ID);
-      if ($suppliers) {
-        $suppliers = \Proiect::parseCompanies($suppliers);
-      }
       $ret[] = array(
         'name' => $project->post_title,
         'verticala' => array(
@@ -38,9 +31,8 @@ class Solutii extends Controller {
         ),
         'image' => \Proiect::featuredImageForID($project->ID),
         'status' => get_field('etapa_implementare', $project->ID),
-        'parteneri' => $partners,
+        'partener' => $partner,
         'permalink' => get_permalink($project->ID),
-        'furnizori' => $suppliers,
       );
     }
 
