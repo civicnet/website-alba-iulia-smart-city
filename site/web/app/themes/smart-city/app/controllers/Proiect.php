@@ -120,12 +120,12 @@ class Proiect extends Controller {
     return get_field('protocol');
   }
 
-  public static function noutati(): ?string {
-    return get_field('noutati');
-  }
-
   public static function rezultate(): ?string {
     return get_field('rezultate');
+  }
+
+  public static function noutati(): ?string {
+    return get_field('noutati');
   }
 
   public static function etape(): array {
