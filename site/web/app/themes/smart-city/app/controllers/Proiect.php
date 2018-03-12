@@ -120,10 +120,6 @@ class Proiect extends Controller {
     return 'Coming soon';
   }
 
-  public static function media(): string {
-    return 'Coming soon';
-  }
-
   public static function noutati(): ?string {
     return get_field('noutati');
   }
@@ -228,5 +224,20 @@ class Proiect extends Controller {
       \AppConstants::PROJECT_GALLERY_METABOX_FEATURED,
       1
     );
+  }
+
+  public static function mediaVideos(): array {
+    $videos = get_post_meta(
+      get_post()->ID,
+      \AppConstants::PROJECT_GALLERY_METABOX_MEDIA_VIDEOS,
+      1
+    );
+
+    $ret = array();
+    foreach ($videos as $video) {
+      $ret[] = $video[\AppConstants::PROJECT_GALLERY_METABOX_MEDIA_VIDEO_EMBED];
+    }
+
+    return $ret;
   }
 }

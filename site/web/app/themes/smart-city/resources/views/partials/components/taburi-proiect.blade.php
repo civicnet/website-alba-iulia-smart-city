@@ -42,7 +42,7 @@
       </a>
     </li>
   @endif
-  @if (Proiect::media())
+  @if (Proiect::mediaVideos())
     <li class="nav-item">
       <a
         class="nav-link"
@@ -131,14 +131,18 @@
       {!! Proiect::protocol() !!}
     </div>
   @endif
-  @if (Proiect::media())
+  @if (Proiect::mediaVideos())
     <div
       class="tab-pane fade"
       id="media"
       role="tabpanel"
       aria-labelledby="media-tab">
       <h3>{{ Proiect::nume() }} {{ pll__('în media') }}</h3>
-      {!! Proiect::media() !!}
+      @foreach (Proiect::mediaVideos() as $video)
+        <div>
+          {!! wp_oembed_get($video) !!}
+        </div>
+      @endforeach
     </div>
   @endif
   @if (Proiect::noutati())

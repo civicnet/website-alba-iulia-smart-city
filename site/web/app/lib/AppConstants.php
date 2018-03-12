@@ -11,4 +11,8 @@ final class AppConstants {
   const PROJECT_GALLERY_METABOX = 'project_gallery';
   const PROJECT_GALLERY_METABOX_LIST = 'cmb_field_project_gallery';
   const PROJECT_GALLERY_METABOX_FEATURED = 'cmb_field_project_gallery_featured';
+
+  const PROJECT_GALLERY_METABOX_MEDIA = 'project_media';
+  const PROJECT_GALLERY_METABOX_MEDIA_VIDEOS = 'cmb_field_project_media_videos';
+  const PROJECT_GALLERY_METABOX_MEDIA_VIDEO_EMBED = 'cmb_field_project_media_video_embed';
 }
