@@ -70,17 +70,17 @@
       </a>
     </li>
   @endif
-  @if (Proiect::altceva())
+  @if (Proiect::rezultate())
     <li class="nav-item">
       <a
         class="nav-link"
-        id="altceva-tab"
+        id="rezultate-tab"
         data-toggle="tab"
-        href="#altceva"
+        href="#rezultate"
         role="tab"
-        aria-controls="altceva"
+        aria-controls="rezultate"
         aria-selected="false">
-        {{ pll__('Altceva') }}
+        {{ pll__('Rezultate') }}
       </a>
     </li>
   @endif
@@ -150,13 +150,13 @@
       {!! Proiect::noutati() !!}
     </div>
   @endif
-  @if (Proiect::altceva())
+  @if (Proiect::rezultate())
     <div
       class="tab-pane fade"
-      id="altceva"
+      id="rezultate"
       role="tabpanel"
-      aria-labelledby="altceva-tab">
-      {!! Proiect::altceva() !!}
+      aria-labelledby="rezultate-tab">
+      {!! Proiect::rezultate() !!}
     </div>
   @endif
 </div>
