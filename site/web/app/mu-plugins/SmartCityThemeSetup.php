@@ -493,8 +493,8 @@ final class SmartCityThemeSetup {
             ),
         array(
                 'key' => 'field_5a9a5ec18d139',
-                'label' => 'Parteneri',
-                'name' => 'parteneri',
+                'label' => 'Partener',
+                'name' => 'partener',
                 'type' => 'relationship',
                 'instructions' => '',
                 'required' => 0,
@@ -513,8 +513,8 @@ final class SmartCityThemeSetup {
                     0 => 'search',
                 ),
                 'elements' => '',
-                'min' => '',
-                'max' => '',
+                'min' => '1',
+                'max' => '1',
                 'return_format' => 'object',
             ),
             array(

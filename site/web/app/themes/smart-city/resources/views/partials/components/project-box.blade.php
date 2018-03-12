@@ -23,7 +23,7 @@
       </div>
 
       <div class="partener">
-        Nume Partener Soluție
+        {{ $proiect['partener']['name'] }}
       </div>
     </div>
   </a>
