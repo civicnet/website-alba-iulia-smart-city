@@ -11,12 +11,6 @@ export default {
       pauseOnDotsHover: true,
     });
 
-    let gallery_photos = [];
-    $('ul.slick-gallery li a').each((idx, elem) => {
-      gallery_photos.push($(elem).attr('href'));
-    });
-
-    console.log(gallery_photos);
     $('.slick-gallery').slick({
       slidesToShow: 1,
       adaptiveHeight: true,
