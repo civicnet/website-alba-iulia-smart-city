@@ -116,8 +116,8 @@ class Proiect extends Controller {
     return get_field('specificatii');
   }
 
-  public static function protocol(): string {
-    return 'Coming soon';
+  public static function protocol(): array {
+    return get_field('protocol');
   }
 
   public static function noutati(): ?string {

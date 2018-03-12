@@ -128,7 +128,10 @@
       role="tabpanel"
       aria-labelledby="protocol-tab">
       <h3>{{ pll__('Protocol de colaborare') }}</h3>
-      {!! Proiect::protocol() !!}
+      <a href="{{ Proiect::protocol()['url'] }}" target="_blank">
+        <i class="fas fa-file-pdf"></i>
+        {{ Proiect::protocol()['title'] }}
+      </a>
     </div>
   @endif
   @if (Proiect::mediaVideos())
