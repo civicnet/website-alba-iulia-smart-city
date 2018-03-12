@@ -15,12 +15,40 @@
   background: #fff !important;
 }
 
+.banner .navbar-container {
+  position: relative;
+}
+
 .banner .navbar-brand img {
   height: 75px;
 }
 
 .banner {
   position: relative;
+}
+
+.banner .header-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #999;
+  font-size: 14px;
+}
+
+.banner .header-top .language-selector {
+  display: inline-block;
+}
+
+.banner .header-top .language-selector a {
+  text-decoration: none;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.banner .header-top .dropdown-menu a {
+  left: unset;
+  right: 0;
+  text-transform: capitalize;
 }
 
 .banner .navbar-nav .menu-item a {
