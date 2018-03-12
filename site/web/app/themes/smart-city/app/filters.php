@@ -89,3 +89,17 @@ add_filter('upload_mimes', function ($mime_types = array()) {
   $mime_types['svg']  = 'image/svg+xml';
   return $mime_types;
 });
+
+add_filter('wp_nav_menu_items', function($items, $args) {
+	if ($args->theme_location === 'primary_navigation') {
+		$home = '<li class="menu-item homepage_item">
+			<a
+				href="' . esc_url(get_home_url('/')) . '"
+				title="'.esc_attr(get_bloginfo('name', 'display')).'"
+				class="nav-link">
+				<i class="fas fa-home"></i>
+			</a></li>';
+		$items = $home . $items;
+	}
+	return $items;
+}, 10, 2);
