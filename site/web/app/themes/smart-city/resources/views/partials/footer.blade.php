@@ -2,6 +2,11 @@
   <div class="container">
     <div class="row links">
       <div class="col-md-2 col-sm-12">
+        <h4>
+          <a href="{{ esc_url(get_home_url('/')) }}">
+            {{ pll__('Acasă') }}
+          </a>
+        </h4>
         @php(dynamic_sidebar('sidebar-footer'))
       </div>
       <div class="col-md-3 col-sm-12">

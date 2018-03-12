@@ -27,6 +27,7 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Înapoi', $group);
 
   $keyword = 'continut_footer';
+  pll_register_string($keyword, 'Acasă', $group);
   pll_register_string($keyword, 'Legături utile', $group);
   pll_register_string($keyword, 'Contact', $group);
   pll_register_string($keyword, 'Social Media', $group);

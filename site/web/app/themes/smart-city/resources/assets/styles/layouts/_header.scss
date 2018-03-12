@@ -59,6 +59,11 @@
   margin-left: 15px;
 }
 
+.banner .navbar-nav .current_page_item a,
+.banner .navbar-nav .menu-item a:hover {
+  color: #333;
+}
+
 @include media-breakpoint-down(md) {
   .banner #navbarSupportedContent {
     padding-top: 20px;
