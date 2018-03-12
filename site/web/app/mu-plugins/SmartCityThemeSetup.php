@@ -549,10 +549,10 @@ final class SmartCityThemeSetup {
             ),
             array(
                 'key' => 'field_5a80ad2150c2d',
-                'label' => 'Altceva',
-                'name' => 'altceva',
+                'label' => 'Rezultate',
+                'name' => 'rezultate',
                 'type' => 'wysiwyg',
-                'instructions' => 'Orice altceva doriți să scrieți despre proiect.',
+                'instructions' => 'Rezultatele obținute ca urmare a proiectului.',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
