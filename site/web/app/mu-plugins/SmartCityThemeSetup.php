@@ -86,6 +86,33 @@ final class SmartCityThemeSetup {
         ),
         'preview_size' => 'large',
       ));
+
+      $project_media = new_cmb2_box(array(
+        'id' => \AppConstants::PROJECT_GALLERY_METABOX_MEDIA,
+        'title' => __('Media', 'cmb2'),
+        'object_types' => array(\AppConstants::POST_TYPE_PROJECT),
+        'context' => 'normal',
+        'priority' => 'high',
+        'show_names' => true,
+      ));
+
+      $project_media_videos = $project_media->add_field(array(
+        'id' => \AppConstants::PROJECT_GALLERY_METABOX_MEDIA_VIDEOS,
+        'type' => 'group',
+        'description' => 'Video-uri despre proiect (din YouTube, Vimeo, Facebook, etc.)',
+        'options' => array(
+          'group_title' => __('Video {#}', 'cmb2'),
+          'add_button' => __('Adauga video nou', 'cmb2'),
+          'remove_button' => __('Sterge video', 'cmb2'),
+        ),
+      ));
+
+      $project_media->add_group_field($project_media_videos, array(
+        'name' => 'URL video',
+        'desc' => 'Adauga un URL pentru un video gazduit pe YouTube, Twitter, sau Vimeo. Lista completa de servicii suportate se gaseste la <a href="http://codex.wordpress.org/Embeds">http://codex.wordpress.org/Embeds</a>.',
+        'id' => \AppConstants::PROJECT_GALLERY_METABOX_MEDIA_VIDEO_EMBED,
+        'type' => 'oembed',
+      ));
     };
 
     add_action( 'cmb2_admin_init', $custom_boxes_init);
