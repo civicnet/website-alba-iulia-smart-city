@@ -23,33 +23,21 @@ $albaRed: #cc3234;
   position: absolute;
 }
 
-.home .page-header .title,
-.home .page-header .title::after {
-  background-color: #fff;
-}
-
 .home .page-header .title {
   position: relative;
   line-height: 1;
   color: $albaRed;
   display: inline;
   white-space: pre-wrap;
+  background-color: #fff;
   border: 0 solid #fff;
-}
-
-.home .page-header .title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 100%;
-  bottom: 0;
-  width: 10px;
 }
 
 .home .page-header .title > span {
   position: relative;
   z-index: 1;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .home .holder {
