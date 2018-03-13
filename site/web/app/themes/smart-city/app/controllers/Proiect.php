@@ -114,7 +114,9 @@ class Proiect extends Controller {
   }
 
   public static function protocol(): array {
-    return get_field('protocol');
+    $protocol = get_field('protocol');
+
+    return $protocol ?: array();
   }
 
   public static function rezultate(): ?string {
