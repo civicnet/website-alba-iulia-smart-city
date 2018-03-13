@@ -7,6 +7,7 @@ const config = require('./config');
 
 module.exports = {
   plugins: [
+    /*
     new ImageminPlugin({
       optipng: { optimizationLevel: 7 },
       gifsicle: { optimizationLevel: 3 },
@@ -15,5 +16,6 @@ module.exports = {
       plugins: [imageminMozjpeg({ quality: 75 })],
       disable: (config.enabled.watcher),
     }),
+    */
   ],
 };
