@@ -9,6 +9,10 @@ class Proiect extends Controller {
     return get_field('verticala')[0]->post_title;
   }
 
+  public static function culoareVerticala(): string {
+    return get_field('culoare', get_field('verticala')[0]->ID);
+  }
+
   public static function nume(): string {
     return get_the_title();
   }
@@ -71,7 +75,9 @@ class Proiect extends Controller {
   }
 
   public static function etichete(): array {
-    return get_field('etichete');
+    $etichete = get_field('etichete');
+
+    return $etichete ? $etichete : array();
   }
 
   public static function furnizori(): array {
@@ -233,8 +239,10 @@ class Proiect extends Controller {
     );
 
     $ret = array();
-    foreach ($videos as $video) {
-      $ret[] = $video[\AppConstants::PROJECT_GALLERY_METABOX_MEDIA_VIDEO_EMBED];
+    if ($videos) {
+      foreach ($videos as $video) {
+        $ret[] = $video[\AppConstants::PROJECT_GALLERY_METABOX_MEDIA_VIDEO_EMBED];
+      }
     }
 
     return $ret;

@@ -1,10 +1,13 @@
 <article @php(post_class())>
-  <header>
+  <header data-tint="{{ Proiect::culoareVerticala() }}" class="project-header">
     <div class="container-fluid  intro">
-      <div class="row header-image" style="background-image: url({{ Proiect::featuredImage() }})">
+      <div
+        class="row header-image"
+        style="background-image: url({{ Proiect::featuredImage() }})">
+
         <div class="container">
           <div class="row align-items-center metadata">
-            <div class="col">
+            <div class="col-md-6 col-xs-12">
               <div class="verticala">
                 {{ Proiect::verticala() }}
               </div>
@@ -13,7 +16,7 @@
                   {{ Proiect::extras() }}
               </div>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12">
               <div
                 class="progress circle align-middle"
                 data-percentage="{{ Proiect::percentage() }}">
@@ -36,45 +39,55 @@
           </div>
         </div>
       </div>
+
       <div class="taxonomy intro-footer row">
         <div class="container">
           <div class="row">
-            <div class="col-6 align-self-end justify-content-center">
+            <div class="col-8 justify-content-center">
               <div class="container align-middle">
-                @foreach (Proiect::etichete() as $eticheta)
-                  <span class="eticheta">
-                    <span class="pictograma align-middle">
-                      <i class="{{ $eticheta->pictograma }}"></i>
+                <div class="row">
+                  @foreach (Proiect::etichete() as $eticheta)
+                    <span class="col-lg col-12 eticheta">
+                      <span class="pictograma align-middle">
+                        <i class="{{ $eticheta->pictograma }}"></i>
+                      </span>
+                      {{ $eticheta->post_title }}
                     </span>
-                    {{ $eticheta->post_title }}
-                  </span>
-                @endforeach
+                  @endforeach
+                </div>
               </div>
             </div>
-            <div class="col-6 social">
-              <div class="cta align-middle">
-                {{ pll__('Distribuie proiectul') }}
+            <div class="col-4 social justify-content-center">
+              <div class="row">
+                <div class="cta d-none d-lg-block col-lg align-middle">
+                  <span>
+                    {{ pll__('Distribuie proiectul') }}
+                  </span>
+                </div>
+                <a href="#" class="col-lg col-6 align-middle">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#" class="col-lg col-6 align-middle">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#" class="col-lg col-6 align-middle">
+                  <i class="fab fa-whatsapp-square"></i>
+                </a>
+                <a href="#" class="col-lg col-6 align-middle">
+                  <i class="fas fa-envelope"></i>
+                </a>
               </div>
-              <a href="#" class="align-middle">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a href="#" class="align-middle">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-              <a href="#" class="align-middle">
-                <i class="fab fa-whatsapp-square"></i>
-              </a>
-              <a href="#" class="align-middle">
-                <i class="fas fa-envelope"></i>
-              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="entry-content">
-    <div class="container etape-proiect">
+
+  <div
+    data-tint="{{ Proiect::culoareVerticala() }}"
+    class="entry-content">
+    <div class="container etape-proiect d-none d-lg-block">
       <h2>{{ pll__('Etape proiect') }}</h2>
 
       <div class="etape-desktop">
@@ -86,11 +99,11 @@
       <div class="container-fluid">
         @if (Proiect::hasSupplierAndPartner())
           <div class="row companii">
-            <div class="col-6 first">
+            <div class="col-sm-6 col-12 first">
               <h3>{{ pll__('Furnizori') }}</h3>
               @include('partials/components/carousel-companie', ['className' => "furnizori-carousel", 'companii' => Proiect::furnizori()])
             </div>
-            <div class="col-6">
+            <div class="col-sm-6 col-12">
               <h3>{{ pll__('Partener') }}</h3>
               @include('partials/components/companie', ['companie' => Proiect::partener()])
             </div>

@@ -13,10 +13,21 @@ class Solutii extends Controller {
 
     $ret = array();
     foreach ($projects as $project) {
-      $verticala = get_field('verticala', $project->ID)[0];
+      $verticala = get_field('verticala', $project->ID);
+      if ($verticala) {
+        $verticala = $verticala[0];
+      } else {
+        continue;
+      }
+
       $etapa = get_field('etapa_implementare', $project->ID)[0];
 
-      $partner = \Proiect::parseCompanies(get_field('partener', $project->ID))[0];
+      $partner = \Proiect::parseCompanies(get_field('partener', $project->ID));
+      if ($partner) {
+        $partner = $partner[0];
+      } else {
+        continue;
+      }
 
       $ret[] = array(
         'name' => $project->post_title,
