@@ -10,11 +10,11 @@ $circleBackground: #099;
   width: $size;
   height: $size;
   line-height: $size;
-  box-shadow: none;
   position: relative;
   margin: 0 auto;
   border-radius: 50%;
   background: $circleBackground;
+  box-shadow: 3px 3px 9px 0 rgba(0, 0, 0, 0.45);
 
   &::after {
     content: "";
