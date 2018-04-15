@@ -1,9 +1,10 @@
-$borderWidth: 2px;
+$borderWidth: 4px;
 $animationTime: 1.5s;
-$border-color-default: #6cc;
+$border-color-default: #fff;
 $border-color-fill: #fff;
 $size: 200px;
 $howManySteps: 20; //this needs to be even.
+$circleBackground: #099;
 
 .progress {
   width: $size;
@@ -13,7 +14,7 @@ $howManySteps: 20; //this needs to be even.
   position: relative;
   margin: 0 auto;
   border-radius: 50%;
-  background: #099;
+  background: $circleBackground;
 
   &::after {
     content: "";
@@ -22,6 +23,7 @@ $howManySteps: 20; //this needs to be even.
     border-radius: 50%;
     border: $borderWidth solid $border-color-default;
     position: absolute;
+    opacity: 0.4;
     top: 0;
     left: 0;
   }

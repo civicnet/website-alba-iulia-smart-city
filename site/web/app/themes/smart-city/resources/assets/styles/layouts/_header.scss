@@ -29,8 +29,6 @@
 
 .banner .header-top {
   position: absolute;
-  top: 20px;
-  right: 20px;
   color: #999;
   font-size: 14px;
 }
@@ -69,12 +67,37 @@
     padding-top: 20px;
     z-index: 10;
     position: absolute;
-    top: 115px;
+    top: 30px;
     background: rgb(255, 255, 255);
     width: 100%;
     left: 0;
     text-align: center;
     padding-bottom: 10px;
-    margin-top: 15px;
+  }
+
+  .banner .navbar-brand img {
+    height: 60px;
+  }
+
+  .banner .header-top {
+    font-size: 0.8rem;
+    top: -12px;
+    right: 0;
+  }
+
+  .banner .navbar-toggler {
+    border: 1px solid #333;
+    color: #333;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .banner .header-top {
+    right: 20px;
+    top: 20px;
+  }
+
+  .banner #navbarSupportedContent {
+    padding-right: 0;
   }
 }

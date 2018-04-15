@@ -20,8 +20,7 @@ article.type-proiect .header-image::before {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #099;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 article.type-proiect .intro .metadata {
@@ -34,15 +33,15 @@ article.type-proiect .intro h1 {
 }
 
 article.type-proiect .intro .verticala {
-  border-bottom: 1px dotted #cff;
+  border-bottom: 1px dotted #fff;
   font-size: 16px;
   text-transform: uppercase;
-  color: #cff;
+  color: #fff;
   width: 70%;
 }
 
 article.type-proiect .intro .extras {
-  color: #cff;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -59,7 +58,8 @@ article.type-proiect .intro .circle .pictograma {
   margin-top: 25px;
   text-align: center;
   font-size: 60px;
-  color: #cff;
+  color: #fff;
+  opacity: 0.8;
 }
 
 article.type-proiect .intro .row {
@@ -68,19 +68,20 @@ article.type-proiect .intro .row {
 
 article.type-proiect .intro .intro-footer {
   min-height: 60px;
-  background: #017a75;
   line-height: 60px;
-  color: #cff;
+  color: #fff;
 }
 
 article.type-proiect .intro .intro-footer .social {
   text-align: center;
+  opacity: 0.8;
 }
 
 article.type-proiect .intro .intro-footer .eticheta {
   font-weight: light;
-  margin-right: 20px;
   text-transform: uppercase;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 article.type-proiect .intro .intro-footer .eticheta .pictograma {
@@ -89,23 +90,20 @@ article.type-proiect .intro .intro-footer .eticheta .pictograma {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 1px solid #cff;
+  border: 1px solid #fff;
   text-align: center;
   line-height: 35px;
 }
 
 article.type-proiect .intro .intro-footer .cta {
-  display: inline-block;
   font-size: 12px;
-  width: 50px;
-  line-height: 12px;
   text-transform: capitalize;
-  margin-right: 20px;
+  line-height: 1;
+  padding-top: 18px;
 }
 
 article.type-proiect .intro .intro-footer a {
   color: unset;
-  margin-right: 10px;
   font-size: 22px;
 }
 
@@ -118,10 +116,13 @@ article.type-proiect .etape-proiect h2 {
   margin-bottom: 140px;
 }
 
+article.type-proiect .etape-desktop {
+  margin-bottom: 150px;
+}
+
 article.type-proiect .companii {
   background: #e4e4e4;
   min-height: 300px;
-  margin-top: 150px;
   text-align: center;
 }
 
@@ -309,4 +310,24 @@ article.type-proiect .slick-gallery:hover::after {
 
 article.type-proiect #protocol a {
   text-decoration: none;
+}
+
+@include media-breakpoint-down(md) {
+  article.type-proiect .intro .circle {
+    margin-top: 20px;
+  }
+
+  article.type-proiect .intro .intro-footer .eticheta {
+    line-height: 2rem;
+  }
+
+  article.type-proiect .intro .intro-footer .eticheta .pictograma {
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    height: unset;
+    font-size: 1rem;
+    width: 1.2rem;
+  }
 }

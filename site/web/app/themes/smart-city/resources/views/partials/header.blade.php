@@ -1,8 +1,11 @@
 <header class="banner">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container navbar-container">
-      <a class="navbar-brand" href="{{ home_url('/') }}">
+      <a class="navbar-brand d-none d-md-block" href="{{ home_url('/') }}">
         <img src="@asset('images/logo.svg')" />
+      </a>
+      <a class="navbar-brand d-md-none" href="{{ home_url('/') }}">
+        <img src="@asset('images/logo_mobile.svg')" />
       </a>
 
       <div class="header-top">
@@ -41,10 +44,10 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-list"></i>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div class="container collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         @if (has_nav_menu('primary_navigation'))
           {!! wp_nav_menu([
             'theme_location' => 'primary_navigation',
@@ -52,6 +55,7 @@
           ]) !!}
         @endif
       </div>
+
     </div>
   </nav>
 </header>
