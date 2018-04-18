@@ -44,7 +44,9 @@
     <h2>{{ pll__('Proiecte') }}</h2>
     <div class="row">
       @foreach (FrontPage::proiecte() as $proiect)
-        @include('partials/components/project-box', [ 'proiect' => $proiect ])
+        @if ($proiect)
+          @include('partials/components/project-box', [ 'proiect' => $proiect ])
+        @endif
       @endforeach
     </div>
     <div class="row">

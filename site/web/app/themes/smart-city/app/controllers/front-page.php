@@ -15,8 +15,11 @@ class FrontPage extends Controller {
     foreach ($projects as $project) {
       $verticala = get_field('verticala', $project->ID)[0];
       $etapa = get_field('etapa_implementare', $project->ID)[0];
-
       $partner = \Proiect::parseCompanies(get_field('partener', $project->ID))[0];
+
+      if (!$etapa || !$verticala || !$partner) {
+        continue;
+      }
 
       $ret[] = array(
         'name' => $project->post_title,
