@@ -11,18 +11,7 @@ export default {
       pauseOnDotsHover: true,
     });
 
-    $('.slick-gallery').slick({
-      slidesToShow: 1,
-      adaptiveHeight: true,
-
-    });
-
-    $('.slick-gallery').slickLightbox({
-      src: 'src',
-      itemSelector: 'div img',
-      background: 'rgba(0, 0, 0, .95)',
-    });
-
+    // Switch theme based on vertical
     $('header.project-header').each((idx, elem) => {
       let color = $(elem).attr('data-tint');
       let className = 'dynamic-tint-' + color.slice(1);

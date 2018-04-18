@@ -94,18 +94,21 @@
     role="tabpanel"
     aria-labelledby="descriere-tab">
     <div class="row">
-      <div class="col-md-4 col-12">
-        <div class="slick-gallery" data-caption="{{ pll__('Vezi galerie') }} >">
-          <div>
-            <img src="{{ Proiect::galerieFotoFeatured() }}" />
-          </div>
-          @foreach (Proiect::galerieFoto() as $photo)
-            <div><img src="{{ $photo }}" data-cta="" /></div>
-          @endforeach
-        </div>
+      <div class="col-md-4 col-12 d-none d-md-block">
+        <a
+          href="#"
+          class="project-gallery desktop-gallery"
+          style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+        </a>
       </div>
       <div class="col-md-8 col-12">
         <h3>{{ pll__('Detaliu Soluție/Proiect') }}</h3>
+
+        <a href="#" class="project-gallery mobile-gallery d-md-none">
+          <i class="fas fa-camera"></i>
+          {{ pll__('Vezi galerie foto') }}
+        </a>
+
         {!! Proiect::descriere() !!}
         <div class="project-reviews">
           @php(comments_template('/partials/comments.blade.php'))
@@ -119,8 +122,25 @@
       id="specificatii"
       role="tabpanel"
       aria-labelledby="specificatii-tab">
-      <h3>{{ pll__('Specificații tehnice') }}</h3>
-      {!! Proiect::specificatii() !!}
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
+        </div>
+        <div class="col-md-8 col-12">
+          <h3>{{ pll__('Specificații tehnice') }}</h3>
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          {!! Proiect::specificatii() !!}
+        </div>
+      </div>
     </div>
   @endif
   @if (Proiect::protocol())
@@ -129,11 +149,28 @@
       id="protocol"
       role="tabpanel"
       aria-labelledby="protocol-tab">
-      <h3>{{ pll__('Protocol de colaborare') }}</h3>
-      <a href="{{ Proiect::protocol()['url'] }}" target="_blank">
-        <i class="fas fa-file-pdf"></i>
-        {{ Proiect::protocol()['title'] }}
-      </a>
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
+        </div>
+        <div class="col-md-8 col-12">
+          <h3>{{ pll__('Protocol de colaborare') }}</h3>
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          <a href="{{ Proiect::protocol()['url'] }}" target="_blank">
+            <i class="fas fa-file-pdf"></i>
+            {{ Proiect::protocol()['title'] }}
+          </a>
+        </div>
+      </div>
     </div>
   @endif
   @if (Proiect::mediaVideos())
@@ -142,12 +179,29 @@
       id="media"
       role="tabpanel"
       aria-labelledby="media-tab">
-      <h3>{{ Proiect::nume() }} {{ pll__('în media') }}</h3>
-      @foreach (Proiect::mediaVideos() as $video)
-        <div>
-          {!! wp_oembed_get($video) !!}
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
         </div>
-      @endforeach
+        <div class="col-md-8 col-12">
+          <h3>{{ Proiect::nume() }} {{ pll__('în media') }}</h3>
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          @foreach (Proiect::mediaVideos() as $video)
+            <div>
+              {!! wp_oembed_get($video) !!}
+            </div>
+          @endforeach
+        </div>
+      </div>
     </div>
   @endif
   @if (Proiect::noutati())
@@ -156,7 +210,24 @@
       id="noutati"
       role="tabpanel"
       aria-labelledby="noutati-tab">
-      {!! Proiect::noutati() !!}
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
+        </div>
+        <div class="col-md-8 col-12">
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          {!! Proiect::noutati() !!}
+        </div>
+      </div>
     </div>
   @endif
   @if (Proiect::rezultate())
@@ -165,7 +236,44 @@
       id="rezultate"
       role="tabpanel"
       aria-labelledby="rezultate-tab">
-      {!! Proiect::rezultate() !!}
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
+        </div>
+        <div class="col-md-8 col-12">
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          {!! Proiect::rezultate() !!}
+        </div>
+      </div>
     </div>
   @endif
 </div>
+
+<script type="text/javascript">
+  let galleryItems = [
+    @foreach (Proiect::galerieFoto() as $photo)
+      {
+        src: '{{ $photo }}',
+      },
+    @endforeach
+  ];
+
+  jQuery(document).ready(function() {
+    jQuery('.project-gallery').magnificPopup({
+      items: galleryItems,
+      gallery: {
+        enabled: true,
+      },
+      type: 'image',
+    });
+  });
+</script>
