@@ -5,8 +5,8 @@ import 'bootstrap/dist/js/bootstrap';
 // Import Slick
 import 'slick-carousel/slick/slick.min';
 
-// Import Slick lightbox
 import 'slick-lightbox/dist/slick-lightbox.js';
+import 'magnific-popup/dist/jquery.magnific-popup.min.js';
 
 // Import everything from autoload
 import "./autoload/**/*"

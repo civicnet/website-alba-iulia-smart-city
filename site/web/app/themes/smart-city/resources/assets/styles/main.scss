@@ -4,12 +4,10 @@
 @import "~bootstrap/scss/bootstrap";
 //@import "~font-awesome/scss/font-awesome";
 
-// Import Slick
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
-
-// Import Slick lightbox
 @import "~slick-lightbox/dist/slick-lightbox.css";
+@import "~magnific-popup/dist/magnific-popup.css";
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
