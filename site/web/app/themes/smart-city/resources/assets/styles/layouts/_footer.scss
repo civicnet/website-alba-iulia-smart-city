@@ -46,23 +46,77 @@ footer.content-info ul.social .icon {
 
 footer.content-info .logos {
   padding: 15px 0;
+  text-align: left;
 }
 
-footer.content-info .logos .alba-logo img {
+footer.content-info .alba-iulia-logo {
+  margin-top: 1.2rem;
+}
+
+footer.content-info .alba-iulia-logo img {
   height: 45px;
+  margin-right: 20px;
 }
 
-footer.content-info .logos .headline {
-  font-size: 18px;
-  font-weight: bold;
+footer.content-info .alba-iulia-logo .text {
+  display: inline-block;
+  color: #fff;
 }
 
-footer.content-info .logos .author,
-footer.content-info .logos .copyright {
-  font-size: 13px;
+footer.content-info .author {
+  margin-left: 25%;
+  display: inline-block;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
-footer.content-info .logos .author a {
-  font-weight: bold;
+footer.content-info .author .author-logo img {
+  height: 35px;
+}
+
+footer.content-info .author .coffee,
+footer.content-info .author .contribute {
+  display: block;
+  margin-bottom: 5px;
+}
+
+footer.content-info .author .contribute {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+@include media-breakpoint-down(md) {
+  footer.content-info {
+    text-align: center;
+  }
+
+  footer.content-info .links {
+    padding-top: 0;
+  }
+
+  footer.content-info .links h4 {
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+
+  footer.content-info .links ul.social {
+    text-align: left;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  footer.content-info .logos .alba-iulia-logo {
+    float: none !important;
+    text-align: left;
+  }
+
+  footer.content-info .logos .alba-iulia-logo .text {
+    margin-top: 10px;
+    text-align: left;
+    display: block;
+  }
+
+  footer.content-info .logos .author {
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 0;
+  }
 }

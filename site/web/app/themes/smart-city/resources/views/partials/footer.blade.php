@@ -61,22 +61,38 @@
       </div>
     </div>
     <div class="row logos">
-      <div class="alba-logo col-md-6 col-sm-12">
-        <a href="#" class="float-right">
-          <img src="@asset('images/stema_heraldica.png')" />
-        </a>
+      <div class="col-md-6 col-sm-12">
+        <div class="alba-iulia-logo float-right">
+          <a href="#">
+            <img src="@asset('images/stema_heraldica.png')" />
+          </a>
+          <div class="text align-middle">
+            <strong>
+              {{ pll__('Departamentul SmartCity Alba Iulia') }}
+            </strong>
+            <div class="copyright">
+              Copyright &copy; 2018.
+              {{ pll__('Toate drepturile rezervate') }}
+            </div>
+          </div>
+        </div>
       </div>
       <div class="civic-tech-logo col-md-6 col-sm-12">
-        <div class="headline">
-          {{ pll__('Departamentul SmartCity Alba Iulia') }}
-        </div>
         <div class="author">
-          {{ pll__('Website creat de') }}
-          <a href="#">CivicTech Romania</a>
-        </div>
-        <div class="copyright">
-          Copyright &copy; 2018.
-          {{ pll__('Toate drepturile rezervate') }}
+          <span class="coffee">
+            {{ pll__('Creat cu') }}
+            <i class="fas fa-heart"></i>
+            {{ pll__('si') }}
+            <i class="fas fa-coffee"></i>
+            {{ pll__('de') }}
+          </span>
+          <a href="#" class="author-logo">
+            <img src="@asset('images/civictech-logo.png')" />
+          </a>
+          <a href="#" class="contribute">
+            <i class="fab fa-github"></i>
+            {{ pll__('Contribuie si tu') }}
+          </a>
         </div>
       </div>
     </div>
