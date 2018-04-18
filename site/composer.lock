@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e095c79b01433335e91621d7b6fcab7",
+    "content-hash": "957fa5588e1ef8b4d384dcde707163b5",
     "packages": [
         {
             "name": "composer/installers",
@@ -522,6 +522,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
+            "name": "wpackagist-plugin/search-by-algolia-instant-relevant-results",
+            "version": "v2.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/search-by-algolia-instant-relevant-results/",
+                "reference": "tags/v2.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/search-by-algolia-instant-relevant-results.v2.4.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/search-by-algolia-instant-relevant-results/"
         }
     ],
     "packages-dev": [

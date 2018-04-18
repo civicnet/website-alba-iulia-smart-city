@@ -20,7 +20,8 @@
     "psr-4": {
       "": [
         "web/app/lib/"
-      ]
+      ],
+      "App\\Algolia\\": "web/app/themes/smart-city/app/algolia/"
     }
   },
   "keywords": [
@@ -51,7 +52,8 @@
     "wpackagist-plugin/advanced-custom-fields-font-awesome": "3.0.0-beta1",
     "wpackagist-plugin/polylang": "2.3.1",
     "wpackagist-plugin/intuitive-custom-post-order": "3.1.1",
-    "wpackagist-plugin/disqus-comment-system": "3.0.15"
+    "wpackagist-plugin/disqus-comment-system": "3.0.15",
+    "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.4.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
@@ -64,7 +66,8 @@
         "wpackagist-plugin/cmb2",
         "wpackagist-plugin/advanced-custom-fields-font-awesome",
         "wpackagist-plugin/polylang",
-        "wpackagist-plugin/intuitive-custom-post-order"
+        "wpackagist-plugin/intuitive-custom-post-order",
+        "wpackagist-plugin/search-by-algolia-instant-relevant-results"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]

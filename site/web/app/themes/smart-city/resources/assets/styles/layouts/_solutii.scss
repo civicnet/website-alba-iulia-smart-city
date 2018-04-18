@@ -26,7 +26,7 @@
   text-transform: uppercase;
   font-weight: 300;
   font-size: 48px;
-  color: #369;
+  color: #fff;
   padding-top: 110px;
 }
 
@@ -40,28 +40,28 @@
 .projects .page-header .circle {
   color: #fff;
   background: #999;
-  width: 100px;
-  height: 100px;
+  width: 5em;
+  height: 5em;
   border: 2px solid #fff;
   font-family: 'Roboto Slab', serif;
   border-radius: 50%;
   font-weight: 300;
   text-align: center;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .solutii .page-header .circle .count,
 .projects .page-header .circle .count {
   margin-top: 10px;
-  font-size: 32px;
+  font-size: 1.6em;
 }
 
 .solutii .page-header .circle .label,
 .projects .page-header .circle .label {
   margin-top: -5px;
   text-transform: uppercase;
-  font-size: 0.75em;
+  font-size: 0.7em;
 }
 
 .solutii .solutii-listing,
@@ -70,3 +70,46 @@
   background: #e2e2e2;
   padding: 100px 0;
 }
+
+.solutii .filter-input,
+.projects .filter-input {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.solutii .search-filter,
+.projects .search-filter {
+  width: 40%;
+}
+
+.solutii .filter-input button,
+.projects .filter-input button {
+  background-color: #fff;
+  color: #369;
+  border-color: #ccc;
+}
+
+.solutii .filters,
+.projects .filters {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.solutii .powered-by,
+.projects .powered-by {
+  display: inline-block;
+  opacity: 0.6;
+  font-size: 1rem;
+  margin-left: 16px;
+}
+
+.solutii .ais-search-box--input,
+.projects .ais-search-box--input {
+  box-shadow: none;
+  color: #369;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+

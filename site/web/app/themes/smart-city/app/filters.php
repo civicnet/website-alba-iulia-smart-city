@@ -103,3 +103,79 @@ add_filter('wp_nav_menu_items', function($items, $args) {
 	}
 	return $items;
 }, 10, 2);
+
+/**
+ * Algolia Custom Index
+ */
+$algoliaAttributesCallback = function(array $attributes, \WP_Post $post) {
+  return Algolia\IndexCustomFields::get($post, $attributes)->index();
+};
+
+// https://www.algolia.com/doc/api-reference/settings-api-parameters/
+$algoliaSettingsCallback = function(array $settings) {
+  return array(
+    'searchableAttributes' => array(
+      'unordered(name)',
+      'unordered(verticala)',
+      'unordered(etapa)',
+      'unordered(partener)',
+      'unordered(locale)',
+    ),
+    'attributesToRetrieve' => array(
+      'type',
+      'name',
+      'verticala',
+      'etapa',
+      'partener',
+      'permalink',
+      'image',
+      'color',
+      'icon_etapa',
+      'icon_verticala',
+      'locale',
+      'weight',
+    ),
+    'customRanking' => array(
+        'desc(weight)',
+        'desc(post_date)',
+    ),
+    'attributeForDistinct'  => 'post_id',
+    'distinct'              => true,
+    'attributesForFaceting' => array(
+      'etapa',
+      'partener',
+      'verticala',
+			'locale',
+    ),
+    'attributesToSnippet' => array(
+        'name:64',
+        'content:30',
+    ),
+    'snippetEllipsisText' => '…',
+    'attributesToHighlight' => array(
+      'name',
+      'verticala',
+      'etapa',
+      'partener',
+    ),
+  );
+};
+
+
+add_filter('algolia_post_shared_attributes', $algoliaAttributesCallback, 10, 2);
+add_filter('algolia_searchable_post_shared_attributes', $algoliaAttributesCallback, 10, 2);
+add_filter('algolia_posts_index_settings', $algoliaSettingsCallback);
+
+$algoliaContentCallback = function(string $post_content, \WP_Post $post) {
+  return Algolia\IndexCustomFields::get($post)->getContent();
+};
+
+add_filter('algolia_searchable_post_content', $algoliaContentCallback, 10, 2);
+add_filter('algolia_post_content', $algoliaContentCallback, 10, 2);
+
+// Expose the current locale of the displayed page in JavaScript.
+$enqueueLocale = function() {
+  wp_add_inline_script( 'algolia-search', sprintf('var current_locale = "%s";', get_locale()), 'before' );
+};
+
+add_action('wp_enqueue_scripts', $enqueueLocale, 99);
