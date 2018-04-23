@@ -179,3 +179,10 @@ $enqueueLocale = function() {
 };
 
 add_action('wp_enqueue_scripts', $enqueueLocale, 99);
+
+// Responsive embeds
+$responsiveEmbeds = function($html, $url, $attr) {
+    return $html !== '' ? '<div class="embed-container">' . $html . '</div>' : '';
+};
+
+add_filter('embed_oembed_html', $responsiveEmbeds, 10, 3);
