@@ -2,7 +2,7 @@
 
 @section('content')
   @include(
-    'partials.solutii-page-header',
+    'partials.page-header',
     ['title' => pll__('Soluții Smart City')]
   )
   @include('partials.solutii-content-page')
