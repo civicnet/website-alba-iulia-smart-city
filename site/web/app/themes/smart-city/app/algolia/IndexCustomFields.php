@@ -30,6 +30,11 @@ abstract class IndexCustomFields {
           $attributes,
           $post
         );
+      case 'post':
+        return new BlogIndexCustomFields(
+          $attributes,
+          $post
+        );
     }
 
     return new NoOpIndexCustomFields($attributes);
