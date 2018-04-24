@@ -116,6 +116,9 @@ $algoliaSettingsCallback = function(array $settings) {
   return array(
     'searchableAttributes' => array(
       'unordered(name)',
+      'unordered(content)',
+      'unordered(category)',
+      'unordered(author)',
       'unordered(verticala)',
       'unordered(etapa)',
       'unordered(partener)',
@@ -124,6 +127,10 @@ $algoliaSettingsCallback = function(array $settings) {
     'attributesToRetrieve' => array(
       'type',
       'name',
+      'date',
+      'content',
+      'author',
+      'category',
       'verticala',
       'etapa',
       'partener',
@@ -133,6 +140,7 @@ $algoliaSettingsCallback = function(array $settings) {
       'icon_etapa',
       'icon_verticala',
       'locale',
+      'date',
       'weight',
     ),
     'customRanking' => array(
@@ -145,7 +153,9 @@ $algoliaSettingsCallback = function(array $settings) {
       'etapa',
       'partener',
       'verticala',
-			'locale',
+      'locale',
+      'author',
+      'category',
     ),
     'attributesToSnippet' => array(
         'name:64',
@@ -157,6 +167,8 @@ $algoliaSettingsCallback = function(array $settings) {
       'verticala',
       'etapa',
       'partener',
+      'author',
+      'category',
     ),
   );
 };

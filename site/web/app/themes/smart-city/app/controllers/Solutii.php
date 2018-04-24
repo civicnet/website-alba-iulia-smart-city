@@ -39,7 +39,7 @@ class Solutii extends Controller {
     if ($partner) {
       $partner = $partner[0];
     } else {
-      return array();
+      return array('partener' => array('name' => null));
     }
 
     return array(
