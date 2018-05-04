@@ -64,13 +64,6 @@
           </a>
         </article>
       </script>
-      <!--
-      @while (have_posts()) @php(the_post())
-        <div class="col-md-3 col-sm-12 article-wrap">
-          @include('partials.content-'.get_post_type())
-        </div>
-      @endwhile
-      -->
     </div>
   </div>
 
