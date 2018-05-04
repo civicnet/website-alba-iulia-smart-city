@@ -1,0 +1,122 @@
+body.stiri .article-wrap,
+body.news .article-wrap {
+  padding: 0 5px;
+}
+
+body.stiri .posts,
+body.news .posts {
+  padding-bottom: 100px;
+}
+
+body.stiri .blog-container,
+body.news .blog-container {
+  background: #eee;
+}
+
+body.stiri .filters,
+body.news .filters {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: ' ';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+body.stiri .filters .powered-by,
+body.news .filters .powered-by {
+  color: #ccc;
+  top: -8px;
+  text-align: center;
+  right: -80px;
+  display: inline-block;
+  position: absolute;
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: -10px;
+  }
+}
+
+article.post-listing a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid #999;
+  background: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+article.post-listing a em {
+  background: #faebd7;
+  font-style: normal;
+}
+
+article.post-listing a:hover {
+  border-color: #f00;
+
+  h2 {
+    color: #f00;
+  }
+}
+
+article.post-listing img {
+  width: 100%;
+}
+
+article.post-listing .category {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  color: #f00;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: ' ';
+    width: 50%;
+    border-bottom: 1px solid #333;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+article.post-listing h2.entry-title {
+  font-size: 1.4rem;
+  color: #333;
+  text-align: left;
+  text-transform: none;
+  margin: 10px;
+  margin-right: 0;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+article.post-listing .meta {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: #999;
+  padding-bottom: 10px;
+}
