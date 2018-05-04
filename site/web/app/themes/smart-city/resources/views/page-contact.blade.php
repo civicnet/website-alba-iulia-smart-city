@@ -2,7 +2,7 @@
 
 @section('content')
   @include(
-    'partials.contact-page-header',
+    'partials.page-header',
     ['title' => pll__('Contact')]
   )
   @include('partials.contact-content-page')
