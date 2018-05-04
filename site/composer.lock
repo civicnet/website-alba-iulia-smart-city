@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "957fa5588e1ef8b4d384dcde707163b5",
+    "content-hash": "2e83b071a0714a013d968cd50ee576eb",
     "packages": [
         {
             "name": "composer/installers",
@@ -502,6 +502,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/intuitive-custom-post-order/"
+        },
+        {
+            "name": "wpackagist-plugin/pirate-forms",
+            "version": "2.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pirate-forms/",
+                "reference": "tags/2.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pirate-forms.2.3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pirate-forms/"
         },
         {
             "name": "wpackagist-plugin/polylang",
