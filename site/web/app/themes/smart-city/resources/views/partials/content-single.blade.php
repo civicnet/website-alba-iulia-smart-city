@@ -47,7 +47,9 @@
             @endforeach
           </div>
 
-          @php(comments_template('/partials/comments.blade.php'))
+          <div class="comments" style="margin-top: 100px; margin-bottom: 120px;">
+            @php(comments_template('/partials/comments.blade.php'))
+          </div>
         </div>
 
         <div class="col-md-4 col-sm-12 sidebar">

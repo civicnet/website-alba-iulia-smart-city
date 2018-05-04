@@ -145,6 +145,7 @@ final class SmartCityThemeSetup {
         ),
         'public' => true,
         'has_archive' => false,
+        'taxonomies'  => array( 'category' ),
         'menu_icon' => 'dashicons-megaphone'
       )
   );

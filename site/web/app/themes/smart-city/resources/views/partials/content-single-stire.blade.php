@@ -39,7 +39,17 @@
             </div>
           </div>
 
-          @php(comments_template('/partials/comments.blade.php'))
+          <div class="row justify-content-center articles">
+            @foreach (News::related() as $article)
+              <div class="col-5">
+                @include('partials/components/article-detailed-box', ['articol' => $article])
+              </div>
+            @endforeach
+          </div>
+
+          <div class="comments" style="margin-top: 100px; margin-bottom: 120px;">
+            @php(comments_template('/partials/comments.blade.php'))
+          </div>
         </div>
 
         <div class="col-md-4 col-sm-12 sidebar">
