@@ -30,6 +30,11 @@ abstract class IndexCustomFields {
           $attributes,
           $post
         );
+      case \AppConstants::POST_TYPE_ARTICOL_STIRI:
+        return new NewsIndexCustomFields(
+          $attributes,
+          $post
+        );
       case 'post':
         return new BlogIndexCustomFields(
           $attributes,

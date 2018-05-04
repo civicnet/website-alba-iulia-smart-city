@@ -119,6 +119,36 @@ final class SmartCityThemeSetup {
   }
 
   private function registerCustomPostTypes(): void {
+
+    register_post_type(
+      AppConstants::POST_TYPE_ARTICOL_STIRI,
+      array(
+        'labels' => array(
+          'name' => __('Știri'),
+          'singular_name' => __('Știre'),
+          'add_new' => __('Adaugă'),
+          'add_new_item' => __('Adaugă articol'),
+          'edit_item' => __('Editează articol'),
+          'new_item' => __('Articol nou'),
+          'view_item' => __('Vezi articol'),
+          'view_items' => __('Vezi articole'),
+        ),
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'author',
+            'excerpt',
+            'trackbacks',
+            'comments',
+            'revisions',
+        ),
+        'public' => true,
+        'has_archive' => false,
+        'menu_icon' => 'dashicons-megaphone'
+      )
+  );
+
     register_post_type(
       AppConstants::POST_TYPE_PROJECT,
       array(
