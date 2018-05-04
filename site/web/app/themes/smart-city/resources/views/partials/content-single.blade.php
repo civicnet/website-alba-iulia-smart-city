@@ -39,6 +39,14 @@
             </div>
           </div>
 
+          <div class="row justify-content-center articles">
+            @foreach (Post::related() as $article)
+              <div class="col-5">
+                @include('partials/components/article-detailed-box', ['articol' => $article])
+              </div>
+            @endforeach
+          </div>
+
           @php(comments_template('/partials/comments.blade.php'))
         </div>
 

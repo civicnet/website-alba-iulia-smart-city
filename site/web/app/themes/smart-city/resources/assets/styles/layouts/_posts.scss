@@ -116,11 +116,25 @@ article.type-post .article-container .section {
   }
 }
 
+article.type-post .article-container .section.larger {
+  &::after {
+    width: calc(50% - 600px);
+  }
+
+  &::before {
+    width: calc(50% - 600px);
+  }
+}
+
 article.type-post .article-container .section .content {
   width: 160px;
   margin: 0 auto;
   font-size: 1.6rem;
   text-align: center;
+}
+
+article.type-post .article-container .section.larger .content {
+  width: 600px;
 }
 
 article.type-post .article-container .section h4 {
@@ -197,3 +211,6 @@ article.type-post .sidebar ul li a.category-link:hover .count {
   background: #333;
 }
 
+article.type-post .articles {
+  margin-bottom: 80px;
+}

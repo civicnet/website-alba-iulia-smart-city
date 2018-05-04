@@ -4,7 +4,7 @@ if (post_password_required()) {
 }
 @endphp
 
-<section id="comments" class="comments">
+<section id="comments" class="comments" style="margin-top: 80px; margin-bottom: 80px;">
   @if (have_comments())
     <ol class="comment-list">
       {!! wp_list_comments(['style' => 'ol', 'short_ping' => true]) !!}
