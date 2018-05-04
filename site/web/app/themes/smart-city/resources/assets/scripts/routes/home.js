@@ -3,45 +3,69 @@ import anime from 'animejs';
 
 export default {
   init() {
+    let is_logo_animating = false;
     // JavaScript to be fired on the home page
-    $('#svg2').click(() => {
+    $(document).scroll(function() {
+      if($(this).scrollTop() >= $('#svg2').position().top - 100){
+        if (!is_logo_animating) {
+          is_logo_animating = true;
+          animate_logo();
+        }
+      }
+    });
+
+    function animate_logo() {
       let timeline = anime.timeline();
 
       timeline
         .add({
-          targets: '#svg2 path',
+          targets: '#svg2 g.stea path',
           strokeDashoffset: [anime.setDashoffset, 0],
           easing: 'easeInQuad',
-          duration: 1000,
+          direction: 'alternate',
+          duration: 2500,
           delay: function(el, i) {
             return i * 50
           },
         })
         .add({
-          targets: '#svg2 path',
+          targets: '#svg2 g.stea path',
           fillOpacity: 1,
-          strokeWidth: 0,
           easing: 'easeInOutQuad',
+          duration: 200,
         })
         .add({
-          targets: '#svg2',
+          targets: '#svg2 line',
+          strokeWidth: 2,
           easing: 'easeInOutQuad',
+          duration: 200,
         })
         .add({
-          targets: '#svg2 path',
-          fillOpacity: 0.2,
+          targets: '#svg2 g:not([class])',
+          fillOpacity: 1,
           easing: 'easeInOutQuad',
-        });
+          duration: 200,
+        })
+        .add({
+          targets: '#svg2 image',
+          opacity: 1,
+          easing: 'easeInOutQuad',
+          duration: 200,
+        })
+        .add({
+          targets: '#svg2 text',
+          fillOpacity: 1,
+          easing: 'easeInOutQuad',
+        })
 
         timeline.finished.then(() => {
-          $('#svg2').css({'filter': 'grayscale(100%)'});
-          $('#svg2 path').css({'stroke': 'none'});
+          //$('#svg2').css({'filter': 'grayscale(100%)'});
+          //$('#svg2 g.stea path').css({'stroke': 'none', 'fill-opacity': 1});
         });
-      });
+    }
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
-    
     $('.partners-carousel').slick({
       infinite: true,
       speed: 300,
