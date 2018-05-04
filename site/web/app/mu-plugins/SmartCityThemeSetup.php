@@ -121,6 +121,32 @@ final class SmartCityThemeSetup {
   private function registerCustomPostTypes(): void {
 
     register_post_type(
+      AppConstants::POST_TYPE_DESPRE,
+      array(
+        'labels' => array(
+          'name' => __('Despre'),
+          'singular_name' => __('Despre'),
+          'add_new' => __('Adaugă'),
+          'add_new_item' => __('Adaugă secțiune'),
+          'edit_item' => __('Editează secțiune'),
+          'new_item' => __('Secțiune nouă'),
+          'view_item' => __('Vezi secțiune'),
+          'view_items' => __('Vezi secțiuni'),
+        ),
+        'supports' => array(
+            'title',
+            'author',
+            'trackbacks',
+            'revisions',
+        ),
+        'public' => true,
+        'has_archive' => false,
+        'taxonomies'  => array(),
+        'menu_icon' => 'dashicons-format-aside'
+      )
+    );
+
+    register_post_type(
       AppConstants::POST_TYPE_ARTICOL_STIRI,
       array(
         'labels' => array(
@@ -148,7 +174,7 @@ final class SmartCityThemeSetup {
         'taxonomies'  => array( 'category' ),
         'menu_icon' => 'dashicons-megaphone'
       )
-  );
+    );
 
     register_post_type(
       AppConstants::POST_TYPE_PROJECT,
@@ -273,6 +299,108 @@ final class SmartCityThemeSetup {
 
   private function registerCustomFieldGroups(): void {
     if( function_exists('acf_add_local_field_group') ):
+
+    // AppConstants::POST_TYPE_DESPRE
+    acf_add_local_field_group(array(
+		'key' => 'group_5af2bae0cab75',
+		'title' => 'pagina_despre',
+		'fields' => array(
+			array(
+				'key' => 'field_5af2bafb8c3f1',
+				'label' => 'titlu',
+				'name' => 'titlu',
+				'type' => 'text',
+				'instructions' => 'Titlul paginii',
+				'required' => 1,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_5af2bb1d8c3f2',
+				'label' => 'Titlu scurt',
+				'name' => 'titlu_scurt',
+				'type' => 'text',
+				'instructions' => 'Titlu scurt (apare in sidebar)',
+				'required' => 1,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_5af2bb328c3f3',
+				'label' => 'Continut 1',
+				'name' => 'continut_1',
+				'type' => 'wysiwyg',
+				'instructions' => '',
+				'required' => 1,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'tabs' => 'all',
+				'toolbar' => 'full',
+				'media_upload' => 1,
+				'delay' => 0,
+			),
+			array(
+				'key' => 'field_5af2bb7e8c3f4',
+				'label' => 'Continut 2',
+				'name' => 'continut_2',
+				'type' => 'wysiwyg',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'tabs' => 'all',
+				'toolbar' => 'full',
+				'media_upload' => 1,
+				'delay' => 0,
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => \AppConstants::POST_TYPE_DESPRE,
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => 1,
+		'description' => '',
+	));
+
 
     // AppConstants::POST_TYPE_COMPANY
     acf_add_local_field_group(array(
