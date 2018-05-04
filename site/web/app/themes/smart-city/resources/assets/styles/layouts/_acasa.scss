@@ -41,7 +41,7 @@ $albaRed: #cc3234;
 }
 
 .home .holder {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -54,15 +54,29 @@ $albaRed: #cc3234;
   height: auto;
 }
 
-.home .holder svg path {
+.home .holder svg g.stea path {
+  opacity: 1;
   fill-opacity: 0;
-  stroke-width: 0.1;
+  stroke-width: 1;
   stroke: #666;
 }
 
+.home .holder svg text,
+.home .holder svg g:not([class]) {
+  fill-opacity: 0;
+}
+
+.home .holder svg text:hover {
+  padding: 10px;
+  border: 2px solid #933;
+}
+
 .home .holder svg line {
-  stroke: #555;
-  stroke-width: 1;
+  stroke-width: 0;
+}
+
+.home .holder svg image {
+  opacity: 0;
 }
 
 .home .filterwrapper {
