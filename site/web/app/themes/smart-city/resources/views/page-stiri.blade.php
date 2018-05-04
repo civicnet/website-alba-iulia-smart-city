@@ -64,13 +64,6 @@
           </a>
         </article>
       </script>
-      <!--
-      @while (have_posts()) @php(the_post())
-        <div class="col-md-3 col-sm-12 article-wrap">
-          @include('partials.content-'.get_post_type())
-        </div>
-      @endwhile
-      -->
     </div>
   </div>
 
@@ -84,7 +77,7 @@
       const search = instantsearch({
         appId: algolia.application_id,
         apiKey: algolia.search_api_key,
-        indexName: algolia.indices.posts_articol_stiri.name,
+        indexName: algolia.indices.posts_stire.name,
         routing: true,
         searchParameters: {
           hitsPerPage: 200,
