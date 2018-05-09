@@ -2,7 +2,7 @@
 
 @section('content')
   @include(
-    'partials.despre-page-header',
+    'partials.page-header',
     ['title' => pll__('Despre')]
   )
   @include('partials.despre-content-page')
