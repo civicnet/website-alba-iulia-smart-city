@@ -36,13 +36,13 @@
             </li>
           </ul>
         </div>
-        <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <div class="entry-content">
-              {!! $section['continut_2'] !!}
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="entry-content">
+            {!! $section['continut_2'] !!}
           </div>
-
+        </div>
       </div>
     </div>
   </div>
