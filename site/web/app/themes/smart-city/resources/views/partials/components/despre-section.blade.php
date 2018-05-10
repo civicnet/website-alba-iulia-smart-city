@@ -16,24 +16,15 @@
         <div class="col-md-4 col-sm-12 sidebar">
           <h3>{{ pll__('Categorii') }}</h3>
           <ul>
-            <li>
-              <a href="#" class="category-link">
-                <span class="category">
-                  General
-                </span>
-                <span class="count">
-                  4
-                </span>
-              </a>
-            </li>
-            <li>
-              <span class="category">
-                General
-              </span>
-              <span class="count">
-                4
-              </span>
-            </li>
+            @foreach ($all as $sec)
+              <li>
+                <a href={{ $sec['permalink'] }} class="category-link">
+                  <span class="category">
+                    {{ $sec['titlu_scurt'] }}
+                  </span>
+                </a>
+              </li>
+            @endforeach
           </ul>
         </div>
       </div>
