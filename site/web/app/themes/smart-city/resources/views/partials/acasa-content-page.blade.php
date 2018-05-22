@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-6 text-center">
           <div class="icon">
-            <i class="far fa-building"></i>
+            <img src="@asset('images/smart_city_icon.png')" />
           </div>
           <div class="cta oras-inteligent">
             {{ pll__('Ce este un oraș inteligent?') }}
@@ -27,7 +27,7 @@
         </div>
         <div class="col-6 text-center">
           <div class="icon">
-            <i class="far fa-building"></i>
+            <img src="@asset('images/poarta3_icon.png')" />
           </div>
           <div class="cta alba-iulia">
             {{ pll__('De ce Alba Iulia?') }}
@@ -60,9 +60,10 @@
 
   <div class="row trivia-section">
     <div class="container">
+      <h2>{{ pll__('Ce trebuie sa stii') }}</h2>
       <div class="row">
         <div class="col-6 text-center">
-          <div class="icon child">
+          <div class="icon transform">
             <i class="fas fa-child"></i>
           </div>
           <div class="cta">
@@ -71,7 +72,7 @@
           </div>
         </div>
         <div class="col-6 text-center">
-          <div class="icon">
+          <div class="icon transform">
             <i class="far fa-handshake"></i>
           </div>
           <div class="cta">
@@ -104,9 +105,9 @@
 
   <div class="row counter-section">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
 
-        <div class="col-4">
+        <div class="col-2">
           <div class="count">
             {{ FrontPage::countProjects() }}
           </div>
@@ -115,7 +116,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-2">
           <div class="count">
             {{ FrontPage::countVerticals() }}
           </div>
@@ -124,7 +125,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-2">
           <div class="count">
             {{ FrontPage::countPartners() }}
           </div>
