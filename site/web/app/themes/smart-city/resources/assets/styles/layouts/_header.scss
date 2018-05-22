@@ -1,3 +1,14 @@
+.phone {
+  font-size: 12px;
+}
+
+.phone svg {
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  margin-right: 8px;
+}
+
 .banner #navbarSupportedContent {
   margin-top: 60px;
 }
@@ -41,6 +52,7 @@
   text-decoration: none;
   color: #999;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .banner .header-top .dropdown-menu a {
@@ -52,14 +64,14 @@
 .banner .navbar-nav .menu-item a {
   font-size: 16px;
   font-weight: 500;
-  color: #369;
+  color: #666;
   text-transform: uppercase;
   margin-left: 15px;
 }
 
 .banner .navbar-nav .current_page_item a,
 .banner .navbar-nav .menu-item a:hover {
-  color: #333;
+  color: #c33;
 }
 
 @include media-breakpoint-down(md) {
