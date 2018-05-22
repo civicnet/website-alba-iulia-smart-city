@@ -3,6 +3,7 @@ footer.content-info {
   background: #333;
   border-top: 2px solid #fff;
   color: #999;
+  padding-bottom: 20px;
 }
 
 footer.content-info a {
@@ -30,8 +31,14 @@ footer.content-info ul {
   padding: 0;
 }
 
+footer.content-info .skyline {
+  background: url(../images/skyline.png);
+  height: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 footer.content-info .links {
-  border-bottom: 1px solid #494949;
   padding: 60px 0;
 }
 
@@ -60,27 +67,31 @@ footer.content-info .alba-iulia-logo img {
 
 footer.content-info .alba-iulia-logo .text {
   display: inline-block;
-  color: #fff;
+  color: #ccc;
 }
 
 footer.content-info .author {
-  margin-left: 25%;
+  margin-right: 10%;
   display: inline-block;
 }
 
 footer.content-info .author .author-logo img {
-  height: 35px;
+  height: 25px;
 }
 
 footer.content-info .author .coffee,
 footer.content-info .author .contribute {
+  font-size: 10px;
   display: block;
   margin-bottom: 5px;
+  color: #666;
 }
 
 footer.content-info .author .contribute {
+  font-size: 11px;
   font-style: italic;
   margin-top: 5px;
+  color: #999;
 }
 
 @include media-breakpoint-down(md) {

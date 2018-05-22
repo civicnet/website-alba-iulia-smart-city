@@ -60,6 +60,7 @@
         </ul>
       </div>
     </div>
+    <div class="row skyline"></div>
     <div class="row logos">
       <div class="col-md-6 col-sm-12">
         <div class="alba-iulia-logo float-right">
@@ -78,7 +79,7 @@
         </div>
       </div>
       <div class="civic-tech-logo col-md-6 col-sm-12">
-        <div class="author">
+        <div class="author pull-right">
           <span class="coffee">
             {{ pll__('Creat cu') }}
             <i class="fas fa-heart"></i>
