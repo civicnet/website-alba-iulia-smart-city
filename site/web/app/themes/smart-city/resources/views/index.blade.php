@@ -7,8 +7,18 @@
     <div class="container">
       <div class="row">
         <div class="col filters">
+          
+          <div id="categorii"></div>
 
-          <div id="search-box">
+          <script type="text/html" id="category-item-template">
+            <a class="dropdown-item" href="@{{url}}">
+              <i class="@{{icon}}"></i>
+              @{{label}}
+              <span class="badge badge-secondary">@{{count}}</span>
+            </a>
+          </script>
+          
+          <div id="search-box" class="float-right">
             <div id="algolia-search-box"></div>
 
             <script type="text/html" id="powered-by-template">
@@ -93,10 +103,10 @@
           cssClasses: {
             input: 'form-control',
           },
-          poweredBy: {
+          /* poweredBy: {
             template: document.getElementById('powered-by-template').innerHTML,
             cssClasses: 'powered-by',
-          }
+          } */
         })
       );
 
@@ -118,6 +128,19 @@
 					}
 				})
 			);
+
+      search.addWidget(
+        instantsearch.widgets.refinementList({
+          container: '#categorii',
+          operator: 'or',
+          sortBy: ["count:desc"],
+          attributeName: 'category',
+          limit: 100,
+          templates: {
+            item: document.getElementById('category-item-template').innerHTML,
+          },
+        })
+      );
 
       search.start();
     });

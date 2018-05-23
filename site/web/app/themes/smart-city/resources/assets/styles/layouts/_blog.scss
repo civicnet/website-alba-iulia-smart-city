@@ -16,16 +16,7 @@ body.blog .filters {
   margin-bottom: 20px;
   padding-bottom: 15px;
   position: relative;
-
-  &::after {
-    content: ' ';
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 15px;
-    border-bottom: 1px solid #ccc;
-  }
+  border-bottom: 1px solid #ccc;
 }
 
 body.blog .filters .powered-by {
@@ -115,4 +106,57 @@ article.post-listing .meta {
   font-size: 0.75rem;
   color: #999;
   padding-bottom: 10px;
+}
+
+body.blog #search-box,
+body.blog #algolia-search-box {
+  display: inline-block;
+  margin: unset;
+  width: 200px;
+}
+
+body.blog #categorii a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+body.blog #categorii {
+  display: inline-block;
+  line-height: 62px;
+  height: 62px;
+}
+
+body.blog #categorii .ais-refinement-list--item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+body.blog #categorii .ais-refinement-list--item:last-child {
+  margin-right: 20px;
+}
+
+body.blog #categorii .ais-refinement-list--item a {
+  font-size: 14px;
+  color: #999;
+  position: relative;
+  padding-left: 0;
+}
+
+body.blog #categorii .ais-refinement-list--item__active a,
+body.blog #categorii .ais-refinement-list--item a:hover {
+  background: unset;
+  color: #c33;
+}
+
+body.blog #categorii .ais-refinement-list--item a span {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-weight: 200;
+  text-transform: lowercase;
+  background: #999;
+}
+
+body.blog #categorii .ais-refinement-list--list {
+  display: inline;
 }
