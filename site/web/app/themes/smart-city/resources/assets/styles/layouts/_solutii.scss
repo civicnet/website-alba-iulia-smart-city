@@ -3,6 +3,26 @@
 
 $albaRed: #cc3234;
 
+#search-box {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#search-box .input-group {
+  height: 44px;
+}
+
+#search-box .dropdown-toggle {
+  color: #69c;
+  background: #fff;
+}
+
+#search-box .dropdown-toggle:hover,
+#search-box .dropdown-toggle:focus, {
+  background: #69c;
+  color: #fff;
+}
+
 .solutii .solutii-listing,
 .projects .solutii-listing {
   min-height: 100px;
@@ -35,12 +55,22 @@ $albaRed: #cc3234;
 
 .solutii .filters #search-box input,
 .projects .filters #search-box input {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left-width: 0;
+}
+
+.solutii .filters #search-box input.with-value,
+.projects .filters #search-box input.with-value {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   border-right-width: 0;
 }
 
 .solutii .filters #search-box input::placeholder,
 .projects .filters #search-box input::placeholder {
   font-style: italic;
+  color: #999;
 }
 
 .solutii .filters #search-box .input-group-text,
@@ -52,18 +82,46 @@ $albaRed: #cc3234;
 .solutii .filters,
 .projects .filters {
   margin-bottom: 20px;
-  padding-bottom: 10px;
+  width: 100%;
+}
+
+.solutii a.clear-all,
+.projects a.clear-all {
+  background: transparent;
+  height: 100%;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.solutii a.clear-all:hover,
+.projects a.clear-all:hover {
+  color: $albaRed;
+}
+
+.solutii .dynamic-content,
+.projects .dynamic-content {
+  position: relative;
   border-bottom: 1px solid #ccc;
   width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.solutii .dynamic-content .smaller,
+.projects .dynamic-content .smaller {
+  width: 75%;
+  min-height: 44px;
+  margin: 0 auto;
+}
+
+.solutii #current-refined-values,
+.projects #current-refined-values {
+  display: inline-block;
 }
 
 .solutii .powered-by,
 .projects .powered-by {
-  bottom: calc(-100% + 10px);
-  right: 0;
-  display: inline-block;
-  position: absolute;
-  width: 300px;
+  display: block;
   text-align: right;
   font-size: 1.2rem;
 
@@ -167,4 +225,54 @@ $albaRed: #cc3234;
     transform-origin: bottom;
     opacity: 1;
   }
+}
+
+.solutii #current-refined-values a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--item,
+.projects #current-refined-values .ais-current-refined-values--item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--item:last-child,
+.projects #current-refined-values .ais-current-refined-values--item:last-child {
+  margin-right: 20px;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--item a,
+.projects #current-refined-values .ais-current-refined-values--item a {
+  font-size: 14px;
+  color: #999;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--item a span,
+.projects #current-refined-values .ais-current-refined-values--item a span {
+  margin-left: 8px;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--clear-all,
+.projects #current-refined-values .ais-current-refined-values--clear-all,
+.solutii #current-refined-values .ais-current-refined-values--list,
+.projects #current-refined-values .ais-current-refined-values--list {
+  display: inline;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--clear-all,
+.projects #current-refined-values .ais-current-refined-values--clear-all {
+  font-size: 14px;
+  color: $albaRed;
+  padding-left: 20px;
+  border-left: 1px solid #999;
+  display: inline;
+}
+
+.solutii #current-refined-values .ais-current-refined-values--clear-all div,
+.projects #current-refined-values .ais-current-refined-values--clear-all div {
+  display: inline;
 }
