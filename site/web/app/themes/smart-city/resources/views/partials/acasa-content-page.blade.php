@@ -80,7 +80,7 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class="col-2">
+        <div class="col-md-2 col-sm-3 col-4">
           <div class="count">
             {{ FrontPage::countProjects() }}
           </div>
@@ -89,7 +89,7 @@
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-md-2 col-sm-3 col-4">
           <div class="count">
             {{ FrontPage::countVerticals() }}
           </div>
@@ -98,7 +98,7 @@
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-md-2 col-sm-3 col-4">
           <div class="count">
             {{ FrontPage::countPartners() }}
           </div>
