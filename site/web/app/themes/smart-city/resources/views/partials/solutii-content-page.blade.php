@@ -1,10 +1,8 @@
-<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css">-->
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1"></script>
-<!--
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch-theme-algolia.min.css">
--->
+
 <div class="container-fluid solutii-listing">
   <div class="container">
+
     <div class="filters">
 			<div id="search-box">
 				<div class="input-group mb-3">
@@ -68,26 +66,56 @@
                 <span class="badge badge-secondary">@{{count}}</span>
               </a>
             </script>
-
 					</div>
+          
+          <div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fas fa-search"></i>
+						</span>
+          </div>
+          
 					<input
 						type="text"
 						class="form-control"
 						placeholder="{{ pll__('Cauta solutii Smart City, ex: parcari') }}"
 						aria-label="{{ pll__('Cauta proiect') }}"
-						id="algolia-search-box">
-
-					<div class="input-group-append">
-						<span class="input-group-text">
-							<i class="fas fa-search"></i>
-						</span>
-					</div>
+            id="algolia-search-box">
+            
+            
 				</div>
 			</div>
 		</div>
 
+    <div class="dynamic-content" id="algolia-dynamic-content">
+      <div class="smaller">
+        <div class="row">
+          <div class="col-10">
+            <div id="current-refined-values"></div>
+          </div> 
+          <div class="col-2">
+            <div class="powered-by">
+              <a href="#">
+                <span class="tagline">
+                  powered by
+                </span>
+                <span class="logo">
+                  <i class="fab fa-algolia"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="dynamic-styles"></div>
     <div id="algolia-hits"></div>
+
+    <script type="text/html" id="clear-search-query-template">
+      <a href="#" class="input-group-text clear-all" id="clear-search-query">
+        <i class="fas fa-times-circle"></i>
+      </a>
+    </script>
 
     <script type="text/html" id="powered-by-template">
       <div class="powered-by">
@@ -175,12 +203,11 @@
         container: '#algolia-search-box',
         placeholder: '{{ pll__("Cauta proiecte") }}',
 				magnifier: false,
-				reset: false,
+				reset: {
+          template: document.getElementById('clear-search-query-template').innerHTML,
+          cssClasses: [{root: 'input-group-append'}],
+        },
         wrapInput: false,
-        poweredBy: {
-          template: document.getElementById('powered-by-template').innerHTML,
-          cssClasses: 'powered-by',
-        }
       })
     );
 
@@ -262,7 +289,37 @@
       })
     );
 
+    search.addWidget(
+      instantsearch.widgets.currentRefinedValues({
+        container: '#current-refined-values',
+        clearAll: 'after',
+        clearsQuery: true,
+        templates: {
+          clearAll: "{{ pll__('Sterge tot') }}",
+          item: (item) => {
+            return _.escape(item.computedLabel) + '<span class="item-clear">X</span>';
+          }
+        },
+        onlyListedAttributes: true,
+      })
+    );
+
     search.start();
+
+
+    var styleOnInput = function(value, selector) {
+      if (value !== '') {
+        jQuery(selector).addClass('with-value');
+      } else {
+        jQuery(selector).removeClass('with-value');
+      }
+    }
+    
+    styleOnInput(jQuery("#algolia-search-box").val(), '#algolia-search-box');
+    jQuery("#algolia-search-box").on('input', function() {
+      var val = jQuery(this).val();
+      styleOnInput(val, '#algolia-search-box');
+    });
   });
 </script>
 
