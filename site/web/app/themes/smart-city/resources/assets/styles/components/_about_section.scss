@@ -1,0 +1,65 @@
+.about-section {
+  background-color: #fff;
+  background-image: url(../images/graph_bg_1.png);
+  padding: 80px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  .icon img {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+
+  .cta {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.777em;
+    color: #666;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 25px !important;
+    line-height: 32px;
+  }
+
+  .cta.oras-inteligent {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .cta.alba-iulia {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .button {
+    color: $albaRed;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #c33;
+    box-shadow: 0 2px 2px #999;
+    margin-top: 10px;
+    display: inline-block;
+    background: #fff;
+  }
+
+  .button:hover {
+    background: $albaRed;
+    color: #fff;
+    animation: fadeIn 0.5s ease;
+    text-decoration: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  a.button {
+    width: 100%;
+  }
+
+  .about-section .cta {
+    font-size: 1.3em;
+  }
+}

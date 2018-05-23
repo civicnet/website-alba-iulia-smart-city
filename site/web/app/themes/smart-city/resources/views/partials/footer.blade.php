@@ -62,8 +62,8 @@
     </div>
     <div class="row skyline"></div>
     <div class="row logos">
-      <div class="col-md-6 col-sm-12">
-        <div class="alba-iulia-logo float-right">
+      <div class="col-md-8 col-sm-12">
+        <div class="alba-iulia-logo">
           <a href="#">
             <img src="@asset('images/stema_heraldica.png')" />
           </a>
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="civic-tech-logo col-md-6 col-sm-12">
+      <div class="civic-tech-logo col-md-4 col-sm-12">
         <div class="author pull-right">
           <span class="coffee">
             {{ pll__('Creat cu') }}

@@ -130,4 +130,15 @@ footer.content-info .author .contribute {
     text-align: left;
     margin-left: 0;
   }
+
+  footer.content-info .skyline {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  footer.content-info .logos .author.pull-right {
+    float: none !important;
+  }
 }
