@@ -1,6 +1,8 @@
 @import "../components/_project-box.scss";
 @import "../components/_page-header.scss";
 
+$albaRed: #cc3234;
+
 .solutii .solutii-listing,
 .projects .solutii-listing {
   min-height: 100px;
@@ -96,6 +98,61 @@
 .projects .ais-hits--item {
   padding: 0 5px;
   animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.about-section {
+  background-color: #fff;
+  background-image: url(../images/graph_bg_1.png);
+  padding: 80px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.about-section .icon img {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.about-section .cta {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.777em;
+  color: #666;
+  font-weight: normal;
+  padding-top: 10px;
+  margin-bottom: 25px !important;
+  line-height: 32px;
+}
+
+.about-section .cta.oras-inteligent {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.about-section .cta.alba-iulia {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.about-section .button {
+  color: $albaRed;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #c33;
+  box-shadow: 0 2px 2px #999;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.about-section .button:hover {
+  background: $albaRed;
+  color: #fff;
+  animation: fadeIn 0.5s ease;
+  text-decoration: none;
 }
 
 @keyframes swing-in-bottom-fwd {

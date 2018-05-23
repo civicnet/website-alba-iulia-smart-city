@@ -154,6 +154,8 @@
   </div>
 </div>
 
+@include('partials/components/about-smart-city')
+    
 <script type="text/javascript">
   jQuery(function() {
     const search = instantsearch({
