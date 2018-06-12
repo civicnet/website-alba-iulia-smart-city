@@ -6,6 +6,15 @@ final class NewsIndexCustomFields extends IndexCustomFields {
   private $data = null;
 
   protected function getCustomAttributes(): array {
+    // Don't leak private posts
+    $status = get_post_status($this->post->ID);
+    if ($status !== 'publish') {
+      return array(
+        'type' => 'noop',
+        'weight' => -1,
+      );
+    }
+    
     return array_merge(
       $this->getContentArray(),
       array(

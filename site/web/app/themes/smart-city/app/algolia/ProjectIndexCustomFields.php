@@ -5,6 +5,15 @@ namespace App\Algolia;
 final class ProjectIndexCustomFields extends IndexCustomFields {
   private $data = null;
   protected function getCustomAttributes(): array {
+    // Don't leak private posts
+    $status = get_post_status($this->post);
+    if ($status != 'publish') {
+      return array(
+        'type' => 'noop',
+        'weight' => -1,
+      );
+    }
+
     $data = $this->getTrimmedData();
     return array_merge(
       array(
@@ -33,7 +42,7 @@ final class ProjectIndexCustomFields extends IndexCustomFields {
       'icon_etapa' => $this->data['etapa']['icon'],
       'etapa' => $this->data['etapa']['label'],
       'partener' => $this->data['partener']['name'],
-      'locale' => pll_get_post_language($this->post->ID, 'locale')
+      'locale' => pll_get_post_language($this->post->ID, 'locale'),
     );
   }
 }
