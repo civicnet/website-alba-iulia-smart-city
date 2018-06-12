@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  albasmart.civictech.ro:
+  beta.albaiuliasmartcity.ro:
     site_hosts:
-      - canonical: albasmart.civictech.ro
+      - canonical: beta.albaiuliasmartcity.ro/
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
