@@ -2,9 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-18.196.247.159
-#civictech
+89.34.92.99
 
 [web]
-18.196.247.159
-#civictech
+89.34.92.99
