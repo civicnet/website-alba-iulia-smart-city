@@ -54,6 +54,7 @@
     "wpackagist-plugin/intuitive-custom-post-order": "3.1.1",
     "wpackagist-plugin/disqus-comment-system": "3.0.16",
     "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.4.0",
+    "wpackagist-plugin/wordpress-importer": "0.6.3",
     "wpackagist-plugin/pirate-forms": "2.3.4"
   },
   "require-dev": {
@@ -69,7 +70,8 @@
         "wpackagist-plugin/polylang",
         "wpackagist-plugin/intuitive-custom-post-order",
         "wpackagist-plugin/search-by-algolia-instant-relevant-results",
-        "wpackagist-plugin/pirate-forms"
+        "wpackagist-plugin/pirate-forms",
+        "wpackagist-plugin/wordpress-importer"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
