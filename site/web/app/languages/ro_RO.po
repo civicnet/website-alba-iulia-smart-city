@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-05-15 18:05:40+0000\n"
+"PO-Revision-Date: 2018-06-11 14:52:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1295,7 +1295,7 @@ msgstr "Este timpul să adaugi câteva legături! Dă clic pe &#8222;%s&#8221; p
 
 #: wp-includes/customize/class-wp-customize-media-control.php:249
 msgid "Choose image"
-msgstr "Alege imagine"
+msgstr "Alege o imagine"
 
 #: wp-includes/customize/class-wp-customize-media-control.php:239
 msgid "Choose audio"
@@ -1455,7 +1455,7 @@ msgstr "Adaugă aici propriul CSS pentru a-ți personaliza aspectul și aranjame
 
 #: wp-includes/class-wp-customize-manager.php:5233
 msgid "Your homepage displays"
-msgstr "Afișările tale de pe prima pagină"
+msgstr "Afișările tale pe prima pagină"
 
 #: wp-includes/class-wp-customize-manager.php:5222
 msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
@@ -5167,73 +5167,73 @@ msgstr "&#8222;%s&#8221;"
 #: wp-includes/class-wp-locale.php:195
 msgctxt "December abbreviation"
 msgid "Dec"
-msgstr "Dec"
+msgstr "dec."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:194
 msgctxt "November abbreviation"
 msgid "Nov"
-msgstr "Noi"
+msgstr "nov."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:193
 msgctxt "October abbreviation"
 msgid "Oct"
-msgstr "Oct"
+msgstr "oct."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:192
 msgctxt "September abbreviation"
 msgid "Sep"
-msgstr "Sep"
+msgstr "sept."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:191
 msgctxt "August abbreviation"
 msgid "Aug"
-msgstr "Aug"
+msgstr "aug."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:190
 msgctxt "July abbreviation"
 msgid "Jul"
-msgstr "Iul"
+msgstr "iul."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:189
 msgctxt "June abbreviation"
 msgid "Jun"
-msgstr "Iun"
+msgstr "iun."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:188
 msgctxt "May abbreviation"
 msgid "May"
-msgstr "Mai"
+msgstr "mai"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:187
 msgctxt "April abbreviation"
 msgid "Apr"
-msgstr "Apr"
+msgstr "apr."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:186
 msgctxt "March abbreviation"
 msgid "Mar"
-msgstr "Mar"
+msgstr "mart."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:185
 msgctxt "February abbreviation"
 msgid "Feb"
-msgstr "Feb"
+msgstr "feb."
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:184
 msgctxt "January abbreviation"
 msgid "Jan"
-msgstr "Ian"
+msgstr "ian."
 
 #. translators: one-letter abbreviation of the weekday
 #: wp-includes/class-wp-locale.php:144
@@ -7346,7 +7346,7 @@ msgstr "Selectare și decupare"
 
 #: wp-includes/media.php:3572
 msgid "Choose Image"
-msgstr "Alege imagine"
+msgstr "Alege o imagine"
 
 #: wp-includes/media.php:3568 wp-includes/media.php:3586
 #: wp-includes/media.php:3592
@@ -7905,7 +7905,7 @@ msgstr "Descarcă video"
 
 #: wp-includes/post.php:786
 msgid "Failed"
-msgstr "Eșuat"
+msgstr "Eșuată"
 
 #: wp-includes/script-loader.php:556
 msgid "Invalid"
@@ -8411,7 +8411,7 @@ msgstr "N-am putut introduce în baza de date relația termenului."
 
 #: wp-includes/script-loader.php:867
 msgid "Select Color"
-msgstr "Selectează culoare"
+msgstr "Selectează culoarea"
 
 #: wp-includes/media-template.php:601 wp-includes/script-loader.php:863
 msgid "Clear"
@@ -8465,7 +8465,7 @@ msgstr "Regret, utilizatorul nu poate fi actualizat."
 
 #: wp-includes/class-wp-xmlrpc-server.php:5014
 msgid "Sorry, you are not allowed to create pages as this user."
-msgstr "Regret, cu acest utilizator, nu ai voie să creezi pagini."
+msgstr "Regret, nu ai voie să creezi pagini în numele acestui utilizator."
 
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:142
 msgid "Display post date?"
@@ -8813,7 +8813,7 @@ msgstr "Regret, nu ai voie să creezi articole private în acest tip de articol.
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:491
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:499
 msgid "Sorry, you are not allowed to create posts as this user."
-msgstr "Regret, cu acest utilizator, nu ai voie să creezi articole."
+msgstr "Regret, nu ai voie să creezi articole în numele acestui utilizator."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1413
 msgid "Sorry, you are not allowed to create password protected posts in this post type."
@@ -10094,15 +10094,15 @@ msgstr "Nu am putut scrie fișierul %1$s (%2$s)."
 
 #: wp-includes/class-wp-xmlrpc-server.php:5355
 msgid "Sorry, you are not allowed to change the page author as this user."
-msgstr "Regret, cu acest utilizator, nu ai voie să schimbi autorul paginii."
+msgstr "Regret, nu ai voie să schimbi autorul paginii în numele acestui utilizator."
 
 #: wp-includes/class-wp-xmlrpc-server.php:5350
 msgid "Sorry, you are not allowed to change the post author as this user."
-msgstr "Regret, cu acest utilizator, nu ai voie să schimbi autorul articolului."
+msgstr "Regret, nu ai voie să schimbi autorul articolului în numele acestui utilizator."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:633
 msgid "Sorry, you are not allowed to update posts as this user."
-msgstr "Regret, ca acest utilizator nu ai voie să actualizezi articole."
+msgstr "Regret, nu ai voie să actualizezi articole în numele acestui utilizator."
 
 #: wp-includes/class-wp-customize-nav-menus.php:805
 #: wp-includes/class-wp-xmlrpc-server.php:1377
@@ -10490,7 +10490,7 @@ msgstr "Afișează mai multe comentarii"
 
 #: wp-includes/script-loader.php:696
 msgid "Published on:"
-msgstr "Publicat în:"
+msgstr "Publicat pe:"
 
 #: wp-includes/script-loader.php:695
 msgid "Schedule for:"
@@ -10686,7 +10686,7 @@ msgstr "%s [Revizie actuală]"
 #. translators: %s: revision date with author avatar
 #: wp-includes/post-template.php:1711 wp-includes/post-template.php:1763
 msgid "%s [Autosave]"
-msgstr "%s [Salvare automată]"
+msgstr "%s (salvare automată)"
 
 #: wp-includes/post-template.php:1343
 msgid "Home"
@@ -11387,7 +11387,7 @@ msgstr "&raquo;"
 #: wp-includes/general-template.php:2008
 msgctxt "calendar caption"
 msgid "%1$s %2$s"
-msgstr "%1$s, %2$s"
+msgstr "%1$s %2$s"
 
 #. translators: 1: month name, 2: 4-digit year
 #: wp-includes/general-template.php:1783 wp-includes/media.php:3435
@@ -12527,7 +12527,7 @@ msgstr "Vizitează situl"
 
 #: wp-includes/class-wp-editor.php:1642
 msgid "Y/m/d"
-msgstr "d m Y"
+msgstr "d.m.Y"
 
 #: wp-includes/post.php:746 wp-includes/post.php:767
 msgid "Draft"

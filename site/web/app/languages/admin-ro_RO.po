@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-05-21 13:51:35+0000\n"
+"PO-Revision-Date: 2018-06-11 09:55:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -713,10 +713,6 @@ msgstr "Trimite cererea"
 msgid "Requester"
 msgstr "Solicitant"
 
-#: wp-admin/includes/user.php:1012
-msgid "Requested"
-msgstr "Cerut"
-
 #: wp-admin/includes/user.php:1453 wp-admin/includes/user.php:1567
 msgid "Remove request"
 msgstr "Înlătură cererea"
@@ -837,6 +833,10 @@ msgstr "Cheia items_removed așteptată în tabloul de răspunsuri la ștergerea
 #: wp-admin/includes/ajax-actions.php:4324
 msgid "Did not receive array from %1$s eraser (index %2$d)."
 msgstr "Nu s-a primit tabloul la ștergerea %1$s (index %2$d)."
+
+#: wp-admin/includes/user.php:1012
+msgid "Requested"
+msgstr "Cerută"
 
 #: wp-admin/includes/plugin-install.php:595
 msgid "Requires PHP Version:"
@@ -2150,7 +2150,7 @@ msgstr "Vezi detalii despre versiunea %2$s a %1$s"
 #: wp-admin/includes/dashboard.php:863
 msgctxt "dashboard"
 msgid "%1$s, %2$s"
-msgstr "%1$s, %2$s"
+msgstr "%1$s la %2$s"
 
 #: wp-admin/edit-form-advanced.php:443
 msgid "<strong>Publish</strong> &mdash; You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). The Password protected option allows you to set an arbitrary password for each post. The Private option hides the post from everyone except editors and administrators. Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post."
@@ -2564,7 +2564,7 @@ msgstr "Simplă"
 #. translators: %s: Codex URL
 #: wp-admin/options-permalink.php:162
 msgid "WordPress offers you the ability to create a custom URL structure for your permalinks and archives. Custom URL structures can improve the aesthetics, usability, and forward-compatibility of your links. A <a href=\"%s\">number of tags are available</a>, and here are some examples to get you started."
-msgstr "WordPress îți oferă posibilitatea de a crea o structură personalizată de URL-uri pentru legăturile permanente și arhivele tale. Structurile personalizate de URL-uri pot îmbunătăți estetica, ușurința în utilizare și compatibilitatea în viitor a legăturilor. Iată un <a href=\"%s\">număr de etichete disponibile</a> și câteva exemple pentru a începe."
+msgstr "WordPress îți oferă posibilitatea de a crea o structură personalizată de URL-uri pentru legăturile permanente și arhivele tale. Structurile personalizate de URL-uri pot îmbunătăți estetica, ușurința în utilizare și compatibilitatea în viitor a legăturilor. <a href=\"%s\">Sunt disponibile mai multe taguri</a> și iată câteva exemple pentru a începe."
 
 #: wp-admin/options-permalink.php:29
 msgid "Permalinks can contain useful information, such as the post date, title, or other elements. You can choose from any of the suggested permalink formats, or you can craft your own if you select Custom Structure."
@@ -3153,10 +3153,6 @@ msgstr "Anulează modificarea parolei"
 msgid "Sessions"
 msgstr "Sesiuni"
 
-#: wp-admin/user-edit.php:569
-msgid "Account Management"
-msgstr "Gestiunea contului"
-
 #: wp-admin/user-edit.php:575
 msgid "Generate Password"
 msgstr "Generează parolă"
@@ -3164,6 +3160,10 @@ msgstr "Generează parolă"
 #: wp-admin/user-edit.php:614 wp-admin/user-edit.php:624
 msgid "Log Out Everywhere Else"
 msgstr "Dezautentificare de peste tot altundeva"
+
+#: wp-admin/user-edit.php:569
+msgid "Account Management"
+msgstr "Administrare cont"
 
 #. translators: The non-breaking space prevents 1Password from thinking the
 #. text "log in" should trigger a password save prompt.
@@ -3683,10 +3683,6 @@ msgstr "Pagină articole"
 msgid "Number of items per page:"
 msgstr "Număr de elemente per pagină:"
 
-#: wp-admin/nav-menus.php:547
-msgid "To add a custom link, <strong>expand the Custom Links section, enter a URL and link text, and click Add to Menu</strong>"
-msgstr "Pentru a adăuga o legătură personalizată, <strong>extinde secțiunea Legături personalizate, introdu un URL și un text pentru legătură și dă clic pe Adăugare la meniu</strong>"
-
 #. translators: Do not translate USERNAME, URL_DELETE, SITE_NAME: those are
 #. placeholders.
 #: wp-admin/ms-delete-site.php:48
@@ -3724,6 +3720,10 @@ msgstr ""
 "Mulțumiri pentru utilizarea sitului,\n"
 "Administrator\n"
 "###SITE_NAME###"
+
+#: wp-admin/nav-menus.php:547
+msgid "To add a custom link, <strong>expand the Custom Links section, enter a URL and link text, and click Add to Menu</strong>"
+msgstr "Pentru a adăuga o legătură personalizată, <strong>extinde secțiunea Legături personalizate, introdu un URL și un text pentru legătură și dă clic pe Adaugă în meniu</strong>"
 
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
@@ -3795,11 +3795,6 @@ msgstr ""
 "\n"
 "Mulțumiri! -- Echipa WordPress"
 
-#: wp-admin/includes/revision.php:208 wp-admin/includes/revision.php:250
-msgctxt "revision date short format"
-msgid "j M @ H:i"
-msgstr "j M @ G:i"
-
 #: wp-admin/includes/ms.php:359
 msgid "Size in megabytes"
 msgstr "Dimensiune în megaocteți"
@@ -3808,16 +3803,10 @@ msgstr "Dimensiune în megaocteți"
 msgid "Site Upload Space Quota"
 msgstr "Cota de spațiu pentru încărcare pentru sit"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:978
-msgid "Y/m/d g:i:s a"
-msgstr "Y/m/d g:i:s A"
-
-#. translators: Publish box date format, see https://secure.php.net/date
-#: wp-admin/edit-form-advanced.php:144 wp-admin/edit-form-comment.php:97
-#: wp-admin/includes/meta-boxes.php:181 wp-admin/includes/meta-boxes.php:340
-#: wp-admin/includes/revision.php:207 wp-admin/includes/revision.php:249
-msgid "M j, Y @ H:i"
-msgstr "j M Y @ G:i"
+#: wp-admin/includes/revision.php:208 wp-admin/includes/revision.php:250
+msgctxt "revision date short format"
+msgid "j M @ H:i"
+msgstr "j M @ G:i"
 
 #: wp-admin/includes/ajax-actions.php:3429
 #: wp-admin/includes/ajax-actions.php:3548
@@ -3827,6 +3816,17 @@ msgstr "j M Y @ G:i"
 #: wp-admin/includes/ajax-actions.php:3889
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr "Nu mă pot conecta la sistemul de fișiere. Te rog confirmă-ți credențialele."
+
+#. translators: Publish box date format, see https://secure.php.net/date
+#: wp-admin/edit-form-advanced.php:144 wp-admin/edit-form-comment.php:97
+#: wp-admin/includes/meta-boxes.php:181 wp-admin/includes/meta-boxes.php:340
+#: wp-admin/includes/revision.php:207 wp-admin/includes/revision.php:249
+msgid "M j, Y @ H:i"
+msgstr "j M Y @ G:i"
+
+#: wp-admin/includes/class-wp-posts-list-table.php:978
+msgid "Y/m/d g:i:s a"
+msgstr "d.m.Y G:i:s"
 
 #: wp-admin/comment.php:195
 msgid "Submitted on"
@@ -3878,19 +3878,19 @@ msgid ""
 "--The WordPress Team\n"
 "https://wordpress.org/\n"
 msgstr ""
-"Noul tău sit WordPress a fost instalat cu succes la: \n"
+"Noul tău sit WordPress a fost inițializat cu succes la: \n"
 "\n"
 "%1$s\n"
 "\n"
-"Poți să te autentifici cu contul de administrator ce are următoarele informații: \n"
+"Poți să te autentifici în contul de administrator cu următoarele informații: \n"
 "\n"
 "Nume utilizator: %2$s\n"
 "Parolă: %3$s\n"
 "Autentifică-te aici: %4$s\n"
 "\n"
-"Sperăm să te bucuri de noul tău sit. Mulțumiri! \n"
+"Sperăm să te bucuri de noul tău sit. Îți mulțumim! \n"
 "\n"
-"--Echipa @ SITE_NAME\n"
+"--Echipa WordPress\n"
 "https://wordpress.org/\n"
 
 #: wp-admin/themes.php:177
@@ -3901,13 +3901,13 @@ msgstr "Nu poți șterge o temă în timp ce o temă copil a sa este activă."
 msgid "Mystery Person"
 msgstr "Persoană misterioasă"
 
-#: wp-admin/install.php:130
-msgid "Usernames can have only alphanumeric characters, spaces, underscores, hyphens, periods, and the @ symbol."
-msgstr "Numele de utilizatori pot avea doar caractere alfanumerice, spații, liniuțe de subliniere, cratime, puncte și simbolul @."
-
 #: wp-admin/options-general.php:33
 msgid "You can set the language, and the translation files will be automatically downloaded and installed (available if your filesystem is writable)."
 msgstr "Poți seta limba, iar fișierele cu traduceri vor fi automat descărcate și instalate (disponibilitate condiționată de posibilitatea de a se scrie în sistemul de fișiere)."
+
+#: wp-admin/install.php:130
+msgid "Usernames can have only alphanumeric characters, spaces, underscores, hyphens, periods, and the @ symbol."
+msgstr "Numele de utilizator pot avea doar caractere alfanumerice, spații, liniuțe-jos, cratime, puncte și simbolul @."
 
 #: wp-admin/includes/class-wp-screen.php:906
 msgid "Enable full-height editor and distraction-free functionality."
@@ -3995,7 +3995,7 @@ msgstr "Editor teme"
 #. translators: %s: placeholder that must come at the start of the URL
 #: wp-admin/options-permalink.php:283
 msgid "If you like, you may enter custom structures for your category and tag URLs here. For example, using <code>topics</code> as your category base would make your category links like <code>%s/topics/uncategorized/</code>. If you leave these blank the defaults will be used."
-msgstr "Dacă dorești poți introduce aici structuri personalizate pentru URL-urile de categorii și etichete. De exemplu, folosind <code>subiecte</code> ca bază pentru categoriile tale va face ca legăturile categoriilor tale să fie de forma <code>%s/subiecte/fara-categorie/</code>. Dacă le lași goale vor fi folosiți termenii impliciți."
+msgstr "Dacă dorești poți introduce aici structuri personalizate pentru URL-urile categoriilor și etichetelor. De exemplu, dacă folosești ca bază pentru categorii <code>subiecte</code> legăturile categoriilor tale vor arăta așa <code>%s/subiecte/fara-categorie/</code>. Dacă lași câmpurile goale vor fi folosiți termenii impliciți."
 
 #: wp-admin/credits.php:124
 msgid "Release Lead"
@@ -4122,10 +4122,6 @@ msgstr "Performanță"
 msgid "More Details"
 msgstr "Mai multe detalii"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:782
-msgid "View details"
-msgstr "Vezi detaliile"
-
 #: wp-admin/includes/class-wp-terms-list-table.php:185
 msgctxt "Number/count of items"
 msgid "Count"
@@ -4173,6 +4169,10 @@ msgstr "Testare beta"
 #: wp-admin/includes/update.php:558
 msgid "Update %s now"
 msgstr "Actualizează %s acum"
+
+#: wp-admin/includes/class-wp-plugins-list-table.php:782
+msgid "View details"
+msgstr "Vezi detalii"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:694
 msgid "If you reach out to us, we'll also ensure you'll never have this problem again."
@@ -4785,10 +4785,6 @@ msgstr "Actualizarea traducerii a eșuat."
 msgid "Comment must be manually approved"
 msgstr "Comentariul trebuie aprobat manual"
 
-#: wp-admin/options-media.php:49
-msgid "The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the Media Library."
-msgstr "Mărimile listate mai jos determină dimensiunile maxime în pixeli ce trebuie folosite atunci când adaugi o imagine în Biblioteca media."
-
 #: wp-admin/user-new.php:395
 msgid "Create a brand new user and add them to this site."
 msgstr "Creează un utilizator nou și adaugă-l la acest sit."
@@ -4797,6 +4793,10 @@ msgstr "Creează un utilizator nou și adaugă-l la acest sit."
 #: wp-admin/theme-editor.php:39
 msgid "Upgrading to a newer version of the same theme will override changes made here. To avoid this, consider creating a <a href=\"%s\">child theme</a> instead."
 msgstr "Actualizarea la o nouă versiune a aceleiași teme va suprascrie modificările făcute aici. Pentru a evita acest lucru, ia în considerare în schimb crearea unei <a href=\"%s\">teme copil</a>."
+
+#: wp-admin/options-media.php:49
+msgid "The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the Media Library."
+msgstr "Mărimile listate mai jos determină dimensiunile maxime, în pixeli, care sunt folosite când adaugi o imagine în Biblioteca media."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:296
 msgid "Updating to WordPress %s"
@@ -4821,10 +4821,6 @@ msgstr "Se copiază fișierele necesare&#8230;"
 #: wp-admin/install.php:359
 msgid "Your passwords do not match. Please try again."
 msgstr "Parolele tale nu se potrivesc. Te rog încearcă din nou."
-
-#: wp-admin/install.php:367
-msgid "Sorry, that isn&#8217;t a valid email address. Email addresses look like <code>username@example.com</code>."
-msgstr "Regret, aceasta nu este o adresă de email validă. Adresele de email arată ca <code>numeutilizator@examplu.com</code>."
 
 #. translators: 1: folder to locate, 2: folder to start searching from
 #: wp-admin/includes/class-wp-filesystem-base.php:243
@@ -4868,6 +4864,10 @@ msgstr "Tema ta nu suportă nativ meniuri, dar le poți folosi în barele latera
 #: wp-admin/nav-menus.php:522
 msgid "Menus can be displayed in locations defined by your theme, even used in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%1$s\">Widgets</a> screen. If your theme does not support the navigation menus feature (the default themes, %2$s and %3$s, do), you can learn about adding this support by following the Documentation link to the side."
 msgstr "Meniurile pot fi afișate în locuri definite de tema ta, pot fi folosite chiar și în barele laterale prin adăugarea unei piese &#8222;Meniu de navigare&#8221; în ecranul <a href=\"%1$s\">Piese</a>. Dacă tema ta nu suportă funcționalitatea meniu de navigare (temele implicite, %2$s și %3$s, o fac), poți afla mai multe despre adăugarea acestui suport urmând legătura de Documentare din lateral."
+
+#: wp-admin/install.php:367
+msgid "Sorry, that isn&#8217;t a valid email address. Email addresses look like <code>username@example.com</code>."
+msgstr "Regret, aceasta nu este o adresă de email validă. Adresele de email arată așa: <code>numeutilizator@exemplu.com</code>."
 
 #: wp-admin/edit.php:276
 msgid "%s post permanently deleted."
@@ -5028,7 +5028,7 @@ msgstr "Revizia curentă de %s"
 
 #: wp-admin/includes/revision.php:381
 msgid "Restore This Autosave"
-msgstr "Restaurează Salvare automată"
+msgstr "Restaurează această salvare automată"
 
 #: wp-admin/includes/revision.php:366
 msgid "Revision by %s"
@@ -5214,10 +5214,6 @@ msgstr "Pentru a reorganiza elementele de meniu <strong>trage și plasează cu m
 msgid "To add a new menu instead of assigning an existing one, <strong>click the &#8217;Use new menu&#8217; link</strong>. Your new menu will be automatically assigned to that theme location"
 msgstr "Pentru a adăuga un meniu nou în loc să atribui unul existent, <strong>dă clic pe legătura &#8217;Folosește meniu nou&#8217;</strong>. Meniul tău nou va fi atribuit automat acelei locații din temă"
 
-#: wp-admin/nav-menus.php:546
-msgid "Add one or several items at once by <strong>selecting the checkbox next to each item and clicking Add to Menu</strong>"
-msgstr "Adăugați unul sau mai multe elemente odată prin <strong>selectarea bifei din dreptul fiecărui element și dând clic pe Adaugă la meniu</strong>"
-
 #: wp-admin/includes/post.php:1646
 msgid "Your latest changes were saved as a revision."
 msgstr "Ultimele schimbări au fost salvate ca o revizie."
@@ -5277,6 +5273,10 @@ msgstr "Fiecare meniu de navigare poate conține un amestec de legături la pagi
 #: wp-admin/nav-menus.php:623
 msgid "Assigned Menu"
 msgstr "Meniu alocat"
+
+#: wp-admin/nav-menus.php:546
+msgid "Add one or several items at once by <strong>selecting the checkbox next to each item and clicking Add to Menu</strong>"
+msgstr "Adaugi unul sau mai multe elemente simultan prin <strong>selectarea bifei din dreptul fiecărui element și dând clic pe Adaugă în meniu</strong>"
 
 #: wp-admin/includes/revision.php:383
 msgid "Restore This Revision"
@@ -5363,10 +5363,6 @@ msgstr "Meniurile selectate au fost șterse."
 msgid "Auto add pages"
 msgstr "Adaugă automat pagini"
 
-#: wp-admin/includes/class-walker-nav-menu-edit.php:116
-msgid "sub item"
-msgstr "sub element"
-
 #: wp-admin/nav-menus.php:786
 msgid "Give your menu a name, then click Create Menu."
 msgstr "Dă meniului tău un nume, apoi dă clic pe Creează meniu."
@@ -5374,6 +5370,10 @@ msgstr "Dă meniului tău un nume, apoi dă clic pe Creează meniu."
 #: wp-admin/nav-menus.php:773
 msgid "Edit your default menu by adding or removing items. Drag each item into the order you prefer. Click Create Menu to save your changes."
 msgstr "Editează-ți meniul implicit adăugând sau ștergând elemente. Trage fiecare element în ordinea pe care o preferi. Dă clic pe Creare meniu pentru a-ți salva modificările."
+
+#: wp-admin/includes/class-walker-nav-menu-edit.php:116
+msgid "sub item"
+msgstr "sub-element"
 
 #: wp-admin/plugin-editor.php:261 wp-admin/theme-editor.php:270
 msgid "Look Up"
@@ -5895,12 +5895,6 @@ msgstr "Contor cuvinte: %s"
 msgid "Edit Link"
 msgstr "Editează legătura"
 
-#: wp-admin/export.php:173 wp-admin/export.php:184 wp-admin/export.php:207
-#: wp-admin/export.php:226 wp-admin/export.php:249
-#: wp-admin/includes/user.php:1092
-msgid "All"
-msgstr "Tot"
-
 #: wp-admin/includes/class-wp-plugins-list-table.php:384
 msgid "Plugin"
 msgstr "Modul"
@@ -5956,13 +5950,6 @@ msgstr "Trimite"
 msgid "No comments yet."
 msgstr "Niciun comentariu până acum."
 
-#: wp-admin/install.php:161 wp-admin/user-edit.php:416
-#: wp-admin/user-edit.php:461 wp-admin/user-new.php:418
-#: wp-admin/user-new.php:422 wp-admin/user-new.php:442
-#: wp-admin/user-new.php:465
-msgid "(required)"
-msgstr "(necesar)"
-
 #: wp-admin/includes/media.php:1232
 msgid "Link URL"
 msgstr "URL legătură"
@@ -5984,6 +5971,19 @@ msgstr "Previzualizare:"
 #: wp-admin/includes/misc.php:1565
 msgid "&uarr; Return to Top"
 msgstr "&uarr; Înapoi sus"
+
+#: wp-admin/export.php:173 wp-admin/export.php:184 wp-admin/export.php:207
+#: wp-admin/export.php:226 wp-admin/export.php:249
+#: wp-admin/includes/user.php:1092
+msgid "All"
+msgstr "Toate"
+
+#: wp-admin/install.php:161 wp-admin/user-edit.php:416
+#: wp-admin/user-edit.php:461 wp-admin/user-new.php:418
+#: wp-admin/user-new.php:422 wp-admin/user-new.php:442
+#: wp-admin/user-new.php:465
+msgid "(required)"
+msgstr "(obligatoriu)"
 
 #: wp-admin/includes/plugin-install.php:287
 #: wp-admin/includes/theme-install.php:67
@@ -6048,7 +6048,7 @@ msgstr "Adaugă comentariu"
 
 #: wp-admin/includes/meta-boxes.php:752
 msgid "Add comment"
-msgstr "Adăugare comentariu"
+msgstr "Adaugă un comentariu"
 
 #. Plugin Name of the plugin/theme
 msgid "Hello Dolly"
@@ -6116,11 +6116,6 @@ msgstr "Îți mulțumesc. Te rog verifică-ți emailul pentru o legătură care 
 msgid "Sorry, the link you clicked is stale. Please select another option."
 msgstr "Regret, legătura pe care ai dat clic este blocată. Te rog selectează altă opțiune."
 
-#. translators: 1: Required disk space in kilobytes
-#: wp-admin/includes/ms.php:33
-msgid "Not enough space to upload. %1$s KB needed."
-msgstr "Nu mai este spațiu pentru a efectua încărcarea. %1$s KB mai sunt necesari."
-
 #. translators: Gigabytes
 #: wp-admin/includes/ms.php:309
 msgid "GB"
@@ -6147,10 +6142,6 @@ msgstr "Ți-ai folosit cota de spațiu. Te rog șterge fișiere înainte de a ma
 #: wp-admin/includes/ms-deprecated.php:33
 msgid "Sorry, you must delete files before you can upload any more."
 msgstr "Regret, trebuie să ștergi fișiere înainte de a mai putea încărca ceva."
-
-#: wp-admin/includes/ms.php:514 wp-admin/includes/ms.php:516
-msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
-msgstr "Ai încercat să accesezi panoul de control pentru \"%1$s\", dar nu ai permisiunile necesare pe acest sit. Dacă crezi că ar trebui să poți accesa panoul de control pentru \"%1$s\", te rog contactează-ți administratorul de rețea."
 
 #: wp-admin/includes/ms.php:359
 msgid "MB (Leave blank for network default)"
@@ -6184,6 +6175,15 @@ msgstr "Acest fișier este prea mare. Dimensiunea fișierelor trebuie să fie ma
 #: wp-admin/includes/ms.php:525
 msgid "Visit Dashboard"
 msgstr "Vizitează Panoul control"
+
+#. translators: 1: Required disk space in kilobytes
+#: wp-admin/includes/ms.php:33
+msgid "Not enough space to upload. %1$s KB needed."
+msgstr "Nu există suficient spațiu pentru încărcare. Mai trebuie %1$s KO."
+
+#: wp-admin/includes/ms.php:514 wp-admin/includes/ms.php:516
+msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
+msgstr "Ai încercat să accesezi panoul de control „%1$s”, dar în prezent nu ai drepturi pe acest sit. Dacă crezi că ar trebui să ai acces la panoul de control „%1$s”, te rog contactează-ți administratorul de rețea."
 
 #: wp-admin/my-sites.php:31
 msgid "The primary site you chose does not exist."
@@ -6338,10 +6338,6 @@ msgstr "Modulul a generat în timpul activării o serie de %d caractere <strong>
 msgid "In previous versions of WordPress, all importers were built-in. They have been turned into plugins since most people only use them once or infrequently."
 msgstr "În versiunile anterioare de WordPress toate importatoarele erau încorporate, acum au fost transformate în module, deoarece frecvența utilizării lor nu justifica integrarea."
 
-#: wp-admin/users.php:42
-msgid "You can filter the list of users by User Role using the text links above the users list to show All, Administrator, Editor, Author, Contributor, or Subscriber. The default view is to show all users. Unused User Roles are not listed."
-msgstr "Poți filtra lista de utilizatori după Rol utilizator folosind legăturile de deasupra listei cu utilizatori pentru a afișa: Toți, Administrator, Editor, Autor, Contribuitor sau Abonat. În mod implicit sunt afișați toți utilizatorii. Rolurile utilizator nefolosite nu sunt afișate."
-
 #: wp-admin/includes/image-edit.php:227
 msgid "There are unsaved changes that will be lost. 'OK' to continue, 'Cancel' to return to the Image Editor."
 msgstr "Există modificări nesalvate care se vor pierde. 'OK' pentru a continua, 'Anulează' pentru a reveni la editorul de imagini."
@@ -6350,9 +6346,9 @@ msgstr "Există modificări nesalvate care se vor pierde. 'OK' pentru a continua
 msgid "Post via email settings allow you to send your WordPress installation an email with the content of your post. You must set up a secret email account with POP3 access to use this, and any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret."
 msgstr "Setările Publicare prin email îți permit să trimiți instalării tale WordPress un email cu conținutul articolului tău. Trebuie să inițializezi un cont de email secret cu acces POP3 pentru folosi asta și orice email primit la această adresă va fi publicat, de aceea e bine ca această adresă s-o ții secretă."
 
-#: wp-admin/options-discussion.php:180
-msgid "An avatar is an image that follows you from weblog to weblog appearing beside your name when you comment on avatar enabled sites. Here you can enable the display of avatars for people who comment on your site."
-msgstr "Un avatar este o imagine care apare lângă numele tău atunci când faci un comentariu pe siturile unde avatarurile publice sunt permise. De aici poți activa afișarea de avataruri pentru oamenii care adaugă un comentariu pe situl tău."
+#: wp-admin/users.php:42
+msgid "You can filter the list of users by User Role using the text links above the users list to show All, Administrator, Editor, Author, Contributor, or Subscriber. The default view is to show all users. Unused User Roles are not listed."
+msgstr "Poți filtra lista de utilizatori după Rol utilizator folosind legăturile text de deasupra listei de utilizatori pentru a afișa: Toți, Administrator, Editor, Autor, Contributor sau Abonat. Implicit, sunt arătați toți utilizatorii. Rolurile de utilizator nefolosite nu sunt afișate."
 
 #: wp-admin/user-new.php:330
 msgid "Enter the email address of an existing user on this network to invite them to this site. That person will be sent an email asking them to confirm the invite."
@@ -6392,9 +6388,13 @@ msgstr "Introdu adresa email sau numele de utilizator al unui utilizator existen
 msgid "WordPress can automatically look for some common database problems and repair them. Repairing can take a while, so please be patient."
 msgstr "WordPress poate bloca automat baza de date la apariția unor probleme cu ea și le poate repara. Repararea poate dura ceva timp, așa că te rugăm să ai răbdare."
 
+#: wp-admin/options-discussion.php:180
+msgid "An avatar is an image that follows you from weblog to weblog appearing beside your name when you comment on avatar enabled sites. Here you can enable the display of avatars for people who comment on your site."
+msgstr "Un avatar este o imagine care te urmează pe web și apare lângă numele tău când lași comentarii pe siturile în care avatarurile sunt activate. Aici poți activa afișarea avatarurilor pentru persoanele care comentează pe situl tău."
+
 #: wp-admin/user-edit.php:301
 msgid "Show Toolbar when viewing site"
-msgstr "Afișează bara de unelte când vizualizez situl"
+msgstr "Arată bara de unelte la vizualizarea sitului"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
 #: wp-admin/about.php:39 wp-admin/about.php:75 wp-admin/about.php:93
@@ -6607,7 +6607,7 @@ msgstr "Acest ecran oferă multe opțiuni pentru controlul administrării și af
 
 #: wp-admin/user-edit.php:46
 msgid "You can change your password, turn on keyboard shortcuts, change the color scheme of your WordPress administration screens, and turn off the WYSIWYG (Visual) editor, among other things. You can hide the Toolbar (formerly called the Admin Bar) from the front end of your site, however it cannot be disabled on the admin screens."
-msgstr "Poți să-ți schimbi parola, să activezi scurtături din taste, să modifici schema de culoare a ecranelor tale de administrare WordPress, să dezactivezi editorul (vizual) WYSIWYG, printre alte lucruri. Poți ascunde bara de unelte (denumită anterior bară de administrare) din partea din față a sitului tău, totuși ea nu poate fi dezactivată pe ecranele de administrare."
+msgstr "Poți să-ți schimbi parola, să activezi scurtături din taste, să modifici schema de culori a ecranelor tale de administrare WordPress, să dezactivezi editorul (vizual) WYSIWYG, printre alte lucruri. Poți ascunde bara de unelte (denumită anterior bară de administrare) din partea din față a sitului tău, totuși ea nu poate fi dezactivată pe ecranele de administrare."
 
 #: wp-admin/widgets.php:100
 msgid "This sidebar is no longer available and does not show anywhere on your site. Remove each of the widgets below to fully remove this inactive sidebar."
@@ -6880,7 +6880,7 @@ msgstr "EROARE: te rog scrie un comentariu."
 
 #: wp-admin/includes/ajax-actions.php:1056
 msgid "ERROR: you are replying to a comment on a draft post."
-msgstr "EROARE: răspunzi la un comentariu de pe ciorna unui articol."
+msgstr "EROARE: răspunzi la un comentariu pe ciorna unui articol."
 
 #: wp-admin/comment.php:43 wp-admin/custom-background.php:87
 #: wp-admin/custom-header.php:96 wp-admin/edit-comments.php:167
@@ -7129,13 +7129,13 @@ msgstr "Nume articol"
 msgid "This importer is not installed. Please install importers from <a href=\"%s\">the main site</a>."
 msgstr "Acest importer nu este instalat. Te rog instalează importerii de pe <a href=\"%s\">situl principal</a>."
 
-#: wp-admin/options-general.php:96
-msgid "Email Address"
-msgstr "Adresă de email"
-
 #: wp-admin/options-general.php:147
 msgid "Site Language"
 msgstr "Limbă sit"
+
+#: wp-admin/options-general.php:96
+msgid "Email Address"
+msgstr "Adresă email"
 
 #: wp-admin/options-discussion.php:47
 msgid "Attempt to notify any blogs linked to from the article"
@@ -7594,13 +7594,13 @@ msgstr "Secțiunea Piese disponibile conține toate piesele dintre care poți al
 msgid "Remember to click Update Media to save metadata entered or changed."
 msgstr "Nu uita să apeși Actualizează media pentru a salva metadatele introduse sau schimbate."
 
-#: wp-admin/edit-form-advanced.php:417 wp-admin/media.php:76
-msgid "For images only, you can click on Edit Image under the thumbnail to expand out an inline image editor with icons for cropping, rotating, or flipping the image as well as for undoing and redoing. The boxes on the right give you more options for scaling the image, for cropping it, and for cropping the thumbnail in a different way than you crop the original image. You can click on Help in those boxes to get more information."
-msgstr "Numai pentru imagini, poți da clic pe legătura Editează imagine de sub miniatură pentru a extinde un editor de imagine în-linie cu iconuri pentru decupare, rotire sau întoarcere a imaginii, precum și pentru a anula și reface. Casetele din dreapta îți oferă mai multe opțiuni pentru redimensionarea imaginii, pentru decuparea ei și pentru decuparea miniaturii într-un mod diferit față de cum decupezi imaginea originală. Poți da clic pe Ajutor în aceste casete pentru a obține mai multe informații."
-
 #: wp-admin/edit-form-advanced.php:418 wp-admin/media.php:77
 msgid "Note that you crop the image by clicking on it (the Crop icon is already selected) and dragging the cropping frame to select the desired part. Then click Save to retain the cropping."
 msgstr "Reține că decupezi imaginea dând clic pe ea (iconul Decupare este deja selectat) și trăgând rama de decupare pentru a selecta partea dorită. Apoi dă clic pe Salvează pentru a păstra decuparea."
+
+#: wp-admin/edit-form-advanced.php:417 wp-admin/media.php:76
+msgid "For images only, you can click on Edit Image under the thumbnail to expand out an inline image editor with icons for cropping, rotating, or flipping the image as well as for undoing and redoing. The boxes on the right give you more options for scaling the image, for cropping it, and for cropping the thumbnail in a different way than you crop the original image. You can click on Help in those boxes to get more information."
+msgstr "Numai pentru imagini, poți da clic pe legătura Editează imagine de sub miniatură pentru a extinde un editor de imagine în-linie cu iconuri pentru decupare, rotire sau întoarcere a imaginii, precum și pentru a anula și reface. Casetele din dreapta îți oferă mai multe opțiuni pentru redimensionarea imaginii, pentru decuparea ei și pentru decuparea miniaturii într-un mod diferit față de cum decupezi imaginea originală. Poți da clic pe Ajutor în aceste casete pentru a obține mai multe informații."
 
 #: wp-admin/media.php:75
 msgid "This screen allows you to edit five fields for metadata in a file within the media library."
@@ -7799,7 +7799,7 @@ msgstr "Majoritatea temelor afișează titlul sitului în partea de sus a fiecă
 
 #: wp-admin/edit-form-advanced.php:474
 msgid "<strong>Order</strong> &mdash; Pages are usually ordered alphabetically, but you can choose your own order by entering a number (1 for first, etc.) in this field."
-msgstr "<strong>Ordine</strong> &mdash; Paginile sunt de obicei ordonate alfabetic, dar poți să-ți alegi ordinea proprie prin introducerea unui număr (1 pentru prima, etc.) în acest câmp."
+msgstr "<strong>Ordine</strong> &mdash; de obicei, paginile sunt ordonate alfabetic, dar poți să-ți alegi ordinea proprie prin introducerea unui număr în acest câmp (1 pentru prima etc.)."
 
 #: wp-admin/includes/file.php:1695
 msgid "Please enter your FTP or SSH credentials to proceed."
@@ -7826,10 +7826,6 @@ msgstr "Profilul tău conține informații despre tine (&#8222;contul&#8221; tă
 msgid "<strong>Send Trackbacks</strong> &mdash; Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. Enter the URL(s) you want to send trackbacks. If you link to other WordPress sites they&#8217;ll be notified automatically using pingbacks, and this field is unnecessary."
 msgstr "<strong>Trimite Trackback-uri</strong> &mdash; Trackback-urile sunt o cale de a notifica sisteme de bloguri mai vechi că ai adăugat o legătură către ele. Introdu URL-urile la care vrei să trimiți trackback-uri. Dacă pui legături spre alte situri WordPress acestea vor fi notificate automat folosind pingback-uri, iar acest câmp nu este necesar."
 
-#: wp-admin/link-manager.php:53
-msgid "You can add links here to be displayed on your site, usually using <a href=\"%s\">Widgets</a>. By default, links to several sites in the WordPress community are included as examples."
-msgstr "Poți adăuga legături aici pentru a fi afișate pe situl tău, de obicei folosind <a href=\"%s\">Piese</a>. Implicit, legăturile către diversele situri din comunitatea WordPress sunt incluse ca exemple."
-
 #: wp-admin/plugin-editor.php:120
 msgid "You can use the editor to make changes to any of your plugins&#8217; individual PHP files. Be aware that if you make changes, plugins updates will overwrite your customizations."
 msgstr "Poți să folosești editorul pentru a face schimbări la oricare din fișierele PHP ale modului. Ține cont că, dacă faci modificări, la actualizarea modulului vor fi suprascrise personalizările tale."
@@ -7845,6 +7841,10 @@ msgstr "Administratorii au acces la toate funcționalitățile de administrare."
 #: wp-admin/link-manager.php:61
 msgid "If you delete a link, it will be removed permanently, as Links do not have a Trash function yet."
 msgstr "Dacă ștergi o legătură, aceasta va fi înlăturată definitiv, deoarece legăturile nu au încă o funcție de aruncare la gunoi."
+
+#: wp-admin/link-manager.php:53
+msgid "You can add links here to be displayed on your site, usually using <a href=\"%s\">Widgets</a>. By default, links to several sites in the WordPress community are included as examples."
+msgstr "Aici poți adăuga legături pentru a fi afișate pe situl tău, de obicei folosind <a href=\"%s\">Piese</a>. Implicit, sunt incluse ca exemple legături la câteva situri din comunitatea WordPress."
 
 #: wp-admin/custom-background.php:89
 msgid "You can customize the look of your site without touching any of your theme&#8217;s code by using a custom background. Your background can be an image or a color."
@@ -7866,10 +7866,6 @@ msgstr "De asemenea, poți să creezi articole cu <a href=\"%s\">mini-aplicația
 msgid "Remember to click the Update Profile button when you are finished."
 msgstr "Nu uita să apeși butonul Actualizează profil când termini."
 
-#: wp-admin/user-edit.php:50
-msgid "Required fields are indicated; the rest are optional. Profile information will only be displayed if your theme is set up to do so."
-msgstr "Câmpurile necesare sunt marcate; celelalte sunt opționale. Informațiile de profil vor fi afișate doar dacă tema activă știe să facă acest lucru."
-
 #: wp-admin/user-new.php:213
 msgid "Editors can publish posts, manage posts as well as manage other people&#8217;s posts, etc."
 msgstr "Editorii pot publica articole, își pot administra articolele proprii, dar și ale altora."
@@ -7877,6 +7873,10 @@ msgstr "Editorii pot publica articole, își pot administra articolele proprii, 
 #: wp-admin/user-edit.php:48
 msgid "Your username cannot be changed, but you can use other fields to enter your real name or a nickname, and change which name to display on your posts."
 msgstr "Numele tău de utilizator nu poate fi schimbat, dar poți folosi alte câmpuri pentru a introduce numele tău real sau o poreclă și a alege care nume să fie afișat în articolele tale."
+
+#: wp-admin/user-edit.php:50
+msgid "Required fields are indicated; the rest are optional. Profile information will only be displayed if your theme is set up to do so."
+msgstr "Sunt indicate câmpurile obligatorii; celelalte sunt opționale. Informațiile de profil vor fi afișate numai dacă tema ta este inițializată să facă asta."
 
 #: wp-admin/comment.php:45
 msgid "You can edit the information left in a comment if needed. This is often useful when you notice that a commenter has made a typographical error."
@@ -8259,7 +8259,7 @@ msgstr "Situl meu"
 
 #: wp-admin/import.php:68
 msgid "If you have posts or comments in another system, WordPress can import those into this site. To get started, choose a system to import from below:"
-msgstr "Dacă ai articole sau comentarii în alt sistem, WordPress le poate importa în acest blog. Pentru a începe, alege de mai jos un sistem din care să importe:"
+msgstr "Dacă ai articole sau comentarii în alt sistem, WordPress le poate importa în acest sit. Pentru a începe, alege de mai jos un sistem din care să imporți:"
 
 #: wp-admin/includes/nav-menu.php:345 wp-admin/includes/nav-menu.php:633
 msgid "No items."
@@ -8968,14 +8968,6 @@ msgstr "O <a href=\"%s\">pagină statică</a> (alege mai jos)"
 msgid "<strong>Warning:</strong> these pages should not be the same!"
 msgstr "<strong>Atenție:</strong> aceste pagini nu trebuie să fie la fel!"
 
-#: wp-admin/options-reading.php:93
-msgid "Blog pages show at most"
-msgstr "Paginile blogului afișează cel mult"
-
-#: wp-admin/options-reading.php:99
-msgid "Syndication feeds show the most recent"
-msgstr "Fluxurile agregate arată cele mai recente"
-
 #: wp-admin/options-reading.php:103 wp-admin/options-reading.php:104
 msgid "For each article in a feed, show"
 msgstr "Pentru fiecare articol din flux, afișează"
@@ -9151,10 +9143,6 @@ msgstr "Editor vizual"
 msgid "Disable the visual editor when writing"
 msgstr "Dezactivează editorul vizual când scrii"
 
-#: wp-admin/includes/misc.php:833 wp-admin/user-edit.php:272
-msgid "Admin Color Scheme"
-msgstr "Paletă culori pentru panoul de administrare"
-
 #: wp-admin/user-edit.php:457
 msgid "Contact Info"
 msgstr "Informații de contact"
@@ -9199,10 +9187,6 @@ msgstr "Nu poți șterge utilizatorul actual."
 #: wp-admin/includes/class-wp-users-list-table.php:259
 msgid "Change role to&hellip;"
 msgstr "Schimbă rolul în&hellip;"
-
-#: wp-admin/includes/class-wp-users-list-table.php:263
-msgid "Change"
-msgstr "Schimbă"
 
 #: wp-admin/options-reading.php:84
 msgid "Posts page: %s"
@@ -9506,13 +9490,6 @@ msgstr "Fără categorie"
 msgid "Double-check your email address before continuing."
 msgstr "Verifică de două ori adresa de email înainte de a continua."
 
-#. translators: add new links
-#: wp-admin/edit-link-form.php:77 wp-admin/link-manager.php:86
-#: wp-admin/menu.php:69
-msgctxt "link"
-msgid "Add New"
-msgstr "Adaugă legătură"
-
 #. translators: add new plugin
 #: wp-admin/menu.php:212 wp-admin/plugins.php:526
 msgctxt "plugin"
@@ -9766,10 +9743,6 @@ msgstr "Reactivare modul"
 msgid "Plugin reactivated successfully."
 msgstr "Modul reactivat cu succes."
 
-#: wp-admin/user-edit.php:293
-msgid "Enable keyboard shortcuts for comment moderation."
-msgstr "Activează scurtături tastatură pentru moderare comentariu."
-
 #: wp-admin/user-edit.php:416
 msgid "Nickname"
 msgstr "Poreclă"
@@ -9833,13 +9806,6 @@ msgstr "Un comentariu este reținut pentru moderare"
 #: wp-admin/options-discussion.php:128
 msgid "Comments should be displayed with the %s comments at the top of each page"
 msgstr "Comentariile ar trebui să fie afișate cu %s comentarii la începutul fiecărei pagini"
-
-#: wp-admin/link-manager.php:101
-msgid "%s link deleted."
-msgid_plural "%s links deleted"
-msgstr[0] "%s legătură ștearsă."
-msgstr[1] "%s legături șterse"
-msgstr[2] "%s de legături șterse"
 
 #: wp-admin/includes/update-core.php:1172
 msgid "Upgrading database&#8230;"
@@ -9913,14 +9879,6 @@ msgstr "Ar trebui să actualizezi acum fișierul .htaccess."
 msgid "Unable to locate WordPress theme directory."
 msgstr "Nu pot localiza directorul de teme WordPress."
 
-#: wp-admin/options-discussion.php:160
-msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Când un comentariu conține în text său oricare dintre aceste cuvinte, nume, URL, adresă email sau adresă IP, el va fi reținut în <a href=\"edit-comments.php?comment_status=moderated\">coada de moderare</a>. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
-
-#: wp-admin/options-discussion.php:169
-msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be put in the trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Când un comentariu conține în text său oricare dintre aceste cuvinte, nume, URL, adresă email sau adresă IP, el va fi trimis la gunoi. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
-
 #. translators: %s: web.config
 #: wp-admin/options-permalink.php:343
 msgid "If you temporarily make your site&#8217;s root directory writable for us to generate the %s file automatically, do not forget to revert the permissions after the file has been created."
@@ -9938,6 +9896,48 @@ msgstr "Tema actuală"
 #: wp-admin/privacy.php:101
 msgid "Privacy Settings"
 msgstr "Setări de confidențialitate"
+
+#: wp-admin/link-manager.php:101
+msgid "%s link deleted."
+msgid_plural "%s links deleted"
+msgstr[0] "O legătură ștearsă."
+msgstr[1] "%s legături șterse"
+msgstr[2] "%s de legături șterse"
+
+#. translators: add new links
+#: wp-admin/edit-link-form.php:77 wp-admin/link-manager.php:86
+#: wp-admin/menu.php:69
+msgctxt "link"
+msgid "Add New"
+msgstr "Adaugă legătură nouă"
+
+#: wp-admin/user-edit.php:293
+msgid "Enable keyboard shortcuts for comment moderation."
+msgstr "Activează scurtături tastatură pentru moderarea comentariilor."
+
+#: wp-admin/includes/misc.php:833 wp-admin/user-edit.php:272
+msgid "Admin Color Scheme"
+msgstr "Schemă de culori în administrare"
+
+#: wp-admin/options-discussion.php:169
+msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be put in the trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Când un comentariu conține în textul său oricare din aceste cuvinte, nume, URL-uri, adrese de email sau adrese IP, el va fi trimis la gunoi. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
+
+#: wp-admin/options-discussion.php:160
+msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Când un comentariu conține în textul său oricare dintre aceste cuvinte, nume, URL-uri, adrese de email sau adrese IP, el va fi reținut în <a href=\"edit-comments.php?comment_status=moderated\">coada de moderare</a>. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
+
+#: wp-admin/options-reading.php:93
+msgid "Blog pages show at most"
+msgstr "Paginile blogului arată cel mult"
+
+#: wp-admin/options-reading.php:99
+msgid "Syndication feeds show the most recent"
+msgstr "Fluxurile globale arată cele mai recente"
+
+#: wp-admin/includes/class-wp-users-list-table.php:263
+msgid "Change"
+msgstr "Modifică"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:272
 #: wp-admin/theme-install.php:61
@@ -10159,12 +10159,6 @@ msgid "Author"
 msgstr "Autor"
 
 #. translators: user role
-#: wp-admin/includes/schema.php:626
-msgctxt "User role"
-msgid "Contributor"
-msgstr "Contribuitor"
-
-#. translators: user role
 #: wp-admin/includes/schema.php:628
 msgctxt "User role"
 msgid "Subscriber"
@@ -10338,11 +10332,6 @@ msgstr "Vizitează legătura"
 msgid "Scheduled for: <b>%1$s</b>"
 msgstr "Programat pentru: <b>%1$s</b>"
 
-#. translators: Post date information. 1: Date on which the post was published
-#: wp-admin/includes/meta-boxes.php:188
-msgid "Published on: <b>%1$s</b>"
-msgstr "Publicat în: <b>%1$s</b>"
-
 #: wp-admin/includes/meta-boxes.php:190 wp-admin/includes/meta-boxes.php:200
 msgid "Publish <b>immediately</b>"
 msgstr "Publică <b>imediat</b>"
@@ -10367,11 +10356,6 @@ msgstr "Stare:"
 #: wp-admin/includes/meta-boxes.php:135
 msgid "Visibility:"
 msgstr "Vizibilitate:"
-
-#: wp-admin/includes/meta-boxes.php:143 wp-admin/includes/meta-boxes.php:166
-#: wp-admin/includes/template.php:1737
-msgid "Password protected"
-msgstr "Parolat"
 
 #: wp-admin/includes/media.php:2296
 msgid "Random"
@@ -10841,17 +10825,6 @@ msgstr "URL:"
 #: wp-admin/edit-link-form.php:14
 msgid "<a href=\"%s\">Links</a> / Edit Link"
 msgstr "<a href=\"%s\">Legături</a> / Editare legătură"
-
-#. translators: 1: Name of most recent post author, 2: Post edited date, 3:
-#. Post edited time
-#: wp-admin/edit-form-advanced.php:654 wp-admin/includes/ajax-actions.php:2340
-msgid "Last edited by %1$s on %2$s at %3$s"
-msgstr "Ultima editare de %1$s în %2$s la %3$s"
-
-#. translators: 1: Post edited date, 2: Post edited time
-#: wp-admin/edit-form-advanced.php:657 wp-admin/includes/ajax-actions.php:2342
-msgid "Last edited on %1$s at %2$s"
-msgstr "Ultima editare în %1$s la %2$s"
 
 #: wp-admin/includes/template.php:430
 msgid "Update Comment"
@@ -11676,10 +11649,6 @@ msgstr ""
 msgid "Page"
 msgstr "Pagină"
 
-#: wp-admin/export.php:157
-msgid "When you click the button below WordPress will create an XML file for you to save to your computer."
-msgstr "Când dai clic pe butonul de mai jos, WordPress va crea un fișier XML ca să-l salvezi în calculatorul tău."
-
 #. translators: site tagline
 #: wp-admin/includes/schema.php:533
 msgid "Just another %s site"
@@ -11770,6 +11739,37 @@ msgstr "Caută cereri"
 msgid "Unable to perform command: %s"
 msgstr "Nu por executa comanda: %s"
 
+#: wp-admin/includes/meta-boxes.php:143 wp-admin/includes/meta-boxes.php:166
+#: wp-admin/includes/template.php:1737
+msgid "Password protected"
+msgstr "Protejat cu parolă"
+
+#. translators: user role
+#: wp-admin/includes/schema.php:626
+msgctxt "User role"
+msgid "Contributor"
+msgstr "Contributor"
+
+#: wp-admin/export.php:157
+msgid "When you click the button below WordPress will create an XML file for you to save to your computer."
+msgstr "Când dai clic pe un buton de mai jos, WordPress va crea un fișier XML ca să-l salvezi în calculatorul tău."
+
+#. translators: Post date information. 1: Date on which the post was published
+#: wp-admin/includes/meta-boxes.php:188
+msgid "Published on: <b>%1$s</b>"
+msgstr "Publicat pe: <b>%1$s</b>"
+
+#. translators: 1: Post edited date, 2: Post edited time
+#: wp-admin/edit-form-advanced.php:657 wp-admin/includes/ajax-actions.php:2342
+msgid "Last edited on %1$s at %2$s"
+msgstr "Ultima editare pe %1$s la %2$s"
+
+#. translators: 1: Name of most recent post author, 2: Post edited date, 3:
+#. Post edited time
+#: wp-admin/edit-form-advanced.php:654 wp-admin/includes/ajax-actions.php:2340
+msgid "Last edited by %1$s on %2$s at %3$s"
+msgstr "Ultima editare de %1$s pe %2$s la %3$s"
+
 #: wp-admin/admin.php:288 wp-admin/import.php:18 wp-admin/menu.php:245
 msgid "Import"
 msgstr "Import"
@@ -11842,10 +11842,6 @@ msgstr "Te rog dă o valoare câmpului personalizat."
 msgid "This comment is in the Trash. Please move it out of the Trash if you want to edit it."
 msgstr "Acest comentariu se află în gunoi. Te rog scoate-l din gunoi dacă vrei să-l editezi."
 
-#: wp-admin/includes/ajax-actions.php:1076
-msgid "Sorry, you must be logged in to reply to a comment."
-msgstr "Regret, trebuie să fii autentificat pentru a răspunde unui comentariu."
-
 #: wp-admin/edit-form-comment.php:80 wp-admin/includes/ajax-actions.php:1833
 #: wp-admin/includes/class-wp-posts-list-table.php:1638
 #: wp-admin/includes/user.php:1011
@@ -11877,3 +11873,7 @@ msgstr "Ești pe cale să marchezi următorul comentariu ca spam:"
 #: wp-admin/admin.php:227
 msgid "Invalid plugin page."
 msgstr "Pagină modul invalidă."
+
+#: wp-admin/includes/ajax-actions.php:1076
+msgid "Sorry, you must be logged in to reply to a comment."
+msgstr "Regret, trebuie să fii autentificat pentru a răspunde la un comentariu."
