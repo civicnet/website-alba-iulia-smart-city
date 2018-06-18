@@ -300,6 +300,95 @@ final class SmartCityThemeSetup {
   private function registerCustomFieldGroups(): void {
     if( function_exists('acf_add_local_field_group') ):
 
+    // Homepage
+    acf_add_local_field_group(array(
+        'key' => 'group_5b27393c47a2c',
+        'title' => 'Metadata Homepage',
+        'fields' => array(
+            array(
+                'key' => 'field_5b27394bd3a14',
+                'label' => 'Link "Ce este un oraș inteligent?"',
+                'name' => 'link_ce_este_un_oras_inteligent',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '/despre/',
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5b273978d3a15',
+                'label' => 'Link "De ce Alba Iulia?"',
+                'name' => 'link_de_ce_alba_iulia',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '/despre/',
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5b27398bd1a19',
+                'label' => 'Link "Pentru cetățeni"',
+                'name' => 'link_pentru_cetateni',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '/despre/',
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5b27399bd3a17',
+                'label' => 'Link "Pentru parteneri"',
+                'name' => 'link_pentru_parteneri',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '/despre/',
+                'placeholder' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page_type',
+                    'operator' => '==',
+                    'value' => 'top_level',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => 1,
+        'description' => '',
+    ));
+
     // AppConstants::POST_TYPE_DESPRE
     acf_add_local_field_group(array(
 		'key' => 'group_5af2bae0cab75',
@@ -400,7 +489,6 @@ final class SmartCityThemeSetup {
 		'active' => 1,
 		'description' => '',
 	));
-
 
     // AppConstants::POST_TYPE_COMPANY
     acf_add_local_field_group(array(

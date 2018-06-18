@@ -11,7 +11,10 @@
     </div>
   </div>
 
-  @include('partials/components/about-smart-city')
+  @include('partials/components/about-smart-city', [
+    'ce_este' => FrontPage::orasInteligentLink(),
+    'de_ce' => FrontPage::deCeAlbaIuliaLink(),
+  ])
 
   <div class="container project-section">
     <h2>{{ pll__('Proiecte') }}</h2>
@@ -39,19 +42,19 @@
           <div class="icon transform">
             <i class="fas fa-child"></i>
           </div>
-          <div class="cta">
+          <a href="{{ FrontPage::pentruCetateniLink() }}" class="cta">
             {{ pll__('Dacă ești') }}
             <b>{{ pll__('Cetățean') }}</b>
-          </div>
+          </a>
         </div>
         <div class="col-6 text-center">
           <div class="icon transform">
             <i class="far fa-handshake"></i>
           </div>
-          <div class="cta">
+          <a class="cta" href="{{ FrontPage::pentruParteneriLink() }}">
             {{ pll__('Dacă ești') }}
             <b>{{ pll__('Partener') }}</b>
-          </div>
+          </a>
         </div>
       </div>
     </div>

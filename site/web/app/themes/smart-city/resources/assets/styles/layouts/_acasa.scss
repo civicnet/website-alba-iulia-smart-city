@@ -241,6 +241,12 @@ $albaRed: #cc3234;
   font-size: 1em;
   color: #666;
   font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+.home .trivia-section .cta:hover {
+  text-decoration: none;
+  color: #c33;
 }
 
 .home .trivia-section .cta b {

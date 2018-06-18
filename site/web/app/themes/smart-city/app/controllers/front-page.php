@@ -101,6 +101,26 @@ class FrontPage extends Controller {
     return $ret;
   }
 
+  public static function orasInteligentLink(): string {
+    return get_field('link_ce_este_un_oras_inteligent')
+      ?: get_permalink(pll_get_post(get_page_by_title('despre')->ID));
+  }
+
+  public static function deCeAlbaIuliaLink(): string {
+    return get_field('link_de_ce_alba_iulia')
+      ?: get_permalink(pll_get_post(get_page_by_title('despre')->ID));
+  }
+
+  public static function pentruCetateniLink(): string {
+    return get_field('link_pentru_cetateni')
+      ?: get_permalink(pll_get_post(get_page_by_title('despre')->ID));
+  }
+
+  public static function pentruParteneriLink(): string {
+    return get_field('link_pentru_parteneri')
+      ?: get_permalink(pll_get_post(get_page_by_title('despre')->ID));
+  }
+
   public static function parteneri(): array {
     $partners = get_posts(array(
       'post_type' => \AppConstants::POST_TYPE_COMPANY,
