@@ -85,6 +85,20 @@
         </a>
       </li>
     @endif
+    @if (Proiect::beneficii())
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="beneficii-tab"
+          data-toggle="tab"
+          href="#beneficii"
+          role="tab"
+          aria-controls="beneficii"
+          aria-selected="false">
+          {{ pll__('Beneficii') }}
+        </a>
+      </li>
+    @endif
   </ul>
 </div>
 <div class="tab-content" id="taburiProiectContent">
@@ -252,6 +266,32 @@
           </a>
 
           {!! Proiect::rezultate() !!}
+        </div>
+      </div>
+    </div>
+  @endif
+  @if (Proiect::beneficii())
+    <div
+      class="tab-pane fade"
+      id="beneficii"
+      role="tabpanel"
+      aria-labelledby="beneficii-tab">
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
+        </div>
+        <div class="col-md-8 col-12">
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          {!! Proiect::beneficii() !!}
         </div>
       </div>
     </div>

@@ -67,21 +67,21 @@
               </a>
             </script>
 					</div>
-          
+
           <div class="input-group-prepend">
 						<span class="input-group-text">
 							<i class="fas fa-search"></i>
 						</span>
           </div>
-          
+
 					<input
 						type="text"
 						class="form-control"
 						placeholder="{{ pll__('Cauta solutii Smart City, ex: parcari') }}"
 						aria-label="{{ pll__('Cauta proiect') }}"
             id="algolia-search-box">
-            
-            
+
+
 				</div>
 			</div>
 		</div>
@@ -91,7 +91,7 @@
         <div class="row">
           <div class="col-10">
             <div id="current-refined-values"></div>
-          </div> 
+          </div>
           <div class="col-2">
             <div class="powered-by">
               <a href="#">
@@ -182,8 +182,11 @@
   </div>
 </div>
 
-@include('partials/components/about-smart-city')
-    
+@include('partials/components/about-smart-city', [
+  'ce_este' => FrontPage::orasInteligentLink(),
+  'de_ce' => FrontPage::deCeAlbaIuliaLink(),
+])
+
 <script type="text/javascript">
   jQuery(function() {
     const search = instantsearch({
@@ -314,7 +317,7 @@
         jQuery(selector).removeClass('with-value');
       }
     }
-    
+
     styleOnInput(jQuery("#algolia-search-box").val(), '#algolia-search-box');
     jQuery("#algolia-search-box").on('input', function() {
       var val = jQuery(this).val();

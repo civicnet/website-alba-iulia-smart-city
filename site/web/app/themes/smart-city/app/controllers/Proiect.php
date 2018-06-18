@@ -129,6 +129,10 @@ class Proiect extends Controller {
     return get_field('rezultate');
   }
 
+  public static function beneficii(): ?string {
+    return get_field('beneficii');
+  }
+
   public static function noutati(): ?string {
     return get_field('noutati');
   }
