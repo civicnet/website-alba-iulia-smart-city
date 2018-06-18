@@ -81,3 +81,9 @@
   </div>
 </article>
 <script id="dsq-count-scr" src="//albaiuliasmartcity.disqus.com/count.js" async></script>
+
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.language = "{{ pll_current_language() }}";
+  };
+</script>
