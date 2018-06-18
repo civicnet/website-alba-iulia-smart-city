@@ -61,19 +61,10 @@
     <h2>{{ pll__('Noutăți') }}</h2>
 
     <div class="row">
-      @foreach (FrontPage::articole() as $articol)
-        @include('partials/components/article-box', [ 'articol' => $articol ])
+      @foreach (FrontPage::stiri() as $stire)
+        @include('partials/components/article-box', [ 'articol' => $stire ])
       @endforeach
     </div>
-    @if (count(FrontPage::articole()) > 3)
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-          <a class="button" href="{{ get_permalink(get_option('page_for_posts')) }}">
-            {{ pll__('Toate articolele') }} >
-          </a>
-        </div>
-      </div>
-    @endif
   </div>
 
   <div class="row counter-section">
