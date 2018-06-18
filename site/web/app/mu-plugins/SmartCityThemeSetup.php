@@ -318,7 +318,7 @@ final class SmartCityThemeSetup {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '/despre/',
+                'default_value' => '',
                 'placeholder' => '',
             ),
             array(
@@ -334,7 +334,7 @@ final class SmartCityThemeSetup {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '/despre/',
+                'default_value' => '',
                 'placeholder' => '',
             ),
             array(
@@ -350,7 +350,7 @@ final class SmartCityThemeSetup {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '/despre/',
+                'default_value' => '',
                 'placeholder' => '',
             ),
             array(
@@ -366,7 +366,7 @@ final class SmartCityThemeSetup {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '/despre/',
+                'default_value' => '',
                 'placeholder' => '',
             ),
         ),
