@@ -5,7 +5,7 @@
 wordpress_sites:
   beta.albaiuliasmartcity.ro:
     site_hosts:
-      - canonical: beta.albaiuliasmartcity.ro/
+      - canonical: beta.albaiuliasmartcity.ro
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
