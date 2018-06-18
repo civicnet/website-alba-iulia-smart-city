@@ -8,7 +8,7 @@
                 <div class="cta oras-inteligent">
                     {{ pll__('Ce este un oraș inteligent?') }}
                 </div>
-                <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('despre')->ID)) }}#oras_inteligent">
+                <a class="button" href="{{ $ce_este }}">
                     {{ pll__('Vezi detalii') }} >
                 </a>
             </div>
@@ -19,7 +19,7 @@
                 <div class="cta alba-iulia">
                     {{ pll__('De ce Alba Iulia?') }}
                 </div>
-                <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('despre')->ID)) }}#alba_iulia">
+                <a class="button" href="{{ $de_ce }}">
                     {{ pll__('Vezi detalii') }} >
                 </a>
             </div>
