@@ -64,16 +64,28 @@
                     {{ pll__('Distribuie proiectul') }}
                   </span>
                 </div>
-                <a href="#" class="col-lg col-6 align-middle">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u={{ Proiect::fullURL() }}"
+                  target="popup"
+                  onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ Proiect::fullURL() }}','popup','width=600,height=600'); return false;"
+                  class="col-lg col-6 align-middle">
                   <i class="fab fa-facebook-square"></i>
                 </a>
-                <a href="#" class="col-lg col-6 align-middle">
+                <a
+                  href="https://twitter.com/home?status={{ Proiect::fullURL() }}"
+                  target="popup"
+                  onclick="window.open('https://twitter.com/home?status={{ Proiect::fullURL() }}','popup','width=600,height=600'); return false;"
+                  class="col-lg col-6 align-middle">
                   <i class="fab fa-twitter-square"></i>
                 </a>
-                <a href="#" class="col-lg col-6 align-middle">
+                <a
+                  href="https://web.whatsapp.com/send?text={{ Proiect::fullURL() }}"
+                  target="popup"
+                  onclick="window.open('https://web.whatsapp.com/send?text={{ Proiect::fullURL() }}','popup','width=600,height=600'); return false;"
+                  class="col-lg col-6 align-middle">
                   <i class="fab fa-whatsapp-square"></i>
                 </a>
-                <a href="#" class="col-lg col-6 align-middle">
+                <a href="mailto:?body={{ Proiect::fullURL() }}" class="col-lg col-6 align-middle">
                   <i class="fas fa-envelope"></i>
                 </a>
               </div>
