@@ -9,6 +9,7 @@ class FrontPage extends Controller {
     $projects = get_posts(array(
       'post_type' => \AppConstants::POST_TYPE_PROJECT,
       'posts_per_page' => 4,
+      'orderby' => 'rand',
     ));
 
     $ret = array();
