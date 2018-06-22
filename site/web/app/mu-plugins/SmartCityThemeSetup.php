@@ -121,6 +121,26 @@ final class SmartCityThemeSetup {
   private function registerCustomPostTypes(): void {
 
     register_post_type(
+      AppConstants::POST_TYPE_DOCUMENT,
+      array(
+        'labels' => array(
+        'name' => __('Documente'),
+        'singular_name' => __('Document'),
+        'add_new' => __('Adaugă'),
+        'add_new_item' => __('Adaugă document'),
+        'edit_item' => __('Editează document'),
+        'new_item' => __('Document nou'),
+        'view_item' => __('Vezi document'),
+        'view_items' => __('Vezi documente'),
+        ),
+        'supports' => array('title'),
+        'public' => true,
+        'has_archive' => false,
+        'menu_icon' => 'dashicons-paperclip'
+      )
+    );
+
+    register_post_type(
       AppConstants::POST_TYPE_DESPRE,
       array(
         'labels' => array(
@@ -142,7 +162,7 @@ final class SmartCityThemeSetup {
         'public' => true,
         'has_archive' => false,
         'taxonomies'  => array(),
-        'menu_icon' => 'dashicons-format-aside'
+        'menu_icon' => 'dashicons-editor-ol'
       )
     );
 
@@ -389,6 +409,88 @@ final class SmartCityThemeSetup {
         'description' => '',
     ));
 
+    // AppConstants::POST_TYPE_DOCUMENT
+    acf_add_local_field_group(array(
+        'key' => 'group_5b2cac304c2dd',
+        'title' => 'Documente',
+        'fields' => array(
+            array(
+                'key' => 'field_5b2cac37025f3',
+                'label' => 'Nume',
+                'name' => 'nume',
+                'type' => 'text',
+                'instructions' => 'Numele documentului (titlu, așa cum apare în acordeon)',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5b2cac72025f4',
+                'label' => 'Descriere',
+                'name' => 'descriere',
+                'type' => 'wysiwyg',
+                'instructions' => 'Descrierea apare în corpul acordeon-ului la deschidere.',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_5b2cac8f025f5',
+                'label' => 'Document',
+                'name' => 'document',
+                'type' => 'file',
+                'instructions' => 'Documentul atașat',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'url',
+                'library' => 'uploadedTo',
+                'min_size' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => \AppConstants::POST_TYPE_DOCUMENT,
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => 1,
+        'description' => '',
+    ));
+
     // AppConstants::POST_TYPE_DESPRE
     acf_add_local_field_group(array(
 		'key' => 'group_5af2bae0cab75',
@@ -450,7 +552,33 @@ final class SmartCityThemeSetup {
 				'toolbar' => 'full',
 				'media_upload' => 1,
 				'delay' => 0,
-			),
+            ),
+            array(
+                'key' => 'field_5a9a5ec18a738',
+                'label' => 'Documente',
+                'name' => 'documente',
+                'type' => 'relationship',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array(
+                    0 => \AppConstants::POST_TYPE_DOCUMENT,
+                ),
+                'taxonomy' => array(
+                ),
+                'filters' => array(
+                    0 => 'search',
+                ),
+                'elements' => '',
+                'min' => '',
+                'max' => '',
+                'return_format' => 'object',
+            ),
 			array(
 				'key' => 'field_5af2bb7e8c3f4',
 				'label' => 'Continut 2',
