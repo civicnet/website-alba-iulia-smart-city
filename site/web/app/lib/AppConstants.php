@@ -9,6 +9,7 @@ final class AppConstants {
   const POST_TYPE_LINKS = 'link';
   const POST_TYPE_ARTICOL_STIRI = 'stire';
   const POST_TYPE_DESPRE = 'despre';
+  const POST_TYPE_DOCUMENT = 'document';
 
   const PROJECT_GALLERY_METABOX = 'project_gallery';
   const PROJECT_GALLERY_METABOX_LIST = 'cmb_field_project_gallery';
