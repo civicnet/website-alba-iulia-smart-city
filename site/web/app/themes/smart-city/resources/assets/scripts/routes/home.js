@@ -6,7 +6,7 @@ export default {
     let is_logo_animating = false;
     // JavaScript to be fired on the home page
     $(document).scroll(function() {
-      if($(this).scrollTop() >= $('#svg2').position().top - 100){
+      if($(this).scrollTop() >= $('#svg2').position().top - 300){
         if (!is_logo_animating) {
           is_logo_animating = true;
           animate_logo();
@@ -19,20 +19,31 @@ export default {
 
       timeline
         .add({
-          targets: '#svg2 g.stea path',
+          targets: '#svg2 #stea-content path',
           strokeDashoffset: [anime.setDashoffset, 0],
-          easing: 'easeInQuad',
+          easing: 'easeInOutQuad',
           direction: 'alternate',
-          duration: 2500,
+          duration: 800,
           delay: function(el, i) {
             return i * 50
           },
         })
         .add({
-          targets: '#svg2 g.stea path',
-          fillOpacity: 1,
+          targets: '#svg2 #stea-content path',
+          fillOpacity: [
+            {
+              value: 0,
+            },
+            {
+              value: .2,
+            },
+            {
+              value: 1,
+            },
+          ],
           easing: 'easeInOutQuad',
-          duration: 200,
+          //duration: 1100,
+          offset: 500,
         })
         .add({
           targets: '#svg2 line',

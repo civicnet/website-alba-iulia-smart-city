@@ -4,7 +4,6 @@
     <div class="row">
       <div class="holder">
         <div class="alba-logo">
-          @include('partials/components/glitch-filter')
           @include('partials/components/alba-logo-full')
         </div>
       </div>
