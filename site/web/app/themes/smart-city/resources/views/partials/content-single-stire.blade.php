@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/algoliasearch.helper/2/algoliasearch.helper.min.js"></script>
+
 <article @php(post_class())>
   <header>
     @include('partials/page-header', ['title' => pll__('Știri')])
@@ -54,27 +56,19 @@
 
         <div class="col-md-4 col-sm-12 sidebar">
           <h3>{{ pll__('Categorii') }}</h3>
-          <ul>
-            <li>
-              <a href="#" class="category-link">
-                <span class="category">
-                  General
-                </span>
-                <span class="count">
-                  4
-                </span>
-              </a>
-            </li>
-            <li>
-              <span class="category">
-                General
-              </span>
-              <span class="count">
-                4
-              </span>
-            </li>
-          </ul>
+          <ul id="categorii"></ul>
         </div>
+
+        <script type="text/html" id="category-template">
+          <li>
+            <a href="{{ get_permalink(pll_get_post(get_page_by_title('blog')->ID)) }}" class="category-link">
+              <span class="category">
+                <%= label %>
+                <span class="count"><%= count %></span>
+              </span>
+            </a>
+          </li>
+        </script>
 
       </div>
     </div>
@@ -83,7 +77,34 @@
 <script id="dsq-count-scr" src="//albaiuliasmartcity.disqus.com/count.js" async></script>
 
 <script type="text/javascript">
+  jQuery(function() {
+    var client = algoliasearch(
+      algolia.application_id,
+      algolia.search_api_key
+    );
+    var helper = algoliasearchHelper(client, algolia.indices.posts_stire.name, {
+      disjunctiveFacets: ['category'],
+      filters: 'locale:"' + current_locale + '"',
+    });
+
+    helper.on('result', async function(data) {
+      let facets = data.getFacetValues('category', {sortBy: ['count:desc']});
+
+      var template = _.template(document.getElementById('category-template').innerHTML);
+      facets.map((facet) => {
+        let html = template({
+          'label': facet.name,
+          'count': facet.count
+        });
+        jQuery("#categorii").append(html);
+      });
+    });
+
+    helper.search();
+  });
+
   var disqus_config = function () {
     this.language = "{{ pll_current_language() }}";
   };
 </script>
+
