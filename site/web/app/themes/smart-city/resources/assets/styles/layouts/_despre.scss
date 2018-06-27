@@ -214,3 +214,69 @@ article.type-despre .sidebar ul li a.category-link:hover .count {
 article.type-despre .articles {
   margin-bottom: 80px;
 }
+
+#accordion {
+  margin: 20px auto;
+}
+
+#accordion button {
+  cursor: pointer;
+  text-transform: initial;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding: 0.8rem 1.25rem;
+  text-decoration: none;
+  transition: 0.7s transform fade-in;
+  background: none;
+  border-bottom: none;
+  color: #333;
+}
+
+#accordion button,
+#accordion h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: normal;
+}
+
+#accordion h3 {
+  font-size: 1.2em;
+  color: #f00;
+}
+
+#accordion button:hover {
+  text-decoration: none;
+}
+
+#accordion .pdf-download a {
+  color: #333;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#accordion .pdf-download a:hover {
+  text-decoration: none;
+  color: #f00;
+}
+
+#accordion .card {
+  border: 0;
+  border-radius: 0;
+}
+
+#accordion .card-header {
+  border-color: #999;
+  padding: 0;
+}
+
+#accordion .card-header svg {
+  transition: 0.3s transform ease-in-out;
+  float: right;
+  transform: rotate(180deg);
+}
+
+#accordion .card-header .collapsed svg {
+  transform: rotate(0deg);
+}
