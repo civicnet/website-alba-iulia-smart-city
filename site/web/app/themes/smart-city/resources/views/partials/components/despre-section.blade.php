@@ -29,7 +29,7 @@
                       </h5>
                     </div>
 
-                    <div id="collapse-{{ $document['id'] }}" class="collapse show" aria-labelledby="heading-{{ $document['id'] }}" data-parent="#accordion">
+                    <div id="collapse-{{ $document['id'] }}" class="collapse" aria-labelledby="heading-{{ $document['id'] }}" data-parent="#accordion">
                       <div class="card-body">
                         <h3>{!! $document['titlu'] !!}</h3>
                         {!! $document['descriere'] !!}
