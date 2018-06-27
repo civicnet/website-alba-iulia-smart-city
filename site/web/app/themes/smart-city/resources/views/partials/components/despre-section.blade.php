@@ -66,4 +66,24 @@
       </div>
     </div>
   </div>
+
+  <div style="border-top: 3px solid #fff; background: #ddd">
+    <div class="container project-section">
+      <h2>{{ pll__('Proiecte') }}</h2>
+      <div class="row">
+        @foreach (FrontPage::proiecte() as $proiect)
+          @if ($proiect)
+            @include('partials/components/project-box', [ 'proiect' => $proiect ])
+          @endif
+        @endforeach
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('solutii')->ID)) }}">
+            {{ pll__('Toate proiectele') }} >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>
