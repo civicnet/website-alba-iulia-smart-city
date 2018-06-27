@@ -23,13 +23,27 @@
               <h4>{{ pll__('Distribuie articol') }}</h4>
               <div class="row icons">
                 <div class="col">
-                  <i class="fab fa-facebook-square"></i>
+                  <a
+                    href="https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}"
+                    target="popup"
+                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}','popup','width=600,height=600'); return false;"
+                    class="col-lg col-6 align-middle">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
                 </div>
                 <div class="col">
-                  <i class="fab fa-twitter"></i>
+                  <a
+                    href="https://twitter.com/home?status={{ get_the_permalink() }}"
+                    target="popup"
+                    onclick="window.open('https://twitter.com/home?status={{ get_the_permalink() }}','popup','width=600,height=600'); return false;"
+                    class="col-lg col-6 align-middle">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
                 </div>
                 <div class="col">
-                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:?body={{ get_the_permalink() }}" class="col-lg col-6 align-middle">
+                    <i class="fas fa-envelope"></i>
+                  </a>
                 </div>
               </div>
             </div>

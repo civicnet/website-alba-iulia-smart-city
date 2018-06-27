@@ -20,6 +20,14 @@ article.type-post .entry-title {
   font-size: 2.8rem;
 }
 
+article.type-post .social-media a {
+  color: unset;
+}
+
+article.type-post .social-media a:hover {
+  color: #333;
+}
+
 article.type-post .article-meta {
   font-size: 2.2rem;
   color: #999;
