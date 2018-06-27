@@ -46,11 +46,23 @@ $albaRed: #cc3234;
   height: auto;
 }
 
-.home .holder svg g.stea path {
+.home .holder svg #stea-content path {
   opacity: 1;
   fill-opacity: 0;
-  stroke-width: 1;
-  stroke: #666;
+  stroke-width: 5;
+  stroke: #f00;
+}
+
+.home .holder svg #stea-content #stea-mid path {
+  stroke-width: 0.5;
+  fill-opacity: 0;
+  stroke: rgb(111, 92, 76);
+}
+
+.home .holder svg #stea-content #stea-inner path {
+  stroke-width: 0.5;
+  fill-opacity: 0;
+  stroke: rgb(255, 154, 0);
 }
 
 .home .holder svg text,
