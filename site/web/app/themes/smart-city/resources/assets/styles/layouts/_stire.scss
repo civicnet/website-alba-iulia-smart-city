@@ -12,6 +12,14 @@ article.stire .entry-title {
   font-size: 2.8rem;
 }
 
+article.stire .social-media a {
+  color: unset;
+}
+
+article.stire .social-media a:hover {
+  color: #333;
+}
+
 article.stire .article-meta {
   font-size: 2.2rem;
   color: #999;
