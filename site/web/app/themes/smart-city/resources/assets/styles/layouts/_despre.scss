@@ -215,6 +215,25 @@ article.type-despre .articles {
   margin-bottom: 80px;
 }
 
+article.type-despre .button {
+  color: $albaRed;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid $albaRed;
+  background: transparent;
+}
+
+article.type-despre .button:hover {
+  background: $albaRed;
+  color: #fff;
+  animation: fadeIn 0.5s ease;
+}
+
 #accordion {
   margin: 20px auto;
 }
