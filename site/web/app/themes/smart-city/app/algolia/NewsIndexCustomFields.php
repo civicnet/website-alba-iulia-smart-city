@@ -14,7 +14,7 @@ final class NewsIndexCustomFields extends IndexCustomFields {
         'weight' => -1,
       );
     }
-    
+
     return array_merge(
       $this->getContentArray(),
       array(

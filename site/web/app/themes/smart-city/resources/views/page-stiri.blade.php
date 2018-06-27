@@ -5,10 +5,20 @@
 
   <div class="container-fluid blog-container">
     <div class="container">
-      <div class="row">
+    <div class="row">
         <div class="col filters">
 
-          <div id="search-box">
+          <div id="categorii"></div>
+
+          <script type="text/html" id="category-item-template">
+            <a class="dropdown-item" href="@{{url}}">
+              <i class="@{{icon}}"></i>
+              @{{label}}
+              <span class="badge badge-secondary">@{{count}}</span>
+            </a>
+          </script>
+
+          <div id="search-box" class="float-right">
             <div id="algolia-search-box"></div>
 
             <script type="text/html" id="powered-by-template">
@@ -89,14 +99,15 @@
       search.addWidget(
         instantsearch.widgets.searchBox({
           container: '#algolia-search-box',
-          placeholder: '{{ pll__("Cauta articole") }}',
+          placeholder: '{{ pll__("Cauta stiri") }}',
           cssClasses: {
             input: 'form-control',
           },
+          /*
           poweredBy: {
             template: document.getElementById('powered-by-template').innerHTML,
             cssClasses: 'powered-by',
-          }
+          }*/
         })
       );
 
@@ -118,6 +129,19 @@
 					}
 				})
 			);
+
+      search.addWidget(
+        instantsearch.widgets.refinementList({
+          container: '#categorii',
+          operator: 'or',
+          sortBy: ["count:desc"],
+          attributeName: 'category',
+          limit: 100,
+          templates: {
+            item: document.getElementById('category-item-template').innerHTML,
+          },
+        })
+      );
 
       search.start();
     });
