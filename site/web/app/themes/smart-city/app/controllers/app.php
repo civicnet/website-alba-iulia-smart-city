@@ -41,7 +41,7 @@ class App extends Controller {
     foreach ($links as $link) {
       $ret[] = array(
         'name' => $link->post_title,
-        'href' => get_field('www', $link->ID),
+        'href' => get_field('adresa_www', $link->ID),
       );
     }
 
