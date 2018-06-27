@@ -1,6 +1,5 @@
 <script src="https://cdn.jsdelivr.net/algoliasearch.helper/2/algoliasearch.helper.min.js"></script>
 
-
 <article @php(post_class())>
   <header>
     @include('partials/page-header', ['title' => pll__('Blog')])
