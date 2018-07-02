@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/61f3f8272ea22b993a52/maintainability)](https://codeclimate.com/github/civictechro/website-alba-iulia-smart-city/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/61f3f8272ea22b993a52/maintainability)](https://codeclimate.com/github/civictechro/website-alba-iulia-smart-city/maintainability) [![Language Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/civictechro/website-alba-iulia-smart-city.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/civictechro/website-alba-iulia-smart-city/context:javascript)
 
 [![GitHub license](https://img.shields.io/github/license/civictechro/website-alba-iulia-smart-city.svg)](https://github.com/civictechro/website-alba-iulia-smart-city/blob/master/LICENSE) [![GitHub issues by-label](https://img.shields.io/github/issues-raw/civictechro/website-alba-iulia-smart-city/help%20wanted.svg)](https://github.com/civictechro/website-alba-iulia-smart-city/issues) [![Slack](https://img.shields.io/badge/slack-%23team--alba--iulia-green.svg)](https://civictechro.slack.com/messages/C4Y24QL7M/) 
 
