@@ -1,6 +1,6 @@
 <div class="container-fluid home-fluid">
   <div class="container">
-    <h2>{{ pll__('Smart City Alba Iulia 2018') }}</h2>
+    <h2>{{ pll__('Alba Iulia Smart City 2018') }}</h2>
     <div class="row">
       <div class="holder">
         <div class="alba-logo">
