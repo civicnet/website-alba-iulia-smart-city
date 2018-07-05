@@ -24,7 +24,7 @@
       <div class="col-md-5 col-sm-12">
         <h4>{{ pll__('Contact') }}</h4>
         <div class="address">
-          {{ pll__('Adresă') }}: Calea Moților, nr.1 A, Alba Iulia <br/>
+          {{ pll__('Adresă') }}: Calea Moților, nr.5 A, Alba Iulia <br/>
           {{ pll__('Telefon') }}: 021.312.25.47<br/>
           {{ pll__('Centrala') }}: 021.303.70.80<br/>
           <br/>
@@ -36,21 +36,28 @@
         <h4>{{ pll__('Social Media') }}</h4>
         <ul class="social">
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/albaiuliasmartcity/" target="_blank">
               <span class="icon">
                 <i class="fab fa-facebook-square"></i>
               </span>
               Facebook
             </a>
           </li><li>
-            <a href="#">
+            <a href="https://twitter.com/AlbaSmartCity" target="_blank">
               <span class="icon">
                 <i class="fab fa-twitter-square"></i>
               </span>
               Twitter
             </a>
           </li><li>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/albaiuliasmartcity/" target="_blank">
+              <span class="icon">
+                <i class="fab fa-linkedin"></i>
+              </span>
+              LinkedIn
+            </a>
+          </li><li>
+            <a href="https://www.youtube.com/channel/UCmrOm12dsXHqcS3GpO0W2zw" target="_blank">
               <span class="icon">
                 <i class="fab fa-youtube"></i>
               </span>
