@@ -110,7 +110,7 @@
     <div class="partners-carousel">
       @foreach (FrontPage::parteneri() as $partener)
         <div class="partner">
-          <img data-lazy="{{ $partener['logo']['url'] }}" />
+          <img src="{{ $partener['logo']['url'] }}" />
         </div>
       @endforeach
     </div>
