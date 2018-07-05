@@ -15,7 +15,7 @@
 								data-toggle="dropdown"
 								aria-haspopup="true"
 								aria-expanded="false">
-								Stadiu
+								{{ pll__('Stadiu') }}
 							</button>
               <div
                 class="dropdown-menu"
@@ -32,7 +32,7 @@
 								data-toggle="dropdown"
 								aria-haspopup="true"
 								aria-expanded="false">
-								Verticala
+								{{ pll__('Verticala') }}
 							</button>
               <div
                 class="dropdown-menu"
@@ -50,7 +50,7 @@
 								data-toggle="dropdown"
 								aria-haspopup="true"
 								aria-expanded="false">
-								Partener
+								{{ pll__('Partener') }}
               </button>
               <div
                 class="dropdown-menu"
