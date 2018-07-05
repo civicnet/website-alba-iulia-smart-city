@@ -76,7 +76,7 @@
           </a>
           <div class="text align-middle">
             <strong>
-              {{ pll__('Departamentul SmartCity Alba Iulia') }}
+              {{ pll__('Echipa Smart City Alba Iulia') }}
             </strong>
             <div class="copyright">
               Copyright &copy; 2018.
