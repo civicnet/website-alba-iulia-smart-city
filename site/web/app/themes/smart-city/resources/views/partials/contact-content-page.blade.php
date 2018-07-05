@@ -2,14 +2,13 @@
   <h2>{{ pll__('Vrei să ne transmiți un mesaj?') }}</h2>
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <div class="address">
-        {{ pll__('Adresă') }}: Calea Moților, nr.1 A, Alba Iulia <br/>
-        {{ pll__('Telefon') }}: 021.312.25.47<br/>
-        {{ pll__('Centrala') }}: 021.303.70.80<br/>
-        <br/>
-        {{ pll__('Fax') }}: 021.313.71.55/021.264.86.46<br/>
-        {{ pll__('E-mail') }}: {{ pll__('salut@albaiuliasmartcity.ro') }}<br/>
-      </div>
+        <div class="address">
+          {{ pll__('Adresă') }}: Calea Moţilor, 5A,  510134 Alba Iulia, România <br/>
+          {{ pll__('Telefon') }}: 0372 586 428 / 0258 819 462;<br/>
+          <br/>
+          {{ pll__('Fax') }}: 0258 812​ ​545<br/>
+          {{ pll__('E-mail') }}: {{ pll__('salut@albaiuliasmartcity.ro') }}<br/>
+        </div>
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="contact-form">
