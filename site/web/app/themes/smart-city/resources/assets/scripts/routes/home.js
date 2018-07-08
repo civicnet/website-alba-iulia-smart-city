@@ -23,7 +23,7 @@ export default {
           strokeDashoffset: [anime.setDashoffset, 0],
           easing: 'easeInOutQuad',
           direction: 'alternate',
-          duration: 800,
+          duration: 300,
           delay: function(el, i) {
             return i * 50
           },
