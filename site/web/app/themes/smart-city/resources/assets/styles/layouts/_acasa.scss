@@ -365,7 +365,11 @@ $albaRed: #cc3234;
 
   .home .page-header .motto {
     margin-left: 0;
-    bottom: 4em;
+    bottom: 8em;
+  }
+
+  .home .page-header .title {
+    text-shadow: 5px 5px 5px #333;
   }
 
   .home .holder {
