@@ -54,4 +54,9 @@ if (function_exists('pll_register_string')) {
 
   $keyword = 'stiri';
   pll_register_string($keyword, 'Știri', $group);
+
+  $keyword = 'header';
+  pll_register_string($keyword, 'soluții', $group);
+  pll_register_string($keyword, 'parteneri', $group);
+  pll_register_string($keyword, 'verticale', $group);
 }
