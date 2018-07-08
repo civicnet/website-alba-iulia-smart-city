@@ -47,4 +47,11 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Verticala', $group);
   pll_register_string($keyword, 'Partener', $group);
   pll_register_string($keyword, 'Cauta solutii Smart City, ex: parcari', $group);
+
+  $keyword = 'filtre_search_stiri';
+  pll_register_string($keyword, 'Cauta stiri', $group);
+  pll_register_string($keyword, 'Nu am gasit rezultate pentru', $group);
+
+  $keyword = 'stiri';
+  pll_register_string($keyword, 'Știri', $group);
 }
