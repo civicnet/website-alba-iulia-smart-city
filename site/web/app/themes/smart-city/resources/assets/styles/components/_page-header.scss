@@ -56,3 +56,22 @@
   font-size: 0.8em;
 }
 
+@include media-breakpoint-down(sm) {
+  .page-header-secondary .circle {
+    color: #fff;
+    background: #999;
+    width: 5.5em;
+    height: 5.5em;
+    border: 2px solid #fff;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 50%;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .page-header-secondary .circle .label {
+    font-size: 0.7em;
+  }
+}
