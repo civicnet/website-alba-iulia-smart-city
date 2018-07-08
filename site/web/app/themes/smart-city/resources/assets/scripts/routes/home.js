@@ -79,13 +79,42 @@ export default {
     // JavaScript to be fired on the home page, after the init JS
     $('.partners-carousel').slick({
       infinite: true,
-      speed: 300,
+      speed: 800,
       slidesToShow: 1,
-      slidesToScroll: 3,
-      centerMode: false,
+      slidesToScroll: 1,
+      centerMode: true,
       variableWidth: true,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 800,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: true,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: true,
+          },
+        },
+      ],
     });
   },
 };
