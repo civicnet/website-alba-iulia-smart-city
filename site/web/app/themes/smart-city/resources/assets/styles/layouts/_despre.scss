@@ -5,11 +5,45 @@ article.type-despre {
 }
 
 article.type-despre .entry-title {
-  margin-top: 100px;
+  margin-top: 60px;
   font-weight: 300;
   color: #f00;
   margin-bottom: 50px;
   font-size: 2.8rem;
+}
+
+article.type-despre .dropdown .btn {
+  color: $albaRed;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #c33;
+  box-shadow: 0 2px 2px #999;
+  margin-top: 10px;
+  display: inline-block;
+  background: transparent;
+}
+
+article.type-despre .dropdown .btn:focus {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #c33;
+  box-shadow: 0 2px 2px #999;
+  margin-top: 10px;
+  display: inline-block;
+  background: #c33;
+}
+
+article.type-despre .dropdown .dropdown-menu {
+  width: 100%;
+}
+
+article.type-despre .dropdown .dropdown-menu a {
+  height: 44px;
+  line-height: 44px;
+  margin: 5px 0;
 }
 
 article.type-despre .article-meta {
