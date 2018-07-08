@@ -18,13 +18,14 @@
                     <div class="card-header" id="heading-{{ $document['id'] }}">
                       <h5 class="mb-0">
                         <button
+                          style="white-space: normal; font-size: 0.8em; padding-right: 50px; position: relative"
                           class="btn btn-link"
                           data-toggle="collapse"
                           data-target="#collapse-{{ $document['id'] }}"
                           aria-expanded="true"
                           aria-controls="collapse-{{ $document['id'] }}">
                           {{ $document['nume'] }}
-                          <i class="fa fa-chevron-down pull-right"></i>
+                          <i style="position: absolute; top: 16px; right: 16px;" class="fa fa-chevron-down pull-right"></i>
                         </button>
                       </h5>
                     </div>
