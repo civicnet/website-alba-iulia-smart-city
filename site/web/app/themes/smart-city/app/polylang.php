@@ -60,4 +60,9 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'soluții', $group);
   pll_register_string($keyword, 'parteneri', $group);
   pll_register_string($keyword, 'verticale', $group);
+
+  $keyword = 'homepage';
+  pll_register_string($keyword, 'Ce este un oraș inteligent?', $group);
+  pll_register_string($keyword, 'De ce Alba Iulia?', $group);
+  pll_register_string($keyword, 'Vezi detalii', $group);
 }
