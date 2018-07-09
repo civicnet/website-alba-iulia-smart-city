@@ -65,4 +65,12 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Ce este un oraș inteligent?', $group);
   pll_register_string($keyword, 'De ce Alba Iulia?', $group);
   pll_register_string($keyword, 'Vezi detalii', $group);
+  pll_register_string($keyword, 'Orașul în care', $group);
+  pll_register_string($keyword, 's-a născut viitorul', $group);
+  pll_register_string($keyword, 'Proiecte', $group);
+  pll_register_string($keyword, 'Toate proiectele', $group);
+  pll_register_string($keyword, 'Ce trebuie sa stii', $group);
+  pll_register_string($keyword, 'Dacă ești', $group);
+  pll_register_string($keyword, 'Cetățean', $group);
+  pll_register_string($keyword, 'Partener', $group);
 }
