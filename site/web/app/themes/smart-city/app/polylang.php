@@ -81,4 +81,11 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'si', $group);
   pll_register_string($keyword, 'de', $group);
   pll_register_string($keyword, 'Contribuie si tu', $group);
+
+  $keyword = 'blog';
+  pll_register_string($keyword, 'Cauta articole', $group);
+
+  $keyword = 'contact';
+  pll_register_string($keyword, 'Vrei să ne transmiți un mesaj?', $group);
+  pll_register_string($keyword, 'Unde ne găsești', $group);
 }
