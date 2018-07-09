@@ -6,9 +6,19 @@
   background-repeat: no-repeat;
   background-position: top;
 
-  .icon img {
-    width: 6rem;
-    height: 6rem;
+  .icon {
+    width: 96px;
+    height: 96px;
+    border: 3px solid #c33;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  .icon img,
+  .icon object {
+    width: 90px;
+    padding: 20px;
     position: relative;
     margin: 0 auto;
     margin-bottom: 5px;

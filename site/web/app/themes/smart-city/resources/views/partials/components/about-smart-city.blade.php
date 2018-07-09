@@ -4,7 +4,9 @@
     <div class="row">
       <div class="col-6 text-center">
         <div class="icon">
-          <img src="@asset('images/smart_city_icon.png')" />
+          <object data="@asset('images/smart_city_vector.svg')" type="image/svg+xml">
+            <img src="@asset('images/smart_city_raster.svg')" />
+          </object>
         </div>
         <div class="cta oras-inteligent">
           {{ pll__('Ce este un oraș inteligent?') }}
@@ -12,7 +14,9 @@
       </div>
       <div class="col-6 text-center">
         <div class="icon">
-          <img src="@asset('images/poarta3_icon.png')" />
+          <object data="@asset('images/poarta_3_vector.svg')" type="image/svg+xml">
+            <img src="@asset('images/poarta_3_raster.svg')" />
+          </object>
         </div>
         <div class="cta alba-iulia">
           {{ pll__('De ce Alba Iulia?') }}
