@@ -73,4 +73,12 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Dacă ești', $group);
   pll_register_string($keyword, 'Cetățean', $group);
   pll_register_string($keyword, 'Partener', $group);
+
+  $keyword = 'footer';
+  pll_register_string($keyword, 'Echipa Smart City Alba Iulia', $group);
+  pll_register_string($keyword, 'Toate drepturile rezervate', $group);
+  pll_register_string($keyword, 'Creat cu', $group);
+  pll_register_string($keyword, 'si', $group);
+  pll_register_string($keyword, 'de', $group);
+  pll_register_string($keyword, 'Contribuie si tu', $group);
 }
