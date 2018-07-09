@@ -7,7 +7,7 @@
       <div class="body-overlay">
         <div class="label">
           <div class="icon">
-            {!! $proiect['verticala']['icon'] !!}
+            <img src={{ $proiect['verticala']['pictograma'] }} />
           </div>
             {{ $proiect['verticala']['label'] }}
         </div>

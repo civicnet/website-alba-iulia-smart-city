@@ -155,7 +155,7 @@
           <div class="body-overlay">
             <div class="label">
               <div class="icon">
-                @{{{icon_verticala}}}
+                <img src="@{{{icon_verticala}}}" />
               </div>
                 @{{{_highlightResult.verticala.value}}}
             </div>
@@ -227,6 +227,7 @@
         },
         transformData: {
           item: function(hit) {
+            console.log(hit);
             if (hit.color) {
               hit.color = hit.color.slice(1);
             }

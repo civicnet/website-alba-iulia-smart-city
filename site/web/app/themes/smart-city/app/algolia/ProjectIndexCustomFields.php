@@ -38,7 +38,7 @@ final class ProjectIndexCustomFields extends IndexCustomFields {
       'permalink' => $this->data['permalink'],
       'color' => $this->data['verticala']['color'],
       'image' => $this->data['image'],
-      'icon_verticala' => $this->data['verticala']['icon'],
+      'icon_verticala' => $this->data['verticala']['pictograma'],
       'icon_etapa' => $this->data['etapa']['icon'],
       'etapa' => $this->data['etapa']['label'],
       'partener' => $this->data['partener']['name'],

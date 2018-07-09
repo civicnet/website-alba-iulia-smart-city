@@ -46,7 +46,7 @@ class Solutii extends Controller {
       'name' => $project->post_title,
       'verticala' => array(
         'label' => $verticala->post_title,
-        'icon' => get_field('pictograma', $verticala->ID)->element,
+        'pictograma' => get_field('pictograma_upload', $verticala->ID),
         'color' => get_field('culoare', $verticala->ID),
       ),
       'etapa' => array(
