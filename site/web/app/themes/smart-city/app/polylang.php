@@ -46,6 +46,7 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Stadiu', $group);
   pll_register_string($keyword, 'Verticala', $group);
   pll_register_string($keyword, 'Partener', $group);
+  pll_register_string($keyword, 'Sterge tot', $group);
   pll_register_string($keyword, 'Cauta solutii Smart City, ex: parcari', $group);
 
   $keyword = 'filtre_search_stiri';
