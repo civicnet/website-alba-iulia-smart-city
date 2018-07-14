@@ -11,11 +11,11 @@
       <div class="header-top">
         <span class="phone">
           <i class="fas fa-phone"></i>
-          0372 586 428 / 0258 819 462 /
+          0372 586 428 / 0258 819 462
         </span>
         <div class="language-selector">
           <a
-            class="dropdown-toggle"
+            class="dropdown-toggle btn btn-secondary"
             rel="button"
             id="languageSelector"
             data-toggle="dropdown"
