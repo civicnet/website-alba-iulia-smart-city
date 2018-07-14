@@ -42,9 +42,9 @@
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
-        aria-expanded="false"
+        aria-expanded="false" 
         aria-label="Toggle navigation">
-        <i class="fas fa-list"></i>
+        <i class="fas fa-bars"></i>
       </button>
 
       <div class="container collapse navbar-collapse justify-content-end" id="navbarSupportedContent">

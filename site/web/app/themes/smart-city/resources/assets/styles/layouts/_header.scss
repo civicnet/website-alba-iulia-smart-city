@@ -118,8 +118,13 @@
   }
 
   .banner .navbar-toggler {
-    border: 1px solid #333;
-    color: #333;
+    border: none;
+    color: #c33;
+  }
+
+  .banner .navbar-toggler:focus,
+  .banner .navbar-toggler:active {
+    outline: none;
   }
 
   .banner .header-top .language-selector {
