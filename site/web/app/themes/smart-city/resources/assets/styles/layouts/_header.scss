@@ -70,7 +70,8 @@
 }
 
 .banner .navbar-nav .current_page_item a,
-.banner .navbar-nav .menu-item a:hover {
+.banner .navbar-nav .menu-item a:hover,
+.banner .navbar-nav .menu-item.is-homepage a {
   color: #c33;
 }
 
