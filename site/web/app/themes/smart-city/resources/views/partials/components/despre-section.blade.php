@@ -38,7 +38,7 @@
                       <h5 class="mb-0">
                         <button
                           style="white-space: normal; font-size: 0.8em; padding-right: 50px; position: relative"
-                          class="btn btn-link"
+                          class="btn btn-link collapsed"
                           data-toggle="collapse"
                           data-target="#collapse-{{ $document['id'] }}"
                           aria-expanded="true"
