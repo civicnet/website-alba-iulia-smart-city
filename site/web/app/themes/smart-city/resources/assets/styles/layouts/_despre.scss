@@ -213,6 +213,10 @@ article.type-despre .sidebar ul li a.category-link {
   width: 100%;
 }
 
+article.type-despre .sidebar ul li a.category-link.current span {
+  color: #c33;
+}
+
 article.type-despre .sidebar ul li .category {
   color: #666;
   font-weight: bold;

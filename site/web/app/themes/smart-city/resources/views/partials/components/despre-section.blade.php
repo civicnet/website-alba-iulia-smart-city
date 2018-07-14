@@ -73,7 +73,7 @@
           <ul>
             @foreach ($all as $sec)
               <li>
-                <a href={{ $sec['permalink'] }} class="category-link">
+                <a href={{ $sec['permalink'] }} class="category-link {{ $sec['is_current'] ? 'current' : '' }}">
                   <span class="category">
                     {{ $sec['titlu_scurt'] }}
                   </span>

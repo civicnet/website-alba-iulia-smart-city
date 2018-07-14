@@ -35,6 +35,7 @@ class Despre extends Controller {
 				'continut_2' => get_field('continut_2', $section->ID),
         'titlu_scurt' => get_field('titlu_scurt', $section->ID),
         'permalink' => get_permalink($section->ID),
+        'is_current' => get_permalink($section->ID) === get_permalink(),
         'documente' => $documents_parsed,
         'id' => $section->ID
 			);
