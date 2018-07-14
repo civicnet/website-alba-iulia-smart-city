@@ -121,6 +121,29 @@
     border: 1px solid #333;
     color: #333;
   }
+
+  .banner .header-top .language-selector {
+    line-height: 14px;
+    font-size: 14px;
+  }
+
+  .banner .header-top .language-selector a.dropdown-toggle {
+    background: transparent;
+    line-height: 14px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    color: unset;
+  }
+
+  .banner .header-top .language-selector a.dropdown-toggle:focus {
+    box-shadow: none;
+  }
+
+  .banner .header-top .language-selector a.dropdown-toggle:hover {
+    background: unset;
+    color: unset;
+  }
 }
 
 @include media-breakpoint-up(lg) {
