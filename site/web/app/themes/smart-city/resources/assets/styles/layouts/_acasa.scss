@@ -205,6 +205,8 @@ $albaRed: #cc3234;
   padding: 8px 20px;
   display: inline-block;
   text-decoration: none;
+  box-shadow: 0 2px 2px #999;
+  border-radius: 3px;
 }
 
 .home .blog-section .article-box a:hover {
@@ -274,15 +276,59 @@ $albaRed: #cc3234;
   margin-bottom: 2em;
 }
 
-.home .blog-section .article-box img {
+.home .blog-section .article-box .article-img-wrapper {
   width: 100%;
-  margin: 20px 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 25px;
 }
+
+.home .blog-section .article-box img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+$articleTitleFontSize: 20px;
+$articleTitleLines: 3;
+$articleTitleLineHeight: 1.2;
 
 .home .blog-section .article-box h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.333em;
-  line-height: 1em;
+  font-size: $articleTitleFontSize;
+  line-height: $articleTitleLineHeight;
+  display: block;
+  display: -webkit-box;
+  height: $articleTitleFontSize*$articleTitleLineHeight*$articleTitleLines;
+  margin: 0 auto;
+  -webkit-line-clamp: $articleTitleLines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+
+$articleExcerptFontSize: 1em;
+$articleExcerptLines: 8;
+$articleExcerptLineHeight: 1.2;
+
+.home .blog-section .article-box .excerpt {
+  font-size: $articleExcerptFontSize;
+  line-height: $articleExcerptLineHeight;
+  display: block;
+  display: -webkit-box;
+  height: $articleExcerptFontSize*$articleExcerptLineHeight*$articleExcerptLines;
+  margin: 0 auto;
+  -webkit-line-clamp: $articleExcerptLines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
 }
 
 .home .counter-section {
