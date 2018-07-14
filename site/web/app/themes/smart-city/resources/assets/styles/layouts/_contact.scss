@@ -1,12 +1,16 @@
-body.contact h2 {
-  margin-top: 80px;
+body.contact h2,
+body.contact-2 h2 {
+  margin-top: 65px;
+  padding: 15px;
 }
 
-body.contact .contact-form .pirate-forms-fields-container .col-sm-6 {
+body.contact .contact-form .pirate-forms-fields-container .col-sm-6,
+body.contact-2 .contact-form .pirate-forms-fields-container .col-sm-6 {
   min-width: 100%;
 }
 
-body.contact .pirate-forms-submit-button {
+body.contact .pirate-forms-submit-button,
+body.contact-2 .pirate-forms-submit-button {
   cursor: pointer;
   color: $albaRed;
   text-transform: uppercase;
@@ -19,20 +23,30 @@ body.contact .pirate-forms-submit-button {
   background-color: transparent;
 }
 
-body.contact .pirate-forms-submit-button:hover {
+body.contact .pirate-forms-submit-button:hover,
+body.contact-2 .pirate-forms-submit-button:hover,
+body.contact .pirate-forms-submit-button:active,
+body.contact-2 .pirate-forms-submit-button:active {
   color: #fff;
   text-transform: uppercase;
   padding: 10px 15px;
   border-radius: 3px;
-  border: 1px solid #c33;
-  box-shadow: 0 2px 2px #999;
+  border: 1px solid #c33 !important;
+  box-shadow: 0 2px 2px #999 !important;
   margin-top: 10px;
   display: inline-block;
-  background-color: #c33;
+  background-color: #c33 !important;
 }
 
-body.contact .pirate-forms-submit-button:focus {
+body.contact .pirate-forms-submit-button:focus,
+body.contact-2 .pirate-forms-submit-button:focus {
   box-shadow: 0 2px 2px #999;
+}
+
+body.contact .contact-form .form-control:focus,
+body.contact-2 .contact-form .form-control:focus {
+  border: 2px solid #369;
+  box-shadow: none;
 }
 
 .home .blog-section .button:hover {
@@ -42,12 +56,14 @@ body.contact .pirate-forms-submit-button:focus {
   text-decoration: none;
 }
 
-body.contact .map-container {
+body.contact .map-container,
+body.contact-2 .map-container {
   width: 100%;
   height: 400px;
 }
 
-body.contact .address {
+body.contact .address,
+body.contact-2 .address {
   margin-bottom: 25px;
   padding: 15px;
 }
