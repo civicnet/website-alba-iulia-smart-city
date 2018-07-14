@@ -84,23 +84,21 @@
         </h2>
 
         <div class="meta container">
-          <div class="row no-gutters">
-            <div class="col-5">
-              <i class="fas fa-pencil-alt"></i>
-              <span class="author">@{{{_highlightResult.author.value}}}</span>
-            </div>
-            <div class="col-5">
-              <i class="fas fa-calendar-alt"></i>
-              <time class="date">@{{date}}</time>
-            </div>
-            <div class="col-2">
-              <i class="fas fa-comments"></i>
-              <span
-                class="comments disqus-comment-count"
-                data-disqus-url="@{{permalink}}">
-                0
-              </span>
-            </div>
+          <div>
+            <i class="fas fa-pencil-alt"></i>
+            <span class="author">@{{{_highlightResult.author.value}}}</span>
+          </div>
+          <div> 
+            <i class="fas fa-calendar-alt"></i>
+            <time class="date">@{{date}}</time>
+          </div>
+          <div>
+            <i class="fas fa-comments"></i>
+            <span
+              class="comments disqus-comment-count"
+              data-disqus-url="@{{permalink}}">
+              0
+            </span>
           </div>
         </div>
       </a>
