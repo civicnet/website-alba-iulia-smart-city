@@ -361,9 +361,19 @@ $articleExcerptLineHeight: 1.2;
   margin-bottom: 120px;
 }
 
+.home .partners-section .partner {
+  vertical-align: middle;
+  display: inline-block;
+  height: 60px;
+  position: relative;
+  line-height: 60px;
+}
+
 .home .partners-section .partner img {
-  max-height: 50px;
+  max-height: 60px;
   margin: 0 40px;
+  vertical-align: middle;
+  display: inline;
 }
 
 .home .partners-section .partners-carousel {

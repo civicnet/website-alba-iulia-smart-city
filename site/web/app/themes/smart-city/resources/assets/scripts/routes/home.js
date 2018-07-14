@@ -84,7 +84,7 @@ export default {
       slidesToScroll: 1,
       centerMode: true,
       variableWidth: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 800,
       responsive: [
         {
