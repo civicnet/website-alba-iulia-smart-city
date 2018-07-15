@@ -21,13 +21,13 @@
       </div>
 
       <div class="row">
-        <div class="col-md-8 col-sm-12">
+        <div class="col-lg-8 col-md-12">
           <h1 class="entry-title">{{ $section['titlu'] }}</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-8 col-sm-12">
+        <div class="col-lg-8 col-md-12">
           <div class="entry-content">
             {!! $section['continut_1'] !!}
 
