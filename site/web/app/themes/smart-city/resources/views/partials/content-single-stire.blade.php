@@ -6,8 +6,8 @@
   </header>
   <div class="container-fluid article-container">
     <div class="container">
-      <div class="row">
-        <div class="col-md-9 col-sm-12">
+      <div class="row"> 
+        <div class="col-md-8 col-sm-12">
           <h1 class="entry-title">{{ get_the_title() }}</h1>
           @include('partials/entry-meta')
         </div>
