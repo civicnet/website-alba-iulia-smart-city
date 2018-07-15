@@ -45,7 +45,7 @@
               <div class="container align-middle">
                 <div class="row">
                   @foreach (Proiect::etichete() as $eticheta)
-                    <span class="col-lg col-12 eticheta">
+                    <span class="eticheta">
                       <span class="pictograma align-middle">
                         <i class="{{ $eticheta->pictograma }}"></i>
                       </span>
