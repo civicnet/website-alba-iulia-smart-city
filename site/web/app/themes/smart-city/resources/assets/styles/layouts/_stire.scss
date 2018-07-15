@@ -8,12 +8,26 @@ article.stire .entry-title {
   margin-top: 100px;
   font-weight: 300;
   color: #f00;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 2.8rem;
+}
+
+article.stire .article-cat {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  display: inline-block;
+  color: #333;
 }
 
 article.stire .social-media a {
   color: unset;
+}
+
+article.stire .article-cat a:hover {
+  text-decoration: none;
+  color: $albaRed;
 }
 
 article.stire .social-media a:hover {
@@ -21,9 +35,10 @@ article.stire .social-media a:hover {
 }
 
 article.stire .article-meta {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   color: #999;
   margin-bottom: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 article.stire .article-meta span {
@@ -41,6 +56,7 @@ article.stire .article-meta .meta div {
 article.stire .article-meta .meta .icon {
   width: 3rem;
   text-align: center;
+  font-size: 2.2rem;
 }
 
 article.stire .article-meta .meta svg {

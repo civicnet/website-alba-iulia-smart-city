@@ -1,3 +1,8 @@
+<div class="row article-cat">
+  <div class="col">
+    {{ get_the_category()[0]->name }}
+  </div>
+</div>
 <div class="row article-meta">
   <div class="col-md-3 col-sm-12 meta">
     <div class="icon">
