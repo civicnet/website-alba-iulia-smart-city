@@ -214,3 +214,11 @@ body.blog .article-wrap header img {
   -o-object-fit: cover;
   object-fit: cover;
 }
+
+@include media-breakpoint-down(sm) {
+  body.blog #categorii {
+    display: block;
+    margin-bottom: 15px;
+    height: unset;
+  }
+}
