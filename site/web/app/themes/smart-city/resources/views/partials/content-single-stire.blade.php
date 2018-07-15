@@ -89,8 +89,8 @@
 
         <script type="text/html" id="category-template">
           <li>
-            <a href="{{ get_permalink(pll_get_post(get_page_by_title('blog')->ID)) }}" class="category-link">
-              <span class="category">
+            <a href="<%= href %>" class="category-link">
+              <span class="category <%= is_current ? 'current' : '' %>">
                 <%= label %>
                 <span class="count"><%= count %></span>
               </span>
@@ -106,24 +106,31 @@
 
 <script type="text/javascript">
   jQuery(function() {
-    var client = algoliasearch(
+    const currentCat = '{{ get_the_category() ? get_the_category()[0]->name : '' }}';
+    const parentURL = "{{ get_permalink(pll_get_post(get_page_by_title('stiri')->ID)) }}";
+
+    const client = algoliasearch(
       algolia.application_id,
       algolia.search_api_key
     );
-    var helper = algoliasearchHelper(client, algolia.indices.posts_stire.name, {
+    const helper = algoliasearchHelper(client, algolia.indices.posts_stire.name, {
       disjunctiveFacets: ['category'],
       filters: 'locale:"' + current_locale + '"',
     });
 
     helper.on('result', async function(data) {
-      let facets = data.getFacetValues('category', {sortBy: ['count:desc']});
+      const facets = data.getFacetValues('category', {sortBy: ['count:desc']});
+      const template = _.template(document.getElementById('category-template').innerHTML);
 
-      var template = _.template(document.getElementById('category-template').innerHTML);
       facets.map((facet) => {
-        let html = template({
+        const queryString = `?refinementList[category][0]=${facet.name}`;
+        const html = template({
           'label': facet.name,
-          'count': facet.count
+          'count': facet.count,
+          'is_current': facet.name === currentCat,
+          'href': parentURL + queryString,
         });
+
         jQuery(".algolia-facets").append(html);
       });
     });

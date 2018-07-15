@@ -216,8 +216,9 @@ article.stire .sidebar ul li .category {
   }
 }
 
+article.stire .sidebar ul li .category.current,
 article.stire .sidebar ul li a.category-link:hover .category {
-  color: #333;
+  color: #c33;
 }
 
 article.stire .sidebar ul li .count {
@@ -231,8 +232,9 @@ article.stire .sidebar ul li .count {
   font-size: 0.8rem;
 }
 
+article.stire .sidebar ul li .category.current .count,
 article.stire .sidebar ul li a.category-link:hover .count {
-  background: #333;
+  background: #c33;
 }
 
 @include media-breakpoint-down(sm) {
