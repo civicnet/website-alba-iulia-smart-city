@@ -124,7 +124,7 @@ article.stire .article-container .section {
   &::after {
     width: calc(50% - 120px);
     content: ' ';
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #ccc;
     position: absolute;
     right: 0;
     top: 50%;
@@ -133,7 +133,7 @@ article.stire .article-container .section {
   &::before {
     width: calc(50% - 120px);
     content: ' ';
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #ccc;
     position: absolute;
     left: 0;
     top: 50%;
