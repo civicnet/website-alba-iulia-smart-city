@@ -99,7 +99,9 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('solutii')->ID)) }}">
+          <a
+            class="smart-button" 
+            href="{{ get_permalink(pll_get_post(get_page_by_title('solutii')->ID)) }}">
             {{ pll__('Toate proiectele') }} >
           </a>
         </div>
