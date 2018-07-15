@@ -58,7 +58,7 @@
 .banner .header-top .dropdown-menu a {
   left: unset;
   right: 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .banner .navbar-nav .menu-item a {
@@ -73,6 +73,12 @@
 .banner .navbar-nav .menu-item a:hover,
 .banner .navbar-nav .menu-item.is-homepage a {
   color: #c33;
+}
+
+.banner .header-top .dropdown-menu a:hover,
+.banner .header-top .dropdown-menu a:active {
+  color: #fff;
+  background: #c33;
 }
 
 .banner .header-top .language-selector a.dropdown-toggle {
@@ -92,6 +98,11 @@
   color: #fff;
   background: #c33;
   border-color: #c33;
+}
+
+.banner .header-top .language-selector-content {
+  right: 0;
+  left: unset;
 }
 
 @include media-breakpoint-down(md) {
@@ -130,6 +141,13 @@
   .banner .header-top .language-selector {
     line-height: 14px;
     font-size: 14px;
+  }
+
+  .banner .header-top .language-selector-content a {
+    height: 44px;
+    line-height: 44px;
+    right: 0;
+    font-size: 0.9em;
   }
 
   .banner .header-top .language-selector a.dropdown-toggle {

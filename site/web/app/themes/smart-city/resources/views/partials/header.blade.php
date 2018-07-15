@@ -28,7 +28,9 @@
               @endif
             @endforeach
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageSelector">
+          <div 
+            class="dropdown-menu dropdown-menu-right language-selector-content" 
+            aria-labelledby="languageSelector">
             @foreach ( pll_the_languages(array('raw' => 1)) as $lang)
               <a class="dropdown-item" href="{{ $lang['url'] }}">{{ $lang['name'] }}</a>
             @endforeach
