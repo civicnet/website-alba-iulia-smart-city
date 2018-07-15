@@ -1,5 +1,5 @@
-body.stiri .article-wrap,
-body.news .article-wrap {
+body.stiri .article-wrap:not(:first-child,:last-child),
+body.news .article-wrap:not(:first-child,:last-child) {
   padding: 0 5px;
 }
 

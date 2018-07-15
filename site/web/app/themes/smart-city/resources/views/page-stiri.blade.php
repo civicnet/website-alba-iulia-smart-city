@@ -45,9 +45,7 @@
         </div>
       </div>
 
-      <div class="row">
-        <div id="algolia-hits"></div>
-      </div>
+      <div id="algolia-hits"></div>
     </div>
   </div>
 
@@ -131,7 +129,7 @@
 						empty: "{{ pll__('Nu am gasit rezultate pentru')}} '@{{query}}'"
 					},
 					cssClasses: {
-						root: 'row no-gutters posts',
+						root: 'row posts',
 						item: 'col-lg-3 col-md-6 col-sm-12 article-wrap',
 					},
 					transformData: {
