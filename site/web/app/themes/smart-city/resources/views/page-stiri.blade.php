@@ -12,10 +12,10 @@
           <div id="search-box" class="float-right">
             <div id="algolia-search-box"></div>
 
-            <div class="autocomplete-footer d-md-none" style="text-align: right; opacity: .4; margin-top: 15px">
+            <div class="autocomplete-footer" style="text-align: right; opacity: .4; margin-top: 15px">
               <div class="autocomplete-footer-branding">
                 <a href="#" class="algolia-powered-by-link" title="Algolia">
-                <svg style="filter: grayscale(100%);" width="130" viewBox="0 0 130 18" xmlns="http://www.w3.org/2000/svg">
+                <svg style="filter: grayscale(100%);" width="110" viewBox="0 0 130 18" xmlns="http://www.w3.org/2000/svg">
                   <title>Search by Algolia</title>
                   <defs>
                   <linearGradient x1="-36.868%" y1="134.936%" x2="129.432%" y2="-27.7%" id="a">
@@ -50,17 +50,6 @@
       </div>
     </div>
   </div>
-
-  <script type="text/html" id="powered-by-template">
-    <div class="powered-by d-none d-md-block">
-      <span class="logo">
-        <i class="fab fa-algolia"></i>
-      </span>
-      <span class="tagline">
-        by algolia
-      </span>
-    </div>
-  </script>
 
   <script type="text/html" id="category-item-template">
     <a class="dropdown-item" href="@{{url}}">
@@ -130,10 +119,6 @@
           placeholder: '{{ pll__("Cauta stiri") }}',
           cssClasses: {
             input: 'form-control',
-          },
-          poweredBy: {
-            template: document.getElementById('powered-by-template').innerHTML,
-            cssClasses: 'powered-by',
           }
         })
       );
