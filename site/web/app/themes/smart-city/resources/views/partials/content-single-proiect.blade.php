@@ -14,7 +14,8 @@
                   {{ Proiect::extras() }}
               </div>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-2 col-xs-12"></div>
+            <div class="col-md-4 col-xs-12">
               <div
                 class="progress circle align-middle"
                 data-percentage="{{ Proiect::percentage() }}">
