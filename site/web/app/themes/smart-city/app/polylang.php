@@ -89,4 +89,9 @@ if (function_exists('pll_register_string')) {
   $keyword = 'contact';
   pll_register_string($keyword, 'Vrei să ne transmiți un mesaj?', $group);
   pll_register_string($keyword, 'Unde ne găsești', $group);
+
+  $keyword = 'contact_companie';
+  pll_register_string($keyword, 'Contacteaza-ne pe email', $group);
+  pll_register_string($keyword, 'Contacteaza-ne pe Facebook', $group);
+  pll_register_string($keyword, 'Vezi site-ul oficial', $group);
 }
