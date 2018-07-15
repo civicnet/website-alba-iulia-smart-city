@@ -235,3 +235,8 @@ article.stire .sidebar ul li a.category-link:hover .count {
   background: #333;
 }
 
+@include media-breakpoint-down(sm) {
+  article.stire .entry-title {
+    font-size: 2rem;
+  }
+}
