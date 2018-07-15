@@ -9,7 +9,7 @@
               <div class="verticala">
                 {{ Proiect::verticala() }}
               </div>
-              <h1 class="entry-title">{{ Proiect::nume() }}</h1>
+              <h1 class="entry-title">{!! Proiect::nume() !!}</h1>
               <div class="extras">
                   {{ Proiect::extras() }}
               </div>
