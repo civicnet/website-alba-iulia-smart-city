@@ -41,9 +41,12 @@ $albaRed: #cc3234;
   width: 40%;
 }
 
+.solutii .btn:active,
+.projects .btn:active,
 .solutii .btn:focus,
 .projects .btn:focus {
-  outline: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .solutii .filters .filter,
@@ -167,6 +170,11 @@ $albaRed: #cc3234;
   color: #369;
   width: 300px;
   font-family: 'Roboto', sans-serif;
+}
+
+.solutii .ais-search-box--input:focus,
+.projects .ais-search-box--input:focus {
+  border: 1px solid rgb(206, 212, 218);
 }
 
 .solutii .ais-hits--item,
