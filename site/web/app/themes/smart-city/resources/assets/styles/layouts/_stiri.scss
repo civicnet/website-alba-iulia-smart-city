@@ -1,6 +1,7 @@
-body.stiri .article-wrap:not(:first-child,:last-child),
-body.news .article-wrap:not(:first-child,:last-child) {
-  padding: 0 5px;
+body.stiri .article-wrap,
+body.news .article-wrap {
+  background: transparent;
+  border: none;
 }
 
 body.stiri .article-wrap .post-listing,
@@ -13,6 +14,8 @@ body.news .article-wrap .post-listing:hover {
   box-shadow: 2px 2px 3px #999;
   margin-top: -4px;
   margin-left: -4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 body.stiri .posts,
@@ -220,5 +223,19 @@ body.news #categorii .ais-refinement-list--list {
 
   .blog-container .ais-search-box {
     max-width: unset;
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }
+
+  @include media-breakpoint-only(md) {
+    column-count: 2;
+  }
+
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
   }
 }

@@ -129,8 +129,8 @@
 						empty: "{{ pll__('Nu am gasit rezultate pentru')}} '@{{query}}'"
 					},
 					cssClasses: {
-						root: 'row posts',
-						item: 'col-lg-3 col-md-6 col-sm-12 article-wrap',
+						root: 'card-columns posts',
+						item: 'card article-wrap',
 					},
 					transformData: {
 						item: function(hit) {
