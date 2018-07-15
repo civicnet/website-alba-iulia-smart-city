@@ -5,7 +5,7 @@
       <div class="col-6 text-center">
         <div class="icon">
           <object data="@asset('images/smart_city_vector.svg')" type="image/svg+xml">
-            <img src="@asset('images/smart_city_raster.svg')" />
+            <img src="@asset('images/smart_city_raster.png')" />
           </object>
         </div>
         <div class="cta oras-inteligent">
@@ -15,7 +15,7 @@
       <div class="col-6 text-center">
         <div class="icon">
           <object data="@asset('images/poarta_3_vector.svg')" type="image/svg+xml">
-            <img src="@asset('images/poarta_3_raster.svg')" />
+            <img src="@asset('images/poarta_3_raster.png')" />
           </object>
         </div>
         <div class="cta alba-iulia">
