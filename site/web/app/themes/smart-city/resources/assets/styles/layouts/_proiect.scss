@@ -10,6 +10,7 @@ article.type-proiect .intro .header-image {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 
 article.type-proiect .header-image::before {
@@ -21,6 +22,22 @@ article.type-proiect .header-image::before {
   left: 0;
   width: 100%;
   opacity: 0.5;
+}
+
+article.type-proiect .intro .header-image img {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  filter: blur(2px);
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+article.type-proiect .intro .header-image .text {
+  text-shadow: 0 0 10px #333;
 }
 
 article.type-proiect .intro .metadata {

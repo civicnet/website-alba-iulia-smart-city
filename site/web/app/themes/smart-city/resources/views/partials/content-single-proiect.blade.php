@@ -1,13 +1,11 @@
 <article @php(post_class())>
   <header data-tint="{{ Proiect::culoareVerticala() }}" class="project-header">
     <div class="container-fluid  intro">
-      <div
-        class="row header-image"
-        style="background-image: url({{ Proiect::featuredImage() }})">
-
+      <div class="row header-image">
+        <img src="{{ Proiect::featuredImage() }}" />
         <div class="container">
           <div class="row align-items-center metadata">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-12 text">
               <div class="verticala">
                 {{ Proiect::verticala() }}
               </div>
