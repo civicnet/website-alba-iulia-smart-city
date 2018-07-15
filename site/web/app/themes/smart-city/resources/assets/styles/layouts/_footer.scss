@@ -140,5 +140,18 @@ footer.content-info .author .contribute {
 @include media-breakpoint-down(sm) {
   footer.content-info .logos .author.pull-right {
     float: none !important;
+    text-align: center;
+  }
+
+  footer.content-info .logos {
+    text-align: center;
+  }
+
+  footer.content-info .logos .alba-iulia-logo {
+    text-align: center;
+  }
+
+  footer.content-info .logos .alba-iulia-logo .text {
+    text-align: center;
   }
 }
