@@ -230,6 +230,13 @@ body.news #categorii .ais-refinement-list--list {
   .blog-container .ais-search-box {
     max-width: unset;
   }
+
+  body.stiri #categorii,
+  body.news #categorii {
+    display: block;
+    margin-bottom: 15px;
+    height: unset;
+  }
 }
 
 body.stiri .article-wrap,
