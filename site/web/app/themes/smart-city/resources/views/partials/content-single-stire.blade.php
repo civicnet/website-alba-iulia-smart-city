@@ -21,27 +21,25 @@
           <div class="section social-media">
             <div class="content">
               <h4>{{ pll__('Distribuie articol') }}</h4>
-              <div class="row icons">
-                <div class="col">
+              <div class="icons">
+                <div>
                   <a
                     href="https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}"
                     target="popup"
-                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}','popup','width=600,height=600'); return false;"
-                    class="col-lg col-6 align-middle">
+                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}','popup','width=600,height=600'); return false;">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </div>
-                <div class="col">
+                <div>
                   <a
                     href="https://twitter.com/home?status={{ get_the_permalink() }}"
                     target="popup"
-                    onclick="window.open('https://twitter.com/home?status={{ get_the_permalink() }}','popup','width=600,height=600'); return false;"
-                    class="col-lg col-6 align-middle">
+                    onclick="window.open('https://twitter.com/home?status={{ get_the_permalink() }}','popup','width=600,height=600'); return false;">
                     <i class="fab fa-twitter-square"></i>
                   </a>
                 </div>
-                <div class="col">
-                  <a href="mailto:?body={{ get_the_permalink() }}" class="col-lg col-6 align-middle">
+                <div>
+                  <a href="mailto:?body={{ get_the_permalink() }}">
                     <i class="fas fa-envelope"></i>
                   </a>
                 </div>
