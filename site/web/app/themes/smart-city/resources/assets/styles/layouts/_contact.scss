@@ -66,4 +66,40 @@ body.contact .address,
 body.contact-2 .address {
   margin-bottom: 25px;
   padding: 15px;
+  padding-top: 0;
+}
+
+body.contact .address a,
+body.contact-2 .address a {
+  color: unset;
+  font-weight: bold;
+}
+
+body.contact .address a.no-break,
+body.contact-2 .address a.no-break {
+  display: inline-block;
+}
+
+body.contact .address a:hover,
+body.contact-2 .address a:hover {
+  text-decoration: none;
+  color: #c33;
+}
+
+body.contact .address span,
+body.contact-2 .address span {
+  display: inline-block;
+}
+
+body.contact .address span:first-child,
+body.contact-2 .address span:first-child {
+  min-width: 30px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+body.contact .address .address-row,
+body.contact-2 .address .address-row {
+  margin-bottom: 8px;
+  display: flex;
 }
