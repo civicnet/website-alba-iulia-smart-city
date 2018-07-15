@@ -208,10 +208,12 @@
   </div>
 </div>
 
-@include('partials/components/about-smart-city', [
-  'ce_este' => FrontPage::orasInteligentLink(),
-  'de_ce' => FrontPage::deCeAlbaIuliaLink(),
-])
+<div class="container">
+  @include('partials/components/about-smart-city', [
+    'ce_este' => FrontPage::orasInteligentLink(),
+    'de_ce' => FrontPage::deCeAlbaIuliaLink(),
+  ])
+</div>
 
 <script type="text/javascript">
   jQuery(function() {
