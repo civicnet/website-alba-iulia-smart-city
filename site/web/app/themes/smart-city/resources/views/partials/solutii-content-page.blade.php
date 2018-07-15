@@ -146,12 +146,19 @@
 
 				.dynamic-tint-@{{color}} .body .label .icon {
 					color: #@{{color}};
-				}
+        } 
+
+        .dynamic-tint-@{{color}} .body .body-overlay {
+          text-shadow:
+            0px -1px 0px #333,
+            0px 2px 3px #@{{color}}CC,
+            0px 4px 13px #@{{color}}AA,
+            0px 8px 23px #@{{color}}AA;
+        }
 			</style>
+      
       <a href="@{{permalink}}" class="project-box dynamic-tint-@{{color}}">
-        <div
-          style="background-image: url(@{{image}})"
-					class="body">
+        <div class="body" style="background-image: url(@{{image}})">
           <div class="body-overlay">
             <div class="label">
               <div class="icon">
@@ -227,7 +234,7 @@
         },
         transformData: {
           item: function(hit) {
-            console.log(hit);
+            // console.log(hit);
             if (hit.color) {
               hit.color = hit.color.slice(1);
             }
@@ -309,7 +316,6 @@
     );
 
     search.start();
-
 
     var styleOnInput = function(value, selector) {
       if (value !== '') {

@@ -27,7 +27,6 @@
 .project-box .body::before {
   content: " ";
   position: absolute;
-  background-color: attr(data-tint color);
   width: 100%;
   height: 100%;
   top: 0;
@@ -109,6 +108,10 @@
   opacity: 0;
   margin-left: -300px;
   transition: all 0.5s ease-in-out;
+}
+
+.project-box:hover .body .body-overlay {
+  text-shadow: 1px 1px 0 #333;
 }
 
 .project-box:hover .body h3 {
