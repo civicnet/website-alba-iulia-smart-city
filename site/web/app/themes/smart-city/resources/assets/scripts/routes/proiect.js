@@ -79,4 +79,14 @@ export default {
       `);
     });
   },
+  finalize() {
+    let suggestionShown = true;
+    $('.scrolling-wrapper ul.nav-tabs').scroll(() => {
+      if (suggestionShown) {
+        $('.mobile-tabs-hint').css('opacity', '0');
+        $('.mobile-tabs-hint').css('font-size', '25px');
+        suggestionShown = false;
+      }
+    })
+  },
 };

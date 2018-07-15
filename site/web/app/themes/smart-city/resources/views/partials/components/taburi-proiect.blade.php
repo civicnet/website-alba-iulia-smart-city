@@ -1,4 +1,7 @@
 <div class="scrolling-wrapper">
+  <div class="mobile-tabs-hint d-md-none slideInRight"> 
+    <i class="far fa-hand-point-up" style="color: {{ Proiect::culoareVerticala() }}"></i>
+  </div>
   <ul
     class="nav nav-tabs justify-content-center"
     id="taburiProiect"
