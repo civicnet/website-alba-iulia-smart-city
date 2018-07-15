@@ -351,6 +351,15 @@
       var val = jQuery(this).val();
       styleOnInput(val, '#algolia-search-box');
     });
+
+
+    jQuery('#search-box input.ais-search-box--input').focus(function() {
+      var ele = jQuery(this);
+      
+      jQuery('html, body').animate({
+        scrollTop: ele.offset().top - 80
+      }, 500);
+    });
   });
 </script>
 

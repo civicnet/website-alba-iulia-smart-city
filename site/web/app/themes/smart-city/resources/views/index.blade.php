@@ -156,6 +156,14 @@
       );
 
       search.start();
+
+      jQuery('#algolia-search-box input.ais-search-box--input').focus(function() {
+        var ele = jQuery(this);
+        
+        jQuery('html, body').animate({
+          scrollTop: ele.offset().top - 80
+        }, 500);
+      });
     });
   </script>
 @endsection
