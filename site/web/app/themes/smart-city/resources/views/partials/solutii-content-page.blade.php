@@ -248,7 +248,7 @@
           empty: "{{ pll__('Nu am gasit rezultate pentru ')}} '@{{query}}'"
         },
         cssClasses: {
-          root: 'row',
+          root: 'row no-gutters',
           item: 'col-lg-3 col-md-6 col-sm-12',
         },
         transformData: {

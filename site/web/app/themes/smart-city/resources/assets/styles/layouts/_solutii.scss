@@ -171,8 +171,18 @@ $albaRed: #cc3234;
 
 .solutii .ais-hits--item,
 .projects .ais-hits--item {
-  padding: 0 5px;
+  padding: 0 8px;
   animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.solutii .ais-hits.row,
+.projects .ais-hits.row {
+  margin: 0 -8px;
+}
+
+.solutii .ais-hits.row .project-box,
+.projects .ais-hits.row .project-box {
+  margin-bottom: 16px;
 }
 
 @keyframes swing-in-bottom-fwd {
@@ -248,6 +258,7 @@ $albaRed: #cc3234;
 .solutii .dynamic-content svg,
 .projects .dynamic-content svg {
   max-width: 100%;
+  opacity: 0.4;
 }
 
 @include media-breakpoint-down(md) {
