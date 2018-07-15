@@ -238,6 +238,10 @@ article.type-proiect .proiect-content .nav-tabs {
   -ms-overflow-style: none;
 }
 
+article.type-proiect .proiect-content .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+
 article.type-proiect .proiect-content .nav-tabs .nav-tabs > li {
   float: none;
 }
