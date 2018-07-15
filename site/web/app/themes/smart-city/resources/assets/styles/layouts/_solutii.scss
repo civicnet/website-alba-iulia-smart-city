@@ -53,6 +53,23 @@ $albaRed: #cc3234;
   border-color: #ccc;
 }
 
+.solutii .filters .facets-selector-wrapper,
+.projects .filters .facets-selector-wrapper,
+.solutii .filters .search-box-wrapper,
+.projects .filters .search-box-wrapper {
+  display: inline-block;
+}
+
+.projects .filters .search-box-wrapper,
+.solutii .filters .search-box-wrapper {
+  width: 100%;
+}
+
+.solutii .filters #search-box,
+.projects .filters #search-box {
+  display: flex;
+}
+
 .solutii .filters #search-box input,
 .projects .filters #search-box input {
   border-top-right-radius: 5px;
@@ -221,3 +238,68 @@ $albaRed: #cc3234;
 .projects #current-refined-values .ais-current-refined-values--clear-all div {
   display: inline;
 }
+
+.solutii .filters .facets-selector-wrapper .edge-btn,
+.projects .filters .facets-selector-wrapper .edge-btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.solutii .dynamic-content svg,
+.projects .dynamic-content svg {
+  max-width: 100%;
+}
+
+@include media-breakpoint-down(md) {
+  .solutii .filters .facets-selector-wrapper,
+  .projects .filters .facets-selector-wrapper {
+    width: 100%;
+  }
+
+  .solutii .filters .facets-selector-wrapper .btn-group,
+  .projects .filters .facets-selector-wrapper .btn-group {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .solutii .filters .facets-selector-wrapper .dropdown-toggle,
+  .projects .filters .facets-selector-wrapper .dropdown-toggle {
+    flex-grow: 1;
+  }
+
+  .solutii .filters .facets-selector-wrapper .edge-btn,
+  .projects .filters .facets-selector-wrapper .edge-btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .solutii .filters #search-box,
+  .projects .filters #search-box {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .solutii .filters .search-box-wrapper,
+  .projects .filters #search-box-wrapper {
+    margin-top: 25px;
+  }
+
+  .solutii .filters #search-box input,
+  .projects .filters #search-box input {
+    width: unset !important;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .solutii .filters #search-box .input-group-text,
+  .projects .filters #search-box .input-group-text {
+    border-left-width: 1px;
+  }
+
+  .solutii .dynamic-content .smaller,
+  .projects .dynamic-content .smaller {
+    width: 100%;
+  }
+}
+

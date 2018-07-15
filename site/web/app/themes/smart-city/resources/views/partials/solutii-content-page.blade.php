@@ -5,94 +5,96 @@
 
     <div class="filters">
 			<div id="search-box">
-				<div class="input-group mb-3">
-					<div class="input-group-prepend btn-group">
-						<div class="btn-group" role="group">
-							<button
-								class="btn btn-outline-secondary dropdown-toggle filter"
-								type="button"
-								id="dropdownStage"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false">
-								{{ pll__('Stadiu') }}
-							</button>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="dropdownStage"
-                id="stadiu-facets">
+        <div class="facets-selector-wrapper">
+          <div class="input-group">
+            <div class="input-group-prepend btn-group">
+              <div class="btn-group" role="group">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle filter"
+                  type="button"
+                  id="dropdownStage"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  {{ pll__('Stadiu') }}
+                </button>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownStage"
+                  id="stadiu-facets">
+                </div>
               </div>
-						</div>
 
-						<div class="btn-group" role="group">
-							<button
-								class="btn btn-outline-secondary dropdown-toggle filter"
-								type="button"
-								id="dropdownVerticals"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false">
-								{{ pll__('Verticala') }}
-							</button>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="dropdownVerticals"
-                id="verticala-facets">
-							</div>
-						</div>
+              <div class="btn-group" role="group">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle filter"
+                  type="button"
+                  id="dropdownVerticals"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  {{ pll__('Verticala') }}
+                </button>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownVerticals"
+                  id="verticala-facets">
+                </div>
+              </div>
 
-            <div class="btn-group" role="group">
-							<button
-								class="btn btn-outline-secondary dropdown-toggle filter"
-								style="border-top-right-radius: 0; border-bottom-right-radius: 0"
-								type="button"
-								id="dropdownPartner"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false">
-								{{ pll__('Partener') }}
-              </button>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="dropdownPartner"
-                id="partener-facets">
-							</div>
+              <div class="btn-group" role="group">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle filter edge-btn"
+                  type="button"
+                  id="dropdownPartner"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  {{ pll__('Partener') }}
+                </button>
+                <div
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="dropdownPartner"
+                  id="partener-facets">
+                </div>
+              </div>
+
+              <script type="text/html" id="facet-item-template">
+                <a class="dropdown-item" href="@{{url}}">
+                  <i class="@{{icon}}"></i>
+                  @{{label}}
+                  <span class="badge badge-secondary">@{{count}}</span>
+                </a>
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="search-box-wrapper">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-search"></i>
+              </span>
             </div>
 
-            <script type="text/html" id="facet-item-template">
-              <a class="dropdown-item" href="@{{url}}">
-                <i class="@{{icon}}"></i>
-                @{{label}}
-                <span class="badge badge-secondary">@{{count}}</span>
-              </a>
-            </script>
-					</div>
-
-          <div class="input-group-prepend">
-						<span class="input-group-text">
-							<i class="fas fa-search"></i>
-						</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="{{ pll__('Cauta solutii Smart City, ex: parcari') }}"
+              aria-label="{{ pll__('Cauta proiect') }}"
+              id="algolia-search-box">
           </div>
-
-					<input
-						type="text"
-						class="form-control"
-						placeholder="{{ pll__('Cauta solutii Smart City, ex: parcari') }}"
-						aria-label="{{ pll__('Cauta proiect') }}"
-            id="algolia-search-box">
-
-
-				</div>
+        </div>
 			</div>
 		</div>
 
     <div class="dynamic-content" id="algolia-dynamic-content">
       <div class="smaller">
-        <div class="row">
-          <div class="col-10">
+        <div class="row no-gutters">
+          <div class="col-8 col-sm-9" style="padding-right: 15px">
             <div id="current-refined-values"></div>
           </div>
-          <div class="col-2">
+          <div class="col-4 col-sm-3">
             <div class="powered-by">
               <a href="#" class="algolia-powered-by-link" title="Algolia">
                 <svg style="filter: grayscale(100%);" width="110" viewBox="0 0 130 18" xmlns="http://www.w3.org/2000/svg">
@@ -323,7 +325,7 @@
         clearAll: 'after',
         clearsQuery: true,
         templates: {
-          clearAll: "{{ pll__('Sterge tot') }}",
+          clearAll: "<span style='display: inline-block'>{{ pll__('Sterge tot') }}</span>",
           item: (item) => {
             return _.escape(item.computedLabel) + '<span class="item-clear">X</span>';
           }
