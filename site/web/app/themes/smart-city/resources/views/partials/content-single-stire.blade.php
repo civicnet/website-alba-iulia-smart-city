@@ -7,13 +7,13 @@
   <div class="container-fluid article-container">
     <div class="container">
       <div class="row"> 
-        <div class="col-md-8 col-sm-12">
+        <div class="col-lg-8 col-md-12">
           <h1 class="entry-title">{{ get_the_title() }}</h1>
           @include('partials/entry-meta')
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 col-sm-12">
+        <div class="col-lg-8 col-md-12">
           <div class="entry-content">
             @php(the_content())
           </div>
@@ -55,7 +55,7 @@
 
           <div class="row justify-content-center articles">
             @foreach (News::related() as $article)
-              <div class="col-5">
+              <div class="col-lg-5 col-md-8 col-sm-12">
                 @include('partials/components/article-detailed-box', ['articol' => $article])
               </div>
             @endforeach
@@ -66,7 +66,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 sidebar">
+        <div class="col-lg-4 col-md-12 sidebar">
           <h3>{{ pll__('Categorii') }}</h3>
           <ul id="categorii"></ul>
         </div>
