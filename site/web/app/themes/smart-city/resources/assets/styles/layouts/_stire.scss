@@ -47,6 +47,15 @@ article.stire .article-meta span {
   color: #333;
 }
 
+article.stire .article-meta .meta {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+article.stire .article-meta .meta:last-child {
+  margin-right: 0;
+}
+
 article.stire .article-meta .meta div {
   display: inline-block;
   vertical-align: middle;

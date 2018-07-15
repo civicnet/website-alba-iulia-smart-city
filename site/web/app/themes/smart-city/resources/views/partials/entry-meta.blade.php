@@ -3,8 +3,8 @@
     {{ get_the_category()[0]->name }}
   </div>
 </div>
-<div class="row article-meta">
-  <div class="col-md-3 col-sm-12 meta">
+<div class="article-meta">
+  <div class="meta">
     <div class="icon">
       {!! get_avatar(get_the_author_meta('ID')) !!}
     </div>
@@ -16,7 +16,7 @@
     </div>
   </div>
 
-  <div class="col-md-3 col-sm-12 meta">
+  <div class="meta">
     <div class="icon">
       <i class="fas fa-calendar-alt"></i>
     </div>
@@ -27,7 +27,7 @@
 
   </div>
 
-  <div class="col-md-3 col-sm-12 meta">
+  <div class="meta">
     <div class="icon">
       <i class="fas fa-comments"></i>
     </div>
