@@ -56,7 +56,22 @@
 
                         <div class="pdf-download">
                           <i class="fas fa-file-pdf" style="margin-right: 4px; color: #f00"></i>
-                          <a href="{{ $document['url'] }}" target="_blank">{{ pll__('Descarcă') }} PDF</a>
+                          <a href="{{ $document['url'] }}" target="_blank">
+                            {{ pll__('Descarcă') }} PDF
+                            
+                            @if($document['pagini'] || $document['marime'])
+                              <span class="document-info">
+                                (
+                                  @if($document['pagini'])
+                                    {{ $document['pagini'] }} {{ pll__('pagini') }}
+                                  @endif
+                                  @if ($document['marime'])
+                                    {{ $document['marime'] }}MB
+                                  @endif
+                                )
+                              </span>
+                            @endif
+                          </a>
                         </div>
                       </div>
                     </div>

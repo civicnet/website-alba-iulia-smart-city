@@ -22,6 +22,8 @@ class Despre extends Controller {
             'nume' => get_field('nume', $doc->ID),
             'titlu' => get_field('titlu', $doc->ID),
             'descriere' => get_field('descriere', $doc->ID),
+            'pagini' => get_field('page_count', $doc->ID),
+            'marime' => get_field('document_weight', $doc->ID),
             'url' => get_field('document', $doc->ID),
             'id' => $doc->ID,
           );
