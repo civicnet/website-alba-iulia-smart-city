@@ -11,7 +11,7 @@
 
           <div id="search-box" class="float-right">
             <div id="algolia-search-box"></div>
-
+ 
             <div class="autocomplete-footer" style="text-align: right; opacity: .4; margin-top: 15px">
               <div class="autocomplete-footer-branding">
                 <a href="#" class="algolia-powered-by-link" title="Algolia">
@@ -129,8 +129,8 @@
 						empty: "{{ pll__('Nu am gasit rezultate pentru')}} '@{{query}}'"
 					},
 					cssClasses: {
-						root: 'card-columns posts',
-						item: 'card article-wrap',
+						root: 'row posts',
+						item: 'article-wrap col-lg-3 col-md-4 col-sm-12',
 					},
 					transformData: {
 						item: function(hit) {
