@@ -20,3 +20,53 @@ $albaRed: #cc3234;
   animation: fadeIn 0.5s ease;
   text-decoration: none;
 }
+
+.small-menu.smart-dropdown .btn {
+  color: $albaRed;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #c33;
+  box-shadow: 0 2px 2px #999;
+  margin-top: 10px;
+  display: inline-block;
+  background: transparent;
+}
+
+.small-menu.smart-dropdown .btn:focus {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #c33;
+  box-shadow: 0 2px 2px #999;
+  margin-top: 10px;
+  display: inline-block;
+  background: #c33;
+}
+
+.small-menu.smart-dropdown .dropdown-menu {
+  // width: 100%;
+}
+
+.small-menu.smart-dropdown .dropdown-menu a {
+  height: 44px;
+  line-height: 44px;
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+}
+
+.small-menu.smart-dropdown .dropdown-menu a:hover {
+  background: $albaRed;
+  color: #fff;
+}

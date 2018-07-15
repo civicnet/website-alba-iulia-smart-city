@@ -6,6 +6,22 @@
   </header>
   <div class="container-fluid article-container">
     <div class="container">
+      <div class="dropdown show small-menu smart-dropdown">
+        <a
+          class="btn btn-secondary dropdown-toggle d-lg-none"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+          {{ pll__('Vezi alte categorii') }}
+        </a>
+
+        <div class="dropdown-menu algolia-facets" aria-labelledby="dropdownMenuLink">
+        </div>
+      </div>
+
       <div class="row"> 
         <div class="col-lg-8 col-md-12">
           <h1 class="entry-title">{{ get_the_title() }}</h1>
@@ -66,9 +82,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-12 sidebar">
+        <div class="col-lg-4 col-md-12 sidebar d-none d-lg-block">
           <h3>{{ pll__('Categorii') }}</h3>
-          <ul id="categorii"></ul>
+          <ul class="algolia-facets"></ul>
         </div>
 
         <script type="text/html" id="category-template">
@@ -80,7 +96,7 @@
               </span>
             </a>
           </li>
-        </script>
+        </script> 
 
       </div>
     </div>
@@ -108,7 +124,7 @@
           'label': facet.name,
           'count': facet.count
         });
-        jQuery("#categorii").append(html);
+        jQuery(".algolia-facets").append(html);
       });
     });
 

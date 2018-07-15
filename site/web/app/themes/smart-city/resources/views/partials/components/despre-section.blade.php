@@ -1,7 +1,7 @@
 <article class="type-despre">
   <div class="container-fluid article-container">
     <div class="container">
-      <div class="dropdown show small-menu">
+      <div class="dropdown show small-menu smart-dropdown">
         <a
           class="btn btn-secondary dropdown-toggle d-lg-none"
           href="#"
