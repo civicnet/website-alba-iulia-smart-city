@@ -144,6 +144,10 @@ article.type-proiect .companii {
   text-align: center;
 }
 
+article.type-proiect .companii .col-12:not(.first) {
+  padding-bottom: 45px;
+}
+
 article.type-proiect .companii h3 {
   margin-top: 60px;
   font-size: 16px;
