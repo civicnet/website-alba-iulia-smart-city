@@ -6,7 +6,7 @@ export default {
     let is_logo_animating = false;
     // JavaScript to be fired on the home page
     $(document).scroll(function() {
-      if($(this).scrollTop() >= $('#svg2').position().top - 300){
+      if($(this).scrollTop() >= $('#svg2').position().top - $('#svg2').height()){
         if (!is_logo_animating) {
           is_logo_animating = true;
           animate_logo();
