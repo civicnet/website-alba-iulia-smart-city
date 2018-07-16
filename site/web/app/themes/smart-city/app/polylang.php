@@ -94,4 +94,9 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Contacteaza-ne pe email', $group);
   pll_register_string($keyword, 'Contacteaza-ne pe Facebook', $group);
   pll_register_string($keyword, 'Vezi site-ul oficial', $group);
+  
+  $keyword = 'cookie_consent';
+  pll_register_string($keyword, 'Pentru o experiență cât mai bună, acest website folosește cookies.', $group);
+  pll_register_string($keyword, 'Am înțeles', $group);
+  pll_register_string($keyword, 'Vezi mai multe detalii', $group);
 }

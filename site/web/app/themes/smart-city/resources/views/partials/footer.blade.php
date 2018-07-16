@@ -115,3 +115,27 @@
 
   gtag('config', 'UA-121898082-1');
 </script>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#838391",
+        "text": "#edeff5"
+      },
+      "button": {
+        "background": "#c33"
+      }
+    },
+    "showLink": true,
+    "content": {
+      "message": "{{ pll__('Pentru o experiență cât mai bună, acest website folosește cookies.') }}",
+      "dismiss": "{{ pll__('Am înțeles') }}",
+      "href": "{{ get_permalink(pll_get_post(get_page_by_title('Politica de confidenţialitate')->ID)) }}",
+      "link": "{{ pll__('Vezi mai multe detalii') }}"
+    }
+  })});
+</script>
