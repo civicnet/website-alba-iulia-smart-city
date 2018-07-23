@@ -204,7 +204,7 @@ $responsiveEmbeds = function($html, $url, $attr) {
 
 add_filter('embed_oembed_html', $responsiveEmbeds, 10, 3);
 
-$addMetaTags = function() {
+/* $addMetaTags = function() {
   if (is_singular() || is_home() || is_404() || is_search()) {
     $post = get_post();
     if (is_search() || is_home()) {
@@ -231,4 +231,4 @@ $addMetaTags = function() {
   return;
 };
 
-add_action('wp_head', $addMetaTags);
+add_action('wp_head', $addMetaTags); */
