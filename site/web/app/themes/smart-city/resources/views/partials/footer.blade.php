@@ -93,10 +93,10 @@
             <i class="fas fa-coffee"></i>
             {{ pll__('de') }}
           </span>
-          <a href="#" class="author-logo">
+          <a href="https://civictech.ro" target="_blank" class="author-logo">
             <img src="@asset('images/civictech-logo.png')" />
           </a>
-          <a href="#" class="contribute">
+          <a href="https://github.com/civictechro/website-alba-iulia-smart-city" target="_blank" class="contribute">
             <i class="fab fa-github"></i>
             {{ pll__('Contribuie si tu') }}
           </a>
