@@ -226,16 +226,9 @@ $addMetaTags = function() {
     foreach ($all_meta_pairs as $pair) {
       echo '<meta name="' . $pair['name'] . '" content="' . $pair['content'] . '" />'."\n";
     }
-
-   /*  print_r(array(
-      $all_og_pairs,
-      $all_meta_pairs,
-    )); */
-
-    return;
   }
 
-  print_r(array('NADA'));
+  return;
 };
 
 add_action('wp_head', $addMetaTags);
