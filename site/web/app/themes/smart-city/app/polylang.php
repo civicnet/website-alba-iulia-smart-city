@@ -18,6 +18,7 @@ if (function_exists('pll_register_string')) {
   pll_register_string($keyword, 'Altceva', $group);
   pll_register_string($keyword, 'Specificații', $group);
   pll_register_string($keyword, 'Beneficii', $group);
+  pll_register_string($keyword, 'Rezultate', $group);
   pll_register_string($keyword, 'Detaliu Soluție/Proiect', $group);
   pll_register_string($keyword, 'Specificații tehnice', $group);
   pll_register_string($keyword, 'Protocol de colaborare', $group);
