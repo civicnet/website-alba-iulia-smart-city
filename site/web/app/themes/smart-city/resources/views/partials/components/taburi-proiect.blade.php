@@ -1,5 +1,5 @@
 <div class="scrolling-wrapper">
-  <div class="mobile-tabs-hint d-md-none slideInRight"> 
+  <div class="mobile-tabs-hint d-md-none slideInRight">
     <i class="far fa-hand-point-up" style="color: {{ Proiect::culoareVerticala() }}"></i>
   </div>
   <ul
@@ -74,20 +74,6 @@
         </a>
       </li>
     @endif
-    @if (Proiect::rezultate())
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="rezultate-tab"
-          data-toggle="tab"
-          href="#rezultate"
-          role="tab"
-          aria-controls="rezultate"
-          aria-selected="false">
-          {{ pll__('Rezultate') }}
-        </a>
-      </li>
-    @endif
     @if (Proiect::beneficii())
       <li class="nav-item">
         <a
@@ -99,6 +85,20 @@
           aria-controls="beneficii"
           aria-selected="false">
           {{ pll__('Beneficii') }}
+        </a>
+      </li>
+    @endif
+    @if (Proiect::rezultate())
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="rezultate-tab"
+          data-toggle="tab"
+          href="#rezultate"
+          role="tab"
+          aria-controls="rezultate"
+          aria-selected="false">
+          {{ pll__('Rezultate') }}
         </a>
       </li>
     @endif
@@ -247,32 +247,6 @@
       </div>
     </div>
   @endif
-  @if (Proiect::rezultate())
-    <div
-      class="tab-pane fade"
-      id="rezultate"
-      role="tabpanel"
-      aria-labelledby="rezultate-tab">
-      <div class="row">
-        <div class="col-md-4 col-12 d-none d-md-block">
-          <a
-            href="#"
-            class="project-gallery desktop-gallery"
-            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
-          </a>
-        </div>
-        <div class="col-md-8 col-12">
-
-          <a href="#" class="project-gallery mobile-gallery d-md-none">
-            <i class="fas fa-camera"></i>
-            {{ pll__('Vezi galerie foto') }}
-          </a>
-
-          {!! Proiect::rezultate() !!}
-        </div>
-      </div>
-    </div>
-  @endif
   @if (Proiect::beneficii())
     <div
       class="tab-pane fade"
@@ -295,6 +269,32 @@
           </a>
 
           {!! Proiect::beneficii() !!}
+        </div>
+      </div>
+    </div>
+  @endif
+  @if (Proiect::rezultate())
+    <div
+      class="tab-pane fade"
+      id="rezultate"
+      role="tabpanel"
+      aria-labelledby="rezultate-tab">
+      <div class="row">
+        <div class="col-md-4 col-12 d-none d-md-block">
+          <a
+            href="#"
+            class="project-gallery desktop-gallery"
+            style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          </a>
+        </div>
+        <div class="col-md-8 col-12">
+
+          <a href="#" class="project-gallery mobile-gallery d-md-none">
+            <i class="fas fa-camera"></i>
+            {{ pll__('Vezi galerie foto') }}
+          </a>
+
+          {!! Proiect::rezultate() !!}
         </div>
       </div>
     </div>
