@@ -49,7 +49,7 @@
     "php": ">=5.6",
     "composer/installers": "^1.4",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.9.6",
+    "johnpbloch/wordpress": "4.9.7",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/advanced-custom-fields": "5.6.7",
@@ -60,7 +60,10 @@
     "wpackagist-plugin/disqus-comment-system": "3.0.16",
     "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.4.0",
     "wpackagist-plugin/wordpress-importer": "0.6.3",
-    "wpackagist-plugin/pirate-forms": "2.3.4"
+    "wpackagist-plugin/pirate-forms": "2.3.4",
+    "wpackagist-plugin/wp-cerber": "7.2",
+    "wpackagist-plugin/updraftplus": "1.14.12",
+    "wpackagist-plugin/wordpress-seo": "7.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"

@@ -36,6 +36,11 @@ msgstr "Bară laterală blog"
 msgid "Scroll down to content"
 msgstr "Derulează în jos la conținut"
 
+#: functions.php:159
+msgctxt "Theme starter content"
+msgid "Espresso"
+msgstr "Expreso"
+
 #: functions.php:167
 msgctxt "Theme starter content"
 msgid "Coffee"
@@ -46,18 +51,13 @@ msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "Sandviș"
 
-#: functions.php:159
-msgctxt "Theme starter content"
-msgid "Espresso"
-msgstr "Expreso"
+#: inc/custom-header.php:125
+msgid "Play background video"
+msgstr "Rulează videoul de fundal"
 
 #: inc/custom-header.php:126
 msgid "Pause background video"
 msgstr "Oprește videoul de fundal"
-
-#: inc/custom-header.php:125
-msgid "Play background video"
-msgstr "Rulează videoul de fundal"
 
 #: inc/template-tags.php:151
 msgid "Front Page Section %1$s Placeholder"
@@ -71,17 +71,17 @@ msgstr "Când e ales aranjamentul pe două coloane, titlul paginii se află înt
 msgid "Next Post"
 msgstr "Articolul următor"
 
-#: index.php:27
-msgid "Posts"
-msgstr "Articole"
+#: inc/template-tags.php:85
+msgid "Categories"
+msgstr "Categorii"
 
 #: inc/template-tags.php:89
 msgid "Tags"
 msgstr "Etichete"
 
-#: inc/template-tags.php:85
-msgid "Categories"
-msgstr "Categorii"
+#: index.php:27
+msgid "Posts"
+msgstr "Articole"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:66
@@ -92,28 +92,6 @@ msgstr ", "
 #: inc/template-tags.php:52
 msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
 msgstr "<span class=\"screen-reader-text\">Publicat pe</span> %s"
-
-#. translators: %s: post author
-#: inc/template-tags.php:21
-msgid "by %s"
-msgstr "de %s"
-
-#: inc/icon-functions.php:44
-msgid "Please define an SVG icon filename."
-msgstr "Definește un nume fișier pentru iconul SVG."
-
-#: inc/icon-functions.php:39
-msgid "Please define default parameters in the form of an array."
-msgstr "Te rog definește parametri impliciți sub forma unui tablou."
-
-#: inc/customizer.php:131
-msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
-msgstr "Alege pagini din listele derulante pentru a fi evidențiate în fiecare dintre zone. Adaugă o imagine la o secțiune prin setarea imaginii reprezentative în editorul paginii. Secțiunile goale nu se vor afișa."
-
-#. translators: %d is the front page section number
-#: inc/customizer.php:130
-msgid "Front Page Section %d Content"
-msgstr "Conținut pentru secțiunea %d din pagina din față"
 
 #: inc/customizer.php:102 inc/customizer.php:158
 msgid "Two Column"
@@ -139,25 +117,47 @@ msgstr "Personalizat"
 msgid "Light"
 msgstr "Luminos"
 
+#: inc/custom-header.php:54
+msgid "Default Header Image"
+msgstr "Imagine implicită de antet"
+
+#: inc/customizer.php:131
+msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
+msgstr "Alege pagini din listele derulante pentru a fi evidențiate în fiecare dintre zone. Adaugă o imagine la o secțiune prin setarea imaginii reprezentative în editorul paginii. Secțiunile goale nu se vor afișa."
+
 #: inc/customizer.php:55
 msgid "Color Scheme"
 msgstr "Paletă de culori"
 
-#: inc/custom-header.php:54
-msgid "Default Header Image"
-msgstr "Imagine implicită de antet"
+#. translators: %d is the front page section number
+#: inc/customizer.php:130
+msgid "Front Page Section %d Content"
+msgstr "Conținut pentru secțiunea %d din pagina din față"
+
+#: inc/icon-functions.php:39
+msgid "Please define default parameters in the form of an array."
+msgstr "Te rog definește parametri impliciți sub forma unui tablou."
+
+#. translators: %s: post author
+#: inc/template-tags.php:21
+msgid "by %s"
+msgstr "de %s"
+
+#: inc/icon-functions.php:44
+msgid "Please define an SVG icon filename."
+msgstr "Definește un nume fișier pentru iconul SVG."
 
 #: functions.php:348
 msgid "Footer 2"
 msgstr "Subsol 2"
 
-#: functions.php:338 functions.php:350
-msgid "Add widgets here to appear in your footer."
-msgstr "Adaugă piese aici ca să apară în subsolul tău."
-
 #: functions.php:336
 msgid "Footer 1"
 msgstr "Subsol 1"
+
+#: comments.php:62
+msgid "Reply"
+msgstr "Răspunde"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Libre Franklin, translate this to 'off'. Do not translate into your own
@@ -172,9 +172,23 @@ msgstr "on"
 msgid "Top Menu"
 msgstr "Meniul de sus"
 
-#: comments.php:62
-msgid "Reply"
-msgstr "Răspunde"
+#: functions.php:338 functions.php:350
+msgid "Add widgets here to appear in your footer."
+msgstr "Adaugă piese aici ca să apară în subsolul tău."
+
+#: comments.php:72 single.php:34
+msgid "Next"
+msgstr "Următor"
+
+#: searchform.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Caută &hellip;"
+
+#: searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr "Căutare"
 
 #: template-parts/post/content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
@@ -192,59 +206,17 @@ msgstr "Gata să-ți publici primul articol? <a href=\"%1$s\">Începe de aici</a
 msgid "Nothing Found"
 msgstr "N-am găsit nimic"
 
-#: single.php:33
-msgid "Previous Post"
-msgstr "Articolul anterior"
-
 #: comments.php:71 single.php:33
 msgid "Previous"
 msgstr "Anterior"
 
-#: comments.php:72 single.php:34
-msgid "Next"
-msgstr "Următor"
-
-#: searchform.php:20
-msgctxt "submit button"
-msgid "Search"
-msgstr "Căutare"
-
-#: searchform.php:19
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Caută &hellip;"
-
-#: searchform.php:17
-msgctxt "label"
-msgid "Search for:"
-msgstr "Caută după:"
+#: single.php:33
+msgid "Previous Post"
+msgstr "Articolul anterior"
 
 #: search.php:19
 msgid "Search Results for: %s"
 msgstr "Rezultatele căutării pentru: %s"
-
-#. translators: %s: Name of current post
-#: functions.php:378 template-parts/page/content-front-page-panels.php:45
-#: template-parts/page/content-front-page.php:42
-#: template-parts/post/content-audio.php:84
-#: template-parts/post/content-gallery.php:71
-#: template-parts/post/content-image.php:61
-#: template-parts/post/content-video.php:83 template-parts/post/content.php:57
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Continuă lectura<span class=\"screen-reader-text\"> \"%s\"</span>"
-
-#: inc/customizer.php:58
-msgid "Dark"
-msgstr "Întunecat"
-
-#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:68
-msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Seventeen necesită măcar WordPress versiunea 4.3. Tu rulezi versiunea %s. Te rog actualizează și încearcă din nou."
-
-#. translators: %s: Name of current post
-#: inc/template-tags.php:117
-msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Editează<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: template-parts/page/content-page.php:26
 #: template-parts/post/content-audio.php:91
@@ -262,21 +234,13 @@ msgstr "Meniu"
 msgid "Skip to content"
 msgstr "Sari la conținut"
 
-#: functions.php:467
-msgid "Collapse child menu"
-msgstr "Restrânge meniul copil"
-
-#: functions.php:466
-msgid "Expand child menu"
-msgstr "Extinde meniul copil"
-
 #: functions.php:65 functions.php:202
 msgid "Social Links Menu"
 msgstr "Meniu legături sociale"
 
-#: template-parts/footer/site-info.php:19
-msgid "Proudly powered by %s"
-msgstr "Propulsat cu mândrie de %s"
+#: comments.php:82
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
 
 #. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.6)  #-#-#-#-#
 #. Author URI of the plugin/theme
@@ -284,13 +248,57 @@ msgstr "Propulsat cu mândrie de %s"
 msgid "https://wordpress.org/"
 msgstr "https://ro.wordpress.org/"
 
+#: archive.php:50 index.php:54 search.php:47
+msgid "Page"
+msgstr "Pagină"
+
+#: archive.php:49 index.php:53 search.php:46
+msgid "Next page"
+msgstr "Pagina următoare"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hopa! Acea pagină nu poate fi găsită."
+
+#: archive.php:48 index.php:52 search.php:45
+msgid "Previous page"
+msgstr "Pagina precedentă"
+
+#: inc/customizer.php:58
+msgid "Dark"
+msgstr "Întunecat"
+
+#: template-parts/footer/site-info.php:19
+msgid "Proudly powered by %s"
+msgstr "Propulsat cu mândrie de %s"
+
 #: footer.php:26
 msgid "Footer Social Links Menu"
 msgstr "Meniu legături sociale subsol"
 
-#: comments.php:82
-msgid "Comments are closed."
-msgstr "Comentariile sunt închise."
+#. translators: %s: Name of current post
+#: inc/template-tags.php:117
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Editează<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: Name of current post
+#: functions.php:378 template-parts/page/content-front-page-panels.php:45
+#: template-parts/page/content-front-page.php:42
+#: template-parts/post/content-audio.php:84
+#: template-parts/post/content-gallery.php:71
+#: template-parts/post/content-image.php:61
+#: template-parts/post/content-video.php:83 template-parts/post/content.php:57
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continuă lectura<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:68
+msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Seventeen necesită măcar WordPress versiunea 4.3. Tu rulezi versiunea %s. Te rog actualizează și încearcă din nou."
+
+#: searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr "Caută după:"
 
 #. translators: 1: number of comments, 2: post title
 #: comments.php:41
@@ -307,25 +315,17 @@ msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr "Un răspuns la &bdquo;%s&rdquo;"
 
-#: archive.php:50 index.php:54 search.php:47
-msgid "Page"
-msgstr "Pagină"
-
-#: 404.php:21
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Hopa! Acea pagină nu poate fi găsită."
-
 #: 404.php:24
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Se pare că n-am găsit nimic la această locație. Poate încerci o căutare?"
 
-#: archive.php:48 index.php:52 search.php:45
-msgid "Previous page"
-msgstr "Pagina precedentă"
+#: functions.php:467
+msgid "Collapse child menu"
+msgstr "Restrânge meniul copil"
 
-#: archive.php:49 index.php:53 search.php:46
-msgid "Next page"
-msgstr "Pagina următoare"
+#: functions.php:466
+msgid "Expand child menu"
+msgstr "Extinde meniul copil"
 
 #. Author of the plugin/theme
 msgid "the WordPress team"

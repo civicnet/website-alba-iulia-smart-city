@@ -1,0 +1,672 @@
+# Translation of Plugins - Google XML Sitemaps - Stable (latest release) in Romanian
+# This file is distributed under the same license as the Plugins - Google XML Sitemaps - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-16 07:34:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ro\n"
+"Project-Id-Version: Plugins - Google XML Sitemaps - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.arnebrachhold.de/"
+msgstr "http://www.arnebrachhold.de/"
+
+#. Author of the plugin/theme
+msgid "Arne Brachhold"
+msgstr "Arne Brachhold"
+
+#. Description of the plugin/theme
+msgid "This plugin will generate a special XML sitemap which will help search engines like Google, Yahoo, Bing and Ask.com to better index your blog."
+msgstr "Acest modul va genera o hartă sit XML specială, care va ajuta motoarele de căutare, precum Google, Yahoo, Bing și Ask.com, să indexeze mai bine blogul tău."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.arnebrachhold.de/redir/sitemap-home/"
+msgstr "http://www.arnebrachhold.de/redir/sitemap-home/"
+
+#. Plugin Name of the plugin/theme
+msgid "Google XML Sitemaps"
+msgstr "Hărți sit XML pentru Google"
+
+#: sitemap.php:95
+msgid "Unfortunately this release of Google XML Sitemaps requires at least PHP %4$s. You are using PHP %2$s, which is out-dated and insecure. Please ask your web host to update your PHP installation or go to <a href=\"%1$s\">active plugins</a> and deactivate the Google XML Sitemaps plugin to hide this message. You can download an older version of this plugin from the <a href=\"%3$s\">plugin website</a>."
+msgstr "Din păcate, această versiune Hărți sit XML pentru Google necesită cel puțin WordPress %4$s. Tu folosești WordPress %2$s, care este depășit și nesigur. Te rog să ceri gazdei tale web să actualizeze instalarea PHP sau mergi la <a href=\"%1$s\">module active</a> și dezactivează modulul Hărți sit XML pentru Google pentru a ascunde acest mesaj. Poți să descarci o versiune mai veche a acestui modul din <a href=\"%3$s\">sit web modul</a>."
+
+#: sitemap.php:95
+msgid "Your PHP version is too old for XML Sitemaps."
+msgstr "Versiunea ta PHP este prea veche pentru hărți sit XML."
+
+#: sitemap.php:85
+msgid "Unfortunately this release of Google XML Sitemaps requires at least WordPress %4$s. You are using Wordpress %2$s, which is out-dated and insecure. Please upgrade or go to <a href=\"%1$s\">active plugins</a> and deactivate the Google XML Sitemaps plugin to hide this message. You can download an older version of this plugin from the <a href=\"%3$s\">plugin website</a>."
+msgstr "Din păcate, această versiune Hărți sit XML pentru Google necesită cel puțin WordPress %4$s. Tu folosești WordPress %2$s, care este depășit și nesigur. Te rog actualizează sau mergi la <a href=\"%1$s\">module active</a> și dezactivează modulul Hărți sit XML pentru Google pentru a ascunde acest mesaj. Poți să descarci o versiune mai veche a acestui modul din <a href=\"%3$s\">sit web modul</a>."
+
+#: sitemap.php:85
+msgid "Your WordPress version is too old for XML Sitemaps."
+msgstr "Versiunea ta WordPress este prea veche pentru hărți sit XML."
+
+#: sitemap-ui.php:1269
+msgid "Reset options"
+msgstr "Resetează opțiunile"
+
+#: sitemap-ui.php:1268
+msgid "Update options"
+msgstr "Actualizează opțiunile"
+
+#: sitemap-ui.php:1243
+msgid "Archives"
+msgstr "Arhive"
+
+#: sitemap-ui.php:1225
+msgid "Minimum post priority (Even if auto calculation is enabled)"
+msgstr "Prioritate minimă articol (chiar dacă calcul automat este activat)"
+
+#: sitemap-ui.php:1219
+msgid "Posts (If auto calculation is disabled)"
+msgstr "Articole (dacă calcul automat este dezactivat)"
+
+#: sitemap-ui.php:1208
+msgid "Priorities"
+msgstr "Priorități"
+
+#: sitemap-ui.php:1200 sitemap-ui.php:1257
+msgid "Author pages"
+msgstr "Pagini autor"
+
+#: sitemap-ui.php:1193 sitemap-ui.php:1250
+msgid "Tag pages"
+msgstr "Pagini etichetă"
+
+#: sitemap-ui.php:1186
+msgid "Older archives (Changes only if you edit an old post)"
+msgstr "Arhive mai vechi (numai modificări, dacă editezi un articol vechi)"
+
+#: sitemap-ui.php:1180
+msgid "The current archive of this month (Should be the same like your homepage)"
+msgstr "Arhiva actuală a acestei luni (ar trebui să fie la fel ca și prima ta pagină)"
+
+#: sitemap-ui.php:1174 sitemap-ui.php:1237
+msgid "Categories"
+msgstr "Categorii"
+
+#: sitemap-ui.php:1168 sitemap-ui.php:1231
+msgid "Static pages"
+msgstr "Pagini statice"
+
+#: sitemap-ui.php:1162
+msgid "Posts"
+msgstr "Articole"
+
+#: sitemap-ui.php:1156 sitemap-ui.php:1213
+msgid "Homepage"
+msgstr "Prima pagină"
+
+#: sitemap-ui.php:1150
+msgid "Please note that the value of this tag is considered a hint and not a command. Even though search engine crawlers consider this information when making decisions, they may crawl pages marked \"hourly\" less frequently than that, and they may crawl pages marked \"yearly\" more frequently than that. It is also likely that crawlers will periodically crawl pages marked \"never\" so that they can handle unexpected changes to those pages."
+msgstr "Te rog să reții că valoarea acestei etichete este considerată o sugestie și nu o comandă. Deși crawlerele motorului de căutare iau în considerație aceste informații atunci când iau decizii, ele pot accesa pagini marcate „pe oră” mai rar decât altele și pot accesa pagini marcate „anual” mai des decât altele. De asemenea, este posibil ca crawlerele să acceseze periodic pagini marcate „niciodată”, astfel încât acestea să poată manipula modificările neașteptate ale acestor pagini."
+
+#: sitemap-ui.php:1146
+msgid "Change frequencies"
+msgstr "Modificare frecvențe"
+
+#: sitemap-ui.php:1140
+msgid "Child posts won't be excluded automatically!"
+msgstr "Articolele copil nu vor fi excluse în mod automat!"
+
+#: sitemap-ui.php:1138
+msgid "List of IDs, separated by comma"
+msgstr "Listă de ID-uri, separate prin virgulă"
+
+#: sitemap-ui.php:1138
+msgid "Exclude the following posts or pages:"
+msgstr "Exclude următoarele articole sau pagini:"
+
+#: sitemap-ui.php:1136
+msgid "Exclude posts"
+msgstr "Exclude articole"
+
+#: sitemap-ui.php:1128
+msgid "Excluded categories"
+msgstr "Categorii excluse"
+
+#: sitemap-ui.php:1126
+msgid "Excluded items"
+msgstr "Elemente excluse"
+
+#: sitemap-ui.php:1119
+msgid "This is highly recommended and helps the search engines to know when your content has changed. This option affects <i>all</i> sitemap entries."
+msgstr "Acest lucru este recomandat cu prisosință și ajută motoarele de căutare să știe când conținutul tău s-a schimbat. Această opțiune afectează <i>toate</i> intrările hărții sit."
+
+#: sitemap-ui.php:1117
+msgid "Include the last modification time."
+msgstr "Include ultima oră de modificare."
+
+#: sitemap-ui.php:1112
+msgid "Further options"
+msgstr "Opțiuni suplimentare"
+
+#: sitemap-ui.php:1100
+msgid "Include custom post type %s"
+msgstr "Include tip de articol personalizat %s"
+
+#: sitemap-ui.php:1089
+msgid "Custom post types"
+msgstr "Tipuri de articol personalizat"
+
+#: sitemap-ui.php:1071
+msgid "Include taxonomy pages for %s"
+msgstr "Include pagini taxonomie pentru %s"
+
+#: sitemap-ui.php:1060
+msgid "Custom taxonomies"
+msgstr "Taxonomii personalizate"
+
+#: sitemap-ui.php:1046
+msgid "Include tag pages"
+msgstr "Include pagini etichetă"
+
+#: sitemap-ui.php:1039
+msgid "Include author pages"
+msgstr "Include pagini autor"
+
+#: sitemap-ui.php:1033
+msgid "Include archives"
+msgstr "Include arhive"
+
+#: sitemap-ui.php:1027
+msgid "Include categories"
+msgstr "Include categorii"
+
+#: sitemap-ui.php:1021
+msgid "Include static pages"
+msgstr "Include pagini statice"
+
+#: sitemap-ui.php:1015
+msgid "Include posts"
+msgstr "Include articole"
+
+#: sitemap-ui.php:1009
+msgid "Include homepage"
+msgstr "Include prima pagină"
+
+#: sitemap-ui.php:1004
+msgid "WordPress standard content"
+msgstr "Conținut standard WordPress"
+
+#: sitemap-ui.php:1003
+msgid "Sitemap Content"
+msgstr "Conținut hartă sit"
+
+#: sitemap-ui.php:992
+msgid "All posts will have the same priority which is defined in &quot;Priorities&quot;"
+msgstr "Toate articolele vor avea aceeași prioritate care este definită în &quot;Priorități&quot;"
+
+#: sitemap-ui.php:992
+msgid "Do not use automatic priority calculation"
+msgstr "Nu folosi calcul automat al priorității"
+
+#: sitemap-ui.php:990
+msgid "Please select how the priority of each post should be calculated:"
+msgstr "Te rog selectează cum ar trebui să fie calculată prioritatea fiecărui articol:"
+
+#: sitemap-ui.php:988
+msgid "Post Priority"
+msgstr "Prioritate articol"
+
+#: sitemap-ui.php:982
+msgid "Add new page"
+msgstr "Adaugă pagină nouă"
+
+#: sitemap-ui.php:977
+msgid "No pages defined."
+msgstr "Nu există pagini definite."
+
+#: sitemap-ui.php:972
+msgid "#"
+msgstr "#"
+
+#: sitemap-ui.php:970
+msgid "Change Frequency"
+msgstr "Schimbă frecvența"
+
+#: sitemap-ui.php:936
+msgid "Enter the date of the last change as YYYY-MM-DD (2005-12-31 for example) (optional)."
+msgstr "Introdu data ultimei modificări în formatul YYYY-MM-DD (de exemplu: 2005-12-31) (opțional)."
+
+#: sitemap-ui.php:935 sitemap-ui.php:971
+msgid "Last Changed"
+msgstr "Ultima modificare"
+
+#: sitemap-ui.php:933
+msgid "Choose the priority of the page relative to the other pages. For example, your homepage might have a higher priority than your imprint."
+msgstr "Alege prioritatea paginii în raport cu celelalte pagini. De exemplu, prima ta pagină poate avea o prioritate mai mare decât numele editorului."
+
+#: sitemap-ui.php:932 sitemap-ui.php:969
+msgid "Priority"
+msgstr "Prioritate"
+
+#: sitemap-ui.php:930
+msgid "Enter the URL to the page. Examples: http://www.foo.com/index.html or www.foo.com/home "
+msgstr "Introdu URL-ul paginii. Exemple: http://www.foo.com/index.html sau www.foo.com/home"
+
+#: sitemap-ui.php:929 sitemap-ui.php:968
+msgid "URL to the page"
+msgstr "URL la pagină"
+
+#: sitemap-ui.php:927
+msgid "If your blog is in a subdirectory and you want to add pages which are NOT in the blog directory or beneath, you MUST place your sitemap file in the root directory (Look at the &quot;Location of your sitemap file&quot; section on this page)!"
+msgstr "Dacă blogul tău este într-un sub-director și vrei să adăugi pagini care NU sunt în directorul blogului sau sub el, TREBUIE să-ți plasezi fișierul hartă sit în directorul rădăcină (vezi secțiunea &quot;Locația fișierului tău hartă sit&quot; de pe această pagină)!"
+
+#: sitemap-ui.php:926 sitemap-ui.php:1140 sitemap-ui.php:1149
+msgid "Note"
+msgstr "Notă"
+
+#: sitemap-ui.php:924
+msgid "Here you can specify files or URLs which should be included in the sitemap, but do not belong to your Blog/WordPress.<br />For example, if your domain is www.foo.com and your blog is located on www.foo.com/blog you might want to include your homepage at www.foo.com"
+msgstr "Aici poți specifica fișiere sau URL-uri care ar trebui să fie incluse în harta sit, dar care nu fac parte din blogul tău WordPress.<br />De exemplu, dacă domeniul tău este www.foo.com și blogul tău este localizat pe www.foo.com/blog ai putea dori să incluzi prima pagină la www.foo.com"
+
+#: sitemap-ui.php:921
+msgid "Additional pages"
+msgstr "Pagini suplimentare"
+
+#: sitemap-ui.php:912
+msgid "Allow anonymous statistics (no personal information)"
+msgstr "Permite statistici anonime (nicio informație cu caracter personal)"
+
+#: sitemap-ui.php:906
+msgid "(The required PHP XSL Module is not installed)"
+msgstr "(Extensia XSL necesară pentru PHP nu este instalată)"
+
+#: sitemap-ui.php:906
+msgid "Include sitemap in HTML format"
+msgstr "Include hartă sit în format HTML"
+
+#: sitemap-ui.php:901
+msgid "Use this if your blog is in a sub-directory, but you want the sitemap be located in the root. Requires .htaccess modification."
+msgstr "Folosește acest lucru dacă blogul tău este într-un sub-director, dar vrei ca harta sit să fie localizată în rădăcină. Necesită modificarea .htaccess."
+
+#: sitemap-ui.php:900
+msgid "Override the base URL of the sitemap:"
+msgstr "Contramandează URL-ul de bază al hărții sit:"
+
+#: sitemap-ui.php:897
+msgid "Use default"
+msgstr "Folosește implicit"
+
+#: sitemap-ui.php:897
+msgid "Full or relative URL to your .xsl file"
+msgstr "URL complet sau relativ la fișierul tău .xsl"
+
+#: sitemap-ui.php:896
+msgid "Include a XSLT stylesheet:"
+msgstr "Include o foaie de stiluri XSLT:"
+
+#: sitemap-ui.php:892
+msgid "Disable this option if you get garbled content or encoding errors in your sitemap."
+msgstr "Dezactivează această opțiune dacă obții conținut trunchiat sau erori de codificare în harta sit."
+
+#: sitemap-ui.php:890
+msgid "Try to automatically compress the sitemap if the requesting client supports it."
+msgstr "Încercă să comprimi automat harta sit dacă clientul solicitant acceptă."
+
+#: sitemap-ui.php:885
+msgid "in seconds, e.g. \"60\" or \"0\" for unlimited"
+msgstr "în secunde, de exemplu: „60” sau „0” pentru nelimitat"
+
+#: sitemap-ui.php:885
+msgid "Try to increase the execution time limit to:"
+msgstr "Încearcă să crești limita timpului de execuție la:"
+
+#: sitemap-ui.php:882
+msgid "e.g. \"4M\", \"16M\""
+msgstr "de exemplu „4M”, „16M”"
+
+#: sitemap-ui.php:882
+msgid "Try to increase the memory limit to:"
+msgstr "Încearcă să crești limita de memorie la:"
+
+#: sitemap-ui.php:879
+msgid "Advanced options:"
+msgstr "Opțiuni avansate:"
+
+#: sitemap-ui.php:875
+msgid "The virtual robots.txt generated by WordPress is used. A real robots.txt file must NOT exist in the blog directory!"
+msgstr "Este folosit robots.txt virtual generat de WordPress. NU trebuie să existe un fișier robots.txt real în directorul blogului!"
+
+#: sitemap-ui.php:871
+msgid "Add sitemap URL to the virtual robots.txt file."
+msgstr "Adaugă URL hartă sit la fișierul robots.txt virtual."
+
+#: sitemap-ui.php:866
+msgid "No registration required, but you can join the <a href=\"%s\">Bing Webmaster Tools</a> to check crawling statistics."
+msgstr "Nu este necesară nicio înregistrare, poți apela la <a href=\"%s\">Instrumente Bing pentru webmaster</a> pentru a verifica statisticile de accesare cu crawlere."
+
+#: sitemap-ui.php:865
+msgid "Notify Bing (formerly MSN Live Search) about updates of your Blog"
+msgstr "Notifică Bing despre actualizările blogului tău"
+
+#: sitemap-ui.php:861
+msgid "No registration required, but you can join the <a href=\"%s\">Google Webmaster Tools</a> to check crawling statistics."
+msgstr "Nu este necesară nicio înregistrare, poți apela la <a href=\"%s\">Instrumente Google pentru webmaster</a> pentru a verifica statisticile de accesare cu crawlere."
+
+#: sitemap-ui.php:860
+msgid "Notify Google about updates of your Blog"
+msgstr "Notifică Google despre actualizările blogului tău"
+
+#: sitemap-ui.php:856 sitemap-ui.php:879 sitemap-ui.php:901 sitemap-ui.php:913
+msgid "Learn more"
+msgstr "Află mai multe"
+
+#: sitemap-ui.php:856
+msgid "Update notification:"
+msgstr "Actualizare notificare:"
+
+#: sitemap-ui.php:854
+msgid "Basic Options"
+msgstr "Opțiuni de bază"
+
+#: sitemap-ui.php:838
+msgid "Since you are using Nginx as your web-server, please configure the following rewrite rules in case you get 404 Not Found errors for your sitemap:"
+msgstr "Întrucât folosești Nginx ca server web, te rog configurează următoarele reguli de rescriere în cazul în care obții erori 404 Negăsită pentru harta ta sit:"
+
+#: sitemap-ui.php:837
+msgid "Webserver Configuration"
+msgstr "Configurare server web"
+
+#: sitemap-ui.php:829
+msgid "If you like the plugin, please <a target=\"_blank\" href=\"%s\">rate it 5 stars</a> or <a href=\"%s\">donate</a> via PayPal! I'm supporting this plugin since over 9 years! Thanks a lot! :)"
+msgstr "Dacă îți place modulul, te rog să-l <a target=\"_blank\" href=\"%s\">evaluezi la 5 stele</a> sau <a href=\"%s\">donează</a> prin PayPal! Asigur suport pentru acest modul de peste 9 ani! Mulțumesc mult! :)"
+
+#: sitemap-ui.php:825
+msgid "If you encounter any problems with your sitemap you can use the <a href=\"%d\">debug function</a> to get more information."
+msgstr "Dacă întâmpini probleme cu harta ta sit, poți folosi <a href=\"%d\">funcția depanare</a> pentru a obține mai multe informații."
+
+#: sitemap-ui.php:813
+msgid "There was a problem while notifying %name%. <a href=\"%s\" target=\"_blank\">View result</a>"
+msgstr "A apărut o problemă în timpul notificării %name%. <a href=\"%s\" target=\"_blank\">Vezi  rezultatul</a>"
+
+#: sitemap-ui.php:810
+msgid "It took %time% seconds to notify %name%, maybe you want to disable this feature to reduce the building time."
+msgstr "A durat %time% secunde pentru notificarea %name%, poate vrei să dezactivezi această funcționalitate pentru a reduce timpul de construcție."
+
+#: sitemap-ui.php:807
+msgid "%s was <b>successfully notified</b> about changes."
+msgstr "%s a fost <b>notificat cu succes</b> cu privire la modificări."
+
+#: sitemap-ui.php:798
+msgid "Search engines haven't been notified yet. Write a post to let them know about your sitemap."
+msgstr "Motoarele de căutare nu au fost încă notificate. Scrie un articol ca să-ți cunoască harta sit."
+
+#: sitemap-ui.php:795
+msgid "The URL to your sitemap index file is: <a href=\"%s\">%s</a>."
+msgstr "URL-ul fișierului index hartă sit este: <a href=\"%s\">%s</a>."
+
+#: sitemap-ui.php:792
+msgid "There is still a sitemap.xml or sitemap.xml.gz file in your blog directory. Please delete them as no static files are used anymore or <a href=\"%s\">try to delete them automatically</a>."
+msgstr "Încă există un fișier sitemap.xml sau sitemap.xml.gz în directorul blogului tău. Te rog șterge-le ca să nu mai fie folosite deloc fișiere statice sau <a href=\"%s\">încercă să le ștergeți automat</a>."
+
+#: sitemap-ui.php:781
+msgid "Enable"
+msgstr "Activează"
+
+#: sitemap-ui.php:781
+msgid "Support Topics have been disabled. Enable them to see useful information regarding this plugin. No Ads or Spam!"
+msgstr "Subiectele suport au fost dezactivate. Activează-le pentru a vedea informații utile cu privire la acest modul. Fără publicitate sau spam!"
+
+#: sitemap-ui.php:778
+msgid "No support topics available or an error occurred while fetching them."
+msgstr "Nu există subiecte suport disponibile sau a apărut o eroare la preluarea lor."
+
+#: sitemap-ui.php:760
+msgid "Disable"
+msgstr "Dezactivează"
+
+#: sitemap-ui.php:756
+msgid "Recent Support Topics / News"
+msgstr "Subiecte suport recente / Noutăți"
+
+#: sitemap-ui.php:749
+msgid "Result of the last ping, started on %date%."
+msgstr "Rezultatul ultimului ping, a început la %date%."
+
+#: sitemap-ui.php:745
+msgid "Search engines haven't been notified yet"
+msgstr "Motoarele de căutare nu au fost încă notificate"
+
+#: sitemap-ui.php:725
+msgid "Thanks for your support!"
+msgstr "Îți mulțumesc pentru susținere!"
+
+#: sitemap-ui.php:722
+msgid "Hide this list"
+msgstr "Ascunde această listă"
+
+#: sitemap-ui.php:720
+msgid "List of the donors"
+msgstr "Listă donatori"
+
+#: sitemap-ui.php:717
+msgid "Recent Donations:"
+msgstr "Donații recente:"
+
+#: sitemap-ui.php:714
+msgid "My Sitemaps FAQ"
+msgstr "Întrebările mele frecvente despre hărți sit"
+
+#: sitemap-ui.php:713
+msgid "Official Sitemaps FAQ"
+msgstr "Întrebări frecvente formale despre hărți sit"
+
+#: sitemap-ui.php:712
+msgid "Sitemaps Protocol"
+msgstr "Protocol hărți sit"
+
+#: sitemap-ui.php:710
+msgid "Webmaster Center Blog"
+msgstr "Blog centru webmaster"
+
+#: sitemap-ui.php:707
+msgid "Search Blog"
+msgstr "Căutare blog"
+
+#: sitemap-ui.php:705
+msgid "Webmaster Blog"
+msgstr "Blog webmaster"
+
+#: sitemap-ui.php:704 sitemap-ui.php:709
+msgid "Webmaster Tools"
+msgstr "Instrumente pentru webmasteri"
+
+#: sitemap-ui.php:703
+msgid "Sitemap Resources:"
+msgstr "Resurse hartă sit:"
+
+#: sitemap-ui.php:700
+msgid "translator_url"
+msgstr "translator_url"
+
+#: sitemap-ui.php:700
+msgid "translator_name"
+msgstr "translator_name"
+
+#: sitemap-ui.php:699
+msgid "My Amazon Wish List"
+msgstr "Lista mea de dorințe Amazon"
+
+#: sitemap-ui.php:698
+msgid "Donate with PayPal"
+msgstr "Donează cu PayPal"
+
+#: sitemap-ui.php:696
+msgid "Report a Bug"
+msgstr "Raportează o eroare"
+
+#: sitemap-ui.php:695
+msgid "Support Forum"
+msgstr "Forum pentru suport"
+
+#: sitemap-ui.php:694
+msgid "Notify List"
+msgstr "Notificare listă"
+
+#: sitemap-ui.php:693
+msgid "Help / FAQ"
+msgstr "Ajutor / Întrebări frecvente"
+
+#: sitemap-ui.php:692
+msgid "Suggest a Feature"
+msgstr "Sugerează o funcționalitate"
+
+#: sitemap-ui.php:691
+msgid "Plugin Homepage"
+msgstr "Prima pagină a modulului"
+
+#: sitemap-ui.php:690
+msgid "About this Plugin:"
+msgstr "Despre acest modul:"
+
+#: sitemap-ui.php:675
+msgid "Your blog is currently blocking search engines! Visit the <a href=\"%s\">Reading Settings</a> to change this."
+msgstr "În prezent blogul tău blochează motoarele de căutare! Vizitează <a href=\"%s\">Setări Scriere</a> pentru a modifica acest lucru."
+
+#: sitemap-ui.php:526
+msgid "Don't show this anymore"
+msgstr "Nu mai arăta asta"
+
+#: sitemap-ui.php:526
+msgid "Thanks for using this plugin! You've installed this plugin some time ago. If it works and your are satisfied, why not <a href=\"%s\">rate it</a> and <a href=\"%s\">recommend it</a> to others? :-)"
+msgstr "Îți mulțumim că folosești acest modul! Ai instalat acest modul mai demult. Dacă funcționează și ești mulțumit, de ce nu-l <a href=\"%s\">evaluezi</a> și nu-l <a href=\"%s\">recomanzi</a> altora? :-)"
+
+#: sitemap-ui.php:519
+msgid "No thanks, please don't bug me anymore!"
+msgstr "Nu, mulțumesc, te rog nu mă mai deranja!"
+
+#: sitemap-ui.php:519
+msgid "Sure, but I already did!"
+msgstr "Sigur, dar deja am făcut-o!"
+
+#: sitemap-ui.php:519
+msgid "Thanks for using this plugin! You've installed this plugin over a month ago. If it works and you are satisfied with the results, isn't it worth at least a few dollar? <a href=\"%s\">Donations</a> help me to continue support and development of this <i>free</i> software! <a href=\"%s\">Sure, no problem!</a>"
+msgstr "Îți mulțumim că folosești acest modul! Ai instalat acest modul cu mai mult de o lună în urmă. Dacă funcționează și ești mulțumit de rezultate, nu valorează măcar câțiva dolari? <a href=\"%s\">Donațiile</a> mă ajută să continui suportul și dezvoltarea acestui program <i>gratis</i>! <a href=\"%s\">Sigur, nicio problemă!</a>"
+
+#: sitemap-ui.php:513
+msgid "Hide this notice"
+msgstr "Ascunde această observație"
+
+#: sitemap-ui.php:513
+msgid "Thank you very much for your donation. You help me to continue support and development of this plugin and other free software!"
+msgstr "Îți mulțumesc foarte mult pentru donație. Mă ajuți să asigur suport în continuare și dezvoltare pentru acest modul și alt program gratuit!"
+
+#: sitemap-ui.php:470
+msgid "Ping was executed, please see below for the result."
+msgstr "Ping-ul a fost executat, te rog vezi mai jos rezultatul."
+
+#: sitemap-ui.php:431
+msgid "The plugin is notifying the selected search engines about your main sitemap and all sub-sitemaps. This might take a minute or two."
+msgstr "Modulul notifică motoarele de căutare selectate despre harta sit principală și toate sub-hărțile sit. Acest lucru ar putea dura un minut sau două."
+
+#: sitemap-ui.php:430
+msgid "Notify Search Engines about all sitemaps"
+msgstr "Notifică motoarele de căutare despre toate hărțile sit"
+
+#: sitemap-ui.php:393
+msgid "The old files were successfully deleted."
+msgstr "Fișierele vechi au fost șterse cu succes."
+
+#: sitemap-ui.php:391
+msgid "The old files could NOT be deleted. Please use an FTP program and delete them by yourself."
+msgstr "Fișierele vechi NU au putut fi șterse. Te rog folosește un program FTP și șterge-le singur."
+
+#: sitemap-ui.php:381
+msgid "The default configuration was restored."
+msgstr "Configurarea implicită a fost restaurată."
+
+#: sitemap-ui.php:373
+msgid "Error while saving pages"
+msgstr "Eroare în timpul salvării paginilor"
+
+#: sitemap-ui.php:372
+msgid "Pages saved"
+msgstr "Pagini salvate"
+
+#: sitemap-ui.php:369
+msgid "Error while saving options"
+msgstr "Eroare în timpul salvării opțiunilor"
+
+#: sitemap-ui.php:368
+msgid "Configuration updated"
+msgstr "Configurare actualizată"
+
+#: sitemap-ui.php:181 sitemap-ui.php:671
+msgid "XML Sitemap Generator for WordPress"
+msgstr "Generator hartă sit XML pentru WordPress"
+
+#: sitemap-loader.php:236
+msgid "Donate"
+msgstr "Donează"
+
+#: sitemap-loader.php:235
+msgid "Support"
+msgstr "Suport"
+
+#: sitemap-loader.php:234
+msgid "FAQ"
+msgstr "Întrebări frecvente"
+
+#: sitemap-loader.php:233
+msgid "Settings"
+msgstr "Setări"
+
+#: sitemap-loader.php:206
+msgid "XML-Sitemap"
+msgstr "XML-Hartă sit"
+
+#: sitemap-loader.php:206
+msgid "XML-Sitemap Generator"
+msgstr "XML-Generator hartă sit"
+
+#: sitemap-core.php:784
+msgid "Never"
+msgstr "Niciodată"
+
+#: sitemap-core.php:783
+msgid "Yearly"
+msgstr "Anual"
+
+#: sitemap-core.php:782
+msgid "Monthly"
+msgstr "Lunar"
+
+#: sitemap-core.php:781
+msgid "Weekly"
+msgstr "Săptămânal"
+
+#: sitemap-core.php:780
+msgid "Daily"
+msgstr "Zilnic"
+
+#: sitemap-core.php:779
+msgid "Hourly"
+msgstr "Pe oră"
+
+#: sitemap-core.php:778
+msgid "Always"
+msgstr "Întotdeauna"
+
+#: sitemap-core.php:618
+msgid "Uses the average comment count to calculate the priority"
+msgstr "Folosește numărul mediu de comentarii pentru a calcula prioritatea"
+
+#: sitemap-core.php:608
+msgid "Comment Average"
+msgstr "Medie comentarii"
+
+#: sitemap-core.php:557
+msgid "Uses the number of comments of the post to calculate the priority"
+msgstr "Folosește numărul de comentarii ale articolului pentru a calcula prioritatea"
+
+#: sitemap-core.php:547
+msgid "Comment Count"
+msgstr "Număr comentarii"
