@@ -93,7 +93,7 @@ add_filter('upload_mimes', function ($mime_types = array()) {
 add_filter('wp_nav_menu_items', function($items, $args) {
 	if ($args->theme_location === 'primary_navigation') {
         $get_attrs = function() {
-            return is_front_page() 
+            return is_front_page()
                 ? 'is-homepage'
                 : '';
         };
@@ -103,7 +103,7 @@ add_filter('wp_nav_menu_items', function($items, $args) {
                title="'.esc_attr(get_bloginfo('name', 'display')).'"
                class="nav-link">
                <i class="fas fa-home"></i>
-			</a></li>'; 
+			</a></li>';
 		$items = $home . $items;
 	}
 	return $items;
@@ -203,3 +203,39 @@ $responsiveEmbeds = function($html, $url, $attr) {
 };
 
 add_filter('embed_oembed_html', $responsiveEmbeds, 10, 3);
+
+$addMetaTags = function() {
+  if (is_singular() || is_home() || is_404() || is_search()) {
+    $post = get_post();
+    if (is_search() || is_home()) {
+      $post = null;
+    }
+
+    $generator = Meta\MetaGenerator::get($post);
+
+    $og_decorator = new Meta\OpenGraphMetaDecorator($generator);
+    $meta_decorator = new Meta\MetaMetaDecorator($generator);
+
+    $all_og_pairs = $og_decorator->getAllTagPairs();
+    $all_meta_pairs = $meta_decorator->getAllTagPairs();
+
+    foreach ($all_og_pairs as $pair) {
+      echo '<meta property="' . $pair['property'] . '" content="' . $pair['content'] . '" />'."\n";
+    }
+
+    foreach ($all_meta_pairs as $pair) {
+      echo '<meta name="' . $pair['name'] . '" content="' . $pair['content'] . '" />'."\n";
+    }
+
+   /*  print_r(array(
+      $all_og_pairs,
+      $all_meta_pairs,
+    )); */
+
+    return;
+  }
+
+  print_r(array('NADA'));
+};
+
+add_action('wp_head', $addMetaTags);

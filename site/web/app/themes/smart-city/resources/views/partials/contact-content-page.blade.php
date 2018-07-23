@@ -6,26 +6,26 @@
           <div class="address-row">
             <span><i class="fas fa-map-marker-alt"></i></span>
             <span>
-              {{ pll__('Adresă') }}: 
+              {{ pll__('Adresă') }}:
               <a
-                target="_blank" 
+                target="_blank"
                 href="http://maps.google.com/?q=Calea Moţilor, 5A,  510134 Alba Iulia, România">
                 Calea Moţilor, 5A,  510134 Alba Iulia, România
               </a>
-            </span> 
+            </span>
           </div>
           <div class="address-row">
             <span><i class="fas fa-phone"></i></span>
             <span>
-              {{ pll__('Telefon') }}: 
-              <a href="tel:0372 586 428" class="no-break">0372 586 428</a> / 
+              {{ pll__('Telefon') }}:
+              <a href="tel:0372 586 428" class="no-break">0372 586 428</a> /
               <a href="tel:0258 819 462" class="no-break">0258 819 462</a>
             </span>
           </div>
           <div class="address-row">
             <span><i class="fas fa-envelope"></i></span>
             <span>
-              {{ pll__('E-mail') }}: 
+              {{ pll__('E-mail') }}:
               <a href="mailto:{{ pll__('salut@albaiuliasmartcity.ro') }}" class="no-break">
                 {{ pll__('salut@albaiuliasmartcity.ro') }}
               </a>

@@ -21,7 +21,12 @@
       "": [
         "web/app/lib/"
       ],
-      "App\\Algolia\\": "web/app/themes/smart-city/app/algolia/"
+      "App\\Algolia\\": "web/app/themes/smart-city/app/algolia/",
+      "App\\Meta\\": [
+        "web/app/themes/smart-city/app/meta/",
+        "web/app/themes/smart-city/app/meta/constants/",
+        "web/app/themes/smart-city/app/meta/decorators/"
+      ]
     }
   },
   "keywords": [
