@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="row"> 
+      <div class="row">
         <div class="col-lg-8 col-md-12">
           <h1 class="entry-title">{!! get_the_title() !!}</h1>
           @include('partials/entry-meta')
@@ -96,7 +96,7 @@
               </span>
             </a>
           </li>
-        </script> 
+        </script>
 
       </div>
     </div>
@@ -113,8 +113,10 @@
       algolia.application_id,
       algolia.search_api_key
     );
+
     const helper = algoliasearchHelper(client, algolia.indices.posts_stire.name, {
       disjunctiveFacets: ['category'],
+      facetingAfterDistinct: true,
       filters: 'locale:"' + current_locale + '"',
     });
 
