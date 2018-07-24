@@ -89,14 +89,15 @@
   border-color: #c33;
 }
 
-.banner .header-top .language-selector a.dropdown-toggle:focus {
-  box-shadow: 0 2px 2px #999;
-}
-
 .banner .header-top .language-selector a.dropdown-toggle:hover {
   color: #fff;
   background: #c33;
   border-color: #c33;
+}
+
+.banner .header-top .language-selector a.dropdown-toggle:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 .banner .header-top .language-selector-content {
@@ -158,12 +159,7 @@
     line-height: 14px;
     padding: 0;
     border: none;
-    box-shadow: none;
     color: unset;
-  }
-
-  .banner .header-top .language-selector a.dropdown-toggle:focus {
-    box-shadow: none;
   }
 
   .banner .header-top .language-selector a.dropdown-toggle:hover {
