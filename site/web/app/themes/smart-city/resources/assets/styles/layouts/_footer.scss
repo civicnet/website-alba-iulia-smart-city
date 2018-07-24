@@ -141,6 +141,7 @@ footer.content-info .author .contribute {
   footer.content-info .logos .author.pull-right {
     float: none !important;
     text-align: center;
+    margin-right: 0;
   }
 
   footer.content-info .logos {
@@ -149,6 +150,10 @@ footer.content-info .author .contribute {
 
   footer.content-info .logos .alba-iulia-logo {
     text-align: center;
+  }
+
+  footer.content-info .logos .alba-iulia-logo img {
+    margin-right: 0;
   }
 
   footer.content-info .logos .alba-iulia-logo .text {
