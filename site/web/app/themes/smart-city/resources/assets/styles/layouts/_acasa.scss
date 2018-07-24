@@ -405,8 +405,8 @@ $articleExcerptLineHeight: 1.2;
 }
 
 @include media-breakpoint-down(md) {
-  .home .holder {
-    //
+  .home .blog-section .article-box a {
+    margin-bottom: 80px;
   }
 }
 
@@ -420,7 +420,6 @@ $articleExcerptLineHeight: 1.2;
     text-align: center;
     text-transform: uppercase;
     border-width: 2px;
-    margin-bottom: 80px;
   }
 
   .home .trivia-section .cta b {
