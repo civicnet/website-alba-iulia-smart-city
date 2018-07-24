@@ -6,6 +6,8 @@
 # Alba Iulia, Smart City
 Website de prezentare soluții Smart City, Alba Iulia
 
+<img src="screenshot.png" />
+
 # Local development
 
 ## Stack
