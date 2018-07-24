@@ -29,9 +29,10 @@ article.type-post .social-media a:hover {
 }
 
 article.type-post .article-meta {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   color: #999;
   margin-bottom: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 article.type-post .article-meta span {
@@ -40,16 +41,25 @@ article.type-post .article-meta span {
   color: #333;
 }
 
+article.type-post .article-meta .meta {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+article.type-post .article-meta .meta:last-child {
+  margin-right: 0;
+}
+
 article.type-post .article-meta .meta div {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  line-height: 0.45em;
 }
 
 article.type-post .article-meta .meta .icon {
   width: 3rem;
   text-align: center;
+  font-size: 2.2rem;
 }
 
 article.type-post .article-meta .meta svg {
