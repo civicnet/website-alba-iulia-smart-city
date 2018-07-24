@@ -71,7 +71,7 @@
       <div class="col-md-8 col-sm-12">
         <div class="alba-iulia-logo">
           <a href="#">
-            <img src="@asset('images/stema_heraldica.png')" />
+            <img src="@asset('images/stema_heraldica_rev.svg')" />
           </a>
           <div class="text align-middle">
             <strong>
