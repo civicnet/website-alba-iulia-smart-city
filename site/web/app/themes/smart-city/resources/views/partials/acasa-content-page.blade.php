@@ -27,7 +27,10 @@
     <div class="row">
       <div class="col text-center">
         <a class="button" href="{{ get_permalink(pll_get_post(get_page_by_title('solutii')->ID)) }}">
-          {{ pll__('Toate proiectele') }} >
+          {{ pll__('Toate proiectele') }}
+          <span class="button-chevron">
+            <i class="fas fa-chevron-right"></i>
+          </span>
         </a>
       </div>
     </div>

@@ -26,12 +26,18 @@
     <div class="row">
       <div class="col-6 text-center">
         <a class="button" href="{{ $ce_este }}">
-          {{ pll__('Vezi detalii') }} >
+          {{ pll__('Vezi detalii') }}
+          <span class="button-chevron">
+            <i class="fas fa-chevron-right"></i>
+          </span>
         </a>
       </div>
       <div class="col-6 text-center">
         <a class="button" href="{{ $de_ce }}">
-          {{ pll__('Vezi detalii') }} >
+          {{ pll__('Vezi detalii') }}
+          <span class="button-chevron">
+            <i class="fas fa-chevron-right"></i>
+          </span>
         </a>
       </div>
     </div>

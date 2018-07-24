@@ -176,6 +176,13 @@ $albaRed: #cc3234;
   box-shadow: 0 2px 2px #999;
 }
 
+.home .project-section .button-chevron,
+.home .blog-section .button-chevron {
+  font-size: 0.6rem;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
 .home .blog-section .button {
   margin-bottom: 0;
 }

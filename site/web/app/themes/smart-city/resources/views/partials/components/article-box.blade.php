@@ -8,7 +8,10 @@
       {{ $articol['excerpt'] }}
     </div>
     <a href="{{ $articol['permalink'] }}">
-      {{ pll__('Citește') }} >
+      {{ pll__('Citește') }}
+      <span class="button-chevron">
+        <i class="fas fa-chevron-right"></i>
+      </span>
     </a>
   </div>
 </div>
