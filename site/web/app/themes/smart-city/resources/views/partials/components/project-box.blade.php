@@ -2,7 +2,7 @@
   <a href="{{ $proiect['permalink'] }}" class="project-box">
     <div
       class="body"
-      style="background-image: url({{ $proiect['image'] }})"
+      style="background-image: url({{ $proiect['thumb'] }})"
       data-tint="{{ $proiect['verticala']['color'] }}">
       <div class="body-overlay">
         <div class="label">

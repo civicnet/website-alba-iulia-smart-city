@@ -63,7 +63,8 @@
     "wpackagist-plugin/pirate-forms": "2.3.4",
     "wpackagist-plugin/wp-cerber": "7.2",
     "wpackagist-plugin/updraftplus": "1.14.12",
-    "wpackagist-plugin/wordpress-seo": "7.8"
+    "wpackagist-plugin/wordpress-seo": "7.8",
+    "wpackagist-plugin/wp-smushit": "2.7.9.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"

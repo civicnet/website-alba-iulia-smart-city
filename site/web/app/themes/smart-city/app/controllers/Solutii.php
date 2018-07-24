@@ -53,6 +53,7 @@ class Solutii extends Controller {
         'label' => $etapa->post_title,
         'icon' => get_field('pictograma', $etapa->ID)->element,
       ),
+      'thumb' => \Proiect::featuredThumbForID($project->ID),
       'image' => \Proiect::featuredImageForID($project->ID),
       'status' => get_field('etapa_implementare', $project->ID),
       'partener' => $partner,

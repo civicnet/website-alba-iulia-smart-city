@@ -74,6 +74,18 @@ class Proiect extends Controller {
     return null;
   }
 
+  public static function featuredThumbForID(int $id): ?string {
+    if (has_post_thumbnail($id)) {
+      $image = wp_get_attachment_image_src(
+        get_post_thumbnail_id($id),
+        'medium'
+      );
+      return $image[0];
+    }
+
+    return null;
+  }
+
   public static function etichete(): array {
     $etichete = get_field('etichete');
 
