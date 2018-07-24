@@ -149,6 +149,7 @@ $algoliaSettingsCallback = function(array $settings) {
       'weight',
     ),
     'customRanking' => array(
+        'desc(post_modified)',
         'desc(weight)',
         'desc(post_date)',
     ),

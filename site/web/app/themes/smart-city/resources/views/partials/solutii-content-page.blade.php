@@ -165,7 +165,7 @@
 
 				.dynamic-tint-@{{color}} .body .label .icon {
 					color: #@{{color}};
-        } 
+        }
 
         .dynamic-tint-@{{color}} .body .body-overlay {
           text-shadow:
@@ -175,7 +175,7 @@
             0px 8px 23px #@{{color}}AA;
         }
 			</style>
-      
+
       <a href="@{{permalink}}" class="project-box dynamic-tint-@{{color}}">
         <div class="body" style="background-image: url(@{{image}})">
           <div class="body-overlay">
@@ -355,7 +355,7 @@
 
     jQuery('#search-box input.ais-search-box--input').focus(function() {
       var ele = jQuery(this);
-      
+
       jQuery('html, body').animate({
         scrollTop: ele.offset().top - 80
       }, 500);
