@@ -2,7 +2,7 @@
   <div class="article-box">
     <h3>{{ $articol['title'] }}</h3>
     <div class="article-img-wrapper">
-      <img src="{{ $articol['image'] }}" />
+      <img src="{{ $articol['thumb'] }}" />
     </div>
     <div class="excerpt">
       {{ $articol['excerpt'] }}

@@ -83,10 +83,15 @@ class FrontPage extends Controller {
     $ret = array();
     foreach ($articles as $article) {
       $image = null;
+      $thumb = null;
       if (has_post_thumbnail($article['ID'])) {
         $image = wp_get_attachment_image_src(
           get_post_thumbnail_id($article['ID']),
           'full'
+        )[0];
+        $thumb = wp_get_attachment_image_src(
+          get_post_thumbnail_id($article['ID']),
+          'medium'
         )[0];
       }
 
@@ -95,6 +100,7 @@ class FrontPage extends Controller {
         'content' => $article['post_content'],
         'excerpt' => $article['post_excerpt'],
         'image' => $image,
+        'thumb' => $thumb,
         'permalink' => get_permalink($article['ID']),
       );
     }
