@@ -105,6 +105,10 @@
 }
 
 @include media-breakpoint-down(md) {
+  .banner .navbar-container {
+    margin-top: 60px;
+  }
+
   .banner #navbarSupportedContent {
     padding-top: 20px;
     z-index: 10;
@@ -123,7 +127,7 @@
 
   .banner .header-top {
     font-size: 0.8rem;
-    top: -12px;
+    top: -42px;
     right: 0;
   }
 
@@ -169,6 +173,10 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .banner .navbar {
+    min-height: 160px;
+  }
+
   .banner .header-top {
     right: 20px;
     top: 20px;
@@ -176,5 +184,6 @@
 
   .banner #navbarSupportedContent {
     padding-right: 0;
+    margin-top: 85px;
   }
 }
