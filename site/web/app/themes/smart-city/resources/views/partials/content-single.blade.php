@@ -98,6 +98,7 @@
     );
     var helper = algoliasearchHelper(client, algolia.indices.posts_post.name, {
       disjunctiveFacets: ['category'],
+      facetingAfterDistinct: true,
       filters: 'locale:"' + current_locale + '"',
     });
 
