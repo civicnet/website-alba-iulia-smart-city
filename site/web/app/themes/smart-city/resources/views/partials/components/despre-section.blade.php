@@ -58,7 +58,7 @@
                           <i class="fas fa-file-pdf" style="margin-right: 4px; color: #f00"></i>
                           <a href="{{ $document['url'] }}" target="_blank">
                             {{ pll__('Descarcă') }} PDF
-                            
+
                             @if($document['pagini'] || $document['marime'])
                               <span class="document-info">
                                 (
@@ -88,7 +88,9 @@
           <ul>
             @foreach ($all as $sec)
               <li>
-                <a href={{ $sec['permalink'] }} class="category-link {{ $sec['is_current'] ? 'current' : '' }}">
+                <a
+                  href={{ $sec['permalink'] }}
+                  class="category-link {{ $sec['is_current'] || $sec['id'] === $section['id'] ? 'current' : '' }}">
                   <span class="category">
                     {{ $sec['titlu_scurt'] }}
                   </span>
@@ -115,7 +117,7 @@
       <div class="row">
         <div class="col text-center">
           <a
-            class="smart-button" 
+            class="smart-button"
             href="{{ get_permalink(pll_get_post(get_page_by_title('solutii')->ID)) }}">
             {{ pll__('Toate proiectele') }} >
           </a>
