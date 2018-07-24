@@ -3,8 +3,8 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  example.com:
-    albaiuliasmartcity.ro:
+  albaiuliasmartcity.ro:
+    site_hosts:
       - canonical: albaiuliasmartcity.ro
         redirects:
           - www.albaiuliasmartcity.ro
