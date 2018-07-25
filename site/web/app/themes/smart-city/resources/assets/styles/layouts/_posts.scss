@@ -20,6 +20,15 @@ article.type-post .entry-title {
   font-size: 2.8rem;
 }
 
+article.type-post .article-cat {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  display: inline-block;
+  color: #333;
+}
+
 article.type-post .social-media a {
   color: unset;
 }
@@ -29,6 +38,9 @@ article.type-post .social-media a:hover {
 }
 
 article.type-post .article-meta {
+  padding: 10px 0;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
   font-size: 2.8rem;
   color: #999;
   margin-bottom: 50px;
