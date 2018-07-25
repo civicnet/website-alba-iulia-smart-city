@@ -70,7 +70,7 @@
     <div class="row logos">
       <div class="col-md-8 col-sm-12">
         <div class="alba-iulia-logo">
-          <a href="#">
+          <a href="http://apulum.ro" target="_blank">
             <img src="@asset('images/stema_heraldica_rev.svg')" />
           </a>
           <div class="text align-middle">
