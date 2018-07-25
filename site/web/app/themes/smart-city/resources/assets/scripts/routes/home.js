@@ -29,7 +29,6 @@ export default {
           duration: 2500,
           // loop: true,
           delay: function(el, i) {
-            console.log(el, i);
             return i*50
           },
         })
