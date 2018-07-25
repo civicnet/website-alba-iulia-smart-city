@@ -45,10 +45,6 @@ $albaRed: #cc3234;
   background: #c33;
 }
 
-.small-menu.smart-dropdown .dropdown-menu {
-  // width: 100%;
-}
-
 .small-menu.smart-dropdown .dropdown-menu a {
   height: 44px;
   line-height: 44px;
@@ -69,4 +65,8 @@ $albaRed: #cc3234;
 .small-menu.smart-dropdown .dropdown-menu a:hover {
   background: $albaRed;
   color: #fff;
+}
+
+.small-menu.smart-dropdown .dropdown-menu .count {
+  display: none;
 }

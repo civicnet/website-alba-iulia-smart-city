@@ -6,14 +6,30 @@
   </header>
   <div class="container-fluid article-container">
     <div class="container">
+      <div class="dropdown show small-menu smart-dropdown" style="text-align: center">
+        <a
+          class="btn btn-secondary dropdown-toggle d-lg-none"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+          {{ pll__('Vezi alte categorii') }}
+        </a>
+
+        <div class="dropdown-menu algolia-facets" aria-labelledby="dropdownMenuLink">
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-md-9 col-sm-12">
+        <div class="col-lg-8 col-md-12">
           <h1 class="entry-title">{!! get_the_title() !!}</h1>
           @include('partials/entry-meta')
         </div>
       </div>
       <div class="row">
-        <div class="col-md-9 col-sm-12">
+        <div class="col-lg-8 col-md-12">
           <div class="entry-content">
             @php(the_content())
           </div>
@@ -21,27 +37,25 @@
           <div class="section social-media">
             <div class="content">
               <h4>{{ pll__('Distribuie articol') }}</h4>
-              <div class="row icons">
-                <div class="col">
+              <div class="icons">
+                <div>
                   <a
                     href="https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}"
                     target="popup"
-                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}','popup','width=600,height=600'); return false;"
-                    class="col-lg col-6 align-middle">
+                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ get_the_permalink() }}','popup','width=600,height=600'); return false;">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </div>
-                <div class="col">
+                <div>
                   <a
                     href="https://twitter.com/home?status={{ get_the_permalink() }}"
                     target="popup"
-                    onclick="window.open('https://twitter.com/home?status={{ get_the_permalink() }}','popup','width=600,height=600'); return false;"
-                    class="col-lg col-6 align-middle">
+                    onclick="window.open('https://twitter.com/home?status={{ get_the_permalink() }}','popup','width=600,height=600'); return false;">
                     <i class="fab fa-twitter-square"></i>
                   </a>
                 </div>
-                <div class="col">
-                  <a href="mailto:?body={{ get_the_permalink() }}" class="col-lg col-6 align-middle">
+                <div>
+                  <a href="mailto:?body={{ get_the_permalink() }}">
                     <i class="fas fa-envelope"></i>
                   </a>
                 </div>
@@ -57,7 +71,7 @@
 
           <div class="row justify-content-center articles">
             @foreach (Post::related() as $article)
-              <div class="col-5">
+              <div class="col-lg-5 col-md-8 col-sm-12">
                 @include('partials/components/article-detailed-box', ['articol' => $article])
               </div>
             @endforeach
@@ -68,9 +82,9 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-12 sidebar">
+        <div class="col-lg-4 col-md-12 sidebar d-none d-lg-block">
           <h3>{{ pll__('Categorii') }}</h3>
-          <ul id="categorii"></ul>
+          <ul class="algolia-facets"></ul>
         </div>
 
         <script type="text/html" id="category-template">
@@ -111,7 +125,7 @@
           'label': facet.name,
           'count': facet.count
         });
-        jQuery("#categorii").append(html);
+        jQuery(".algolia-facets").append(html);
       });
     });
 
