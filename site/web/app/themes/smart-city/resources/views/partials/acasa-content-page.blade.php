@@ -4,7 +4,7 @@
     <div class="row">
       <div class="holder">
         <div class="alba-logo">
-          @include('partials/components/alba-logo-full')
+          @include('partials/components/alba-logo-final')
         </div>
       </div>
     </div>

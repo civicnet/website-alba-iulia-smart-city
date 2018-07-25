@@ -3,6 +3,9 @@ import anime from 'animejs';
 
 export default {
   init() {
+
+  },
+  finalize() {
     let is_logo_animating = false;
     // JavaScript to be fired on the home page
     $(document).scroll(function() {
@@ -19,17 +22,19 @@ export default {
 
       timeline
         .add({
-          targets: '#svg2 #stea-content path',
+          targets: '.home .holder svg #Logo_x5F_Symbol path',
           strokeDashoffset: [anime.setDashoffset, 0],
           easing: 'easeInOutQuad',
-          direction: 'alternate',
-          duration: 300,
+          // direction: 'reverse',
+          duration: 2500,
+          // loop: true,
           delay: function(el, i) {
-            return i * 50
+            console.log(el, i);
+            return i*50
           },
         })
         .add({
-          targets: '#svg2 #stea-content path',
+          targets: '.home .holder svg #Logo_x5F_Symbol path',
           fillOpacity: [
             {
               value: 0,
@@ -42,31 +47,36 @@ export default {
             },
           ],
           easing: 'easeInOutQuad',
-          //duration: 1100,
+          duration: 200,
           offset: 500,
         })
         .add({
-          targets: '#svg2 line',
+          targets: '.home .holder svg line, .home .holder svg circle',
           strokeWidth: 2,
           easing: 'easeInOutQuad',
-          duration: 200,
+          duration: 100,
+          offset: 700,
         })
         .add({
           targets: '#svg2 g:not([class])',
           fillOpacity: 1,
           easing: 'easeInOutQuad',
-          duration: 200,
+          duration: 100,
+          offset: 800,
         })
         .add({
           targets: '#svg2 image',
           opacity: 1,
           easing: 'easeInOutQuad',
-          duration: 200,
+          duration: 100,
+          offset: 800,
         })
         .add({
           targets: '#svg2 text',
           fillOpacity: 1,
           easing: 'easeInOutQuad',
+          duration: 100,
+          offset: 900,
         })
 
         timeline.finished.then(() => {
@@ -74,8 +84,7 @@ export default {
           //$('#svg2 g.stea path').css({'stroke': 'none', 'fill-opacity': 1});
         });
     }
-  },
-  finalize() {
+
     // JavaScript to be fired on the home page, after the init JS
     $('.partners-carousel').slick({
       infinite: true,
