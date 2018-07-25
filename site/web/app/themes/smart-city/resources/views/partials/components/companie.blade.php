@@ -1,6 +1,12 @@
  <div class="companie">
 	<div class="logo">
-		<img src="{{ $companie['logo']['url'] }}" />
+    @if ($companie['www'])
+      <a href="{{ $companie['www'] }}" target="_blank" title="{{ pll__('Vezi site-ul oficial') }}">
+        <img src="{{ $companie['logo']['url'] }}" />
+      </a>
+    @else
+      <img src="{{ $companie['logo']['url'] }}" />
+    @endif
 	</div>
 	<div class="location">
 		<i class="fas fa-map-marker-alt"></i>
