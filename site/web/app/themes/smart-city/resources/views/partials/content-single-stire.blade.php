@@ -6,7 +6,7 @@
   </header>
   <div class="container-fluid article-container">
     <div class="container">
-      <div class="dropdown show small-menu smart-dropdown">
+      <div class="dropdown show small-menu smart-dropdown" style="text-align: center">
         <a
           class="btn btn-secondary dropdown-toggle d-lg-none"
           href="#"
