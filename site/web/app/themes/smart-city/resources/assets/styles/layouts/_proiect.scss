@@ -305,6 +305,43 @@ article.type-proiect .project-gallery.desktop-gallery {
   background-size: cover;
   background-position: center;
   display: block;
+  position: relative;
+}
+
+article.type-proiect .project-gallery.desktop-gallery .gallery-button {
+  position: absolute;
+  bottom: -65px;
+  border: 1px solid #c33;
+  color: #c33;
+  padding: 8px 20px;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 2px 2px #999;
+  border-radius: 3px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 165px;
+}
+
+article.type-proiect .project-gallery.desktop-gallery:hover .gallery-button {
+  background: #c33;
+  border-color: #c33;
+  color: #fff;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: transparent;
+    color: #c33;
+  }
+  100% {
+    background-color: #c33;
+    border-color: #c33;
+    color: #fff;
+  }
 }
 
 article.type-proiect .project-gallery.mobile-gallery {

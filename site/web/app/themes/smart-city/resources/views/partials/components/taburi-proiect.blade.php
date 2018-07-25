@@ -116,6 +116,9 @@
           href="#"
           class="project-gallery desktop-gallery"
           style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+          <span class="gallery-button">
+            {{ pll__('Vezi galerie foto') }}
+          </span>
         </a>
       </div>
       <div class="col-md-8 col-12">
@@ -145,6 +148,9 @@
             href="#"
             class="project-gallery desktop-gallery"
             style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+            <span class="gallery-button">
+              {{ pll__('Vezi galerie foto') }}
+            </span>
           </a>
         </div>
         <div class="col-md-8 col-12">
@@ -172,6 +178,9 @@
             href="#"
             class="project-gallery desktop-gallery"
             style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+            <span class="gallery-button">
+              {{ pll__('Vezi galerie foto') }}
+            </span>
           </a>
         </div>
         <div class="col-md-8 col-12">
@@ -202,6 +211,9 @@
             href="#"
             class="project-gallery desktop-gallery"
             style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+            <span class="gallery-button">
+              {{ pll__('Vezi galerie foto') }}
+            </span>
           </a>
         </div>
         <div class="col-md-8 col-12">
@@ -233,6 +245,9 @@
             href="#"
             class="project-gallery desktop-gallery"
             style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+            <span class="gallery-button">
+              {{ pll__('Vezi galerie foto') }}
+            </span>
           </a>
         </div>
         <div class="col-md-8 col-12">
@@ -259,6 +274,9 @@
             href="#"
             class="project-gallery desktop-gallery"
             style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+            <span class="gallery-button">
+              {{ pll__('Vezi galerie foto') }}
+            </span>
           </a>
         </div>
         <div class="col-md-8 col-12">
@@ -285,6 +303,9 @@
             href="#"
             class="project-gallery desktop-gallery"
             style="background-image: url({{ Proiect::galerieFotoFeatured() }})">
+            <span class="gallery-button">
+              {{ pll__('Vezi galerie foto') }}
+            </span>
           </a>
         </div>
         <div class="col-md-8 col-12">
