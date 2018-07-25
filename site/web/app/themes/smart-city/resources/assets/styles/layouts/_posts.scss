@@ -1,19 +1,11 @@
 @import "../components/_page-header.scss";
 
-/* article.type-post .page-header-secondary::before {
-  background: url(../images/beige_header_bg.jpg);
-  filter: none;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
-
 article.type-post {
   font-size: 16px;
 }
 
 article.type-post .entry-title {
-  margin-top: 100px;
+  margin-top: 70px;
   font-weight: 300;
   color: #c33;
   margin-bottom: 50px;
