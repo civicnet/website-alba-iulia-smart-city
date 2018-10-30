@@ -118,7 +118,7 @@
 
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
+<!-- <script>
 window.addEventListener("load", function(){
   window.cookieconsent.initialise({
     "palette": {
@@ -138,4 +138,4 @@ window.addEventListener("load", function(){
       "link": "{{ pll__('Vezi mai multe detalii') }}"
     }
   })});
-</script>
+</script> -->
