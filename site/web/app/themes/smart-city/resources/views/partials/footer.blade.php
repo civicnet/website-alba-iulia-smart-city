@@ -78,7 +78,7 @@
               {{ pll__('Echipa Smart City Alba Iulia') }}
             </strong>
             <div class="copyright">
-              Copyright &copy; 2018.
+              Copyright &copy; 2019.
               {{ pll__('Toate drepturile rezervate') }}
             </div>
           </div>
